@@ -28,7 +28,7 @@ def decode_text(text: str) -> str:
 
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
-def run_scraper(channel="0", rank_type="1", limit=30, sleep_sec=5, output_dir=None):
+def run_scraper(channel="0", rank_type="1", limit=30, sleep_sec=5, output_dir=None, min_category_books=15):
     os.makedirs(output_dir or OUTPUT_DIR, exist_ok=True)
     date_str = datetime.now().strftime("%Y%m%d")
     gender = "female" if channel == "0" else "male"
@@ -55,15 +55,45 @@ def run_scraper(channel="0", rank_type="1", limit=30, sleep_sec=5, output_dir=No
             try:
                 existing = json.load(f)
                 all_categories = existing.get("categories", [])
+                valid_names = {
+                    cat.get("name")
+                    for cat in all_categories
+                    if len(cat.get("books", [])) >= min_category_books
+                }
+                completed_cats = [name for name in completed_cats if name in valid_names]
+                all_categories = [cat for cat in all_categories if cat.get("name") in valid_names]
             except:
                 pass
     # ----------------------------------------
     
     with sync_playwright() as p:
-        if os.environ.get("GITHUB_ACTIONS"):
-            browser = p.chromium.launch(headless=True)
+        launch_kwargs = {"headless": True}
+        executable_path = os.environ.get("PLAYWRIGHT_EXECUTABLE_PATH")
+        if executable_path:
+            launch_kwargs["executable_path"] = executable_path
+        elif os.environ.get("GITHUB_ACTIONS"):
+            # GitHub Actions installs Playwright's bundled Chromium.
+            pass
+        elif os.name == "nt":
+            launch_kwargs["channel"] = "chrome"
         else:
-            browser = p.chromium.launch(headless=True, channel="chrome")
+            # Oracle's ARM64 images commonly ship Chromium at one of these
+            # paths, while Playwright's "chrome" channel only checks the
+            # x64 Google Chrome location.
+            for candidate in (
+                "/usr/bin/google-chrome",
+                "/usr/bin/chromium",
+                "/usr/bin/chromium-browser",
+                "/snap/bin/chromium",
+            ):
+                if os.path.exists(candidate):
+                    launch_kwargs["executable_path"] = candidate
+                    break
+            else:
+                raise RuntimeError(
+                    "No Chromium executable found; set PLAYWRIGHT_EXECUTABLE_PATH"
+                )
+        browser = p.chromium.launch(**launch_kwargs)
         # Create a new context with a normal user agent
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -73,8 +103,19 @@ def run_scraper(channel="0", rank_type="1", limit=30, sleep_sec=5, output_dir=No
         # 先访问新书榜的基准前缀页面，以此为入口模拟人工作业
         init_url = f"https://fanqienovel.com/rank/{channel}_{rank_type}_{category_id}"
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 正在初始化并访问基础榜单页：{init_url}")
-        page.goto(init_url, wait_until="load", timeout=15000)
-        page.wait_for_selector('a[href^="/page/"]', timeout=5000)
+        initialized = False
+        for attempt in range(3):
+            try:
+                page.goto(init_url, wait_until="domcontentloaded", timeout=30000)
+                page.wait_for_selector('a[href^="/page/"]', timeout=15000)
+                initialized = True
+                break
+            except Exception as e:
+                print(f"官方入口第 {attempt + 1} 次加载失败: {e}")
+                if attempt < 2:
+                    page.wait_for_timeout(2000)
+        if not initialized:
+            raise RuntimeError("官方榜单入口连续三次加载失败，拒绝发布本次数据")
         
         # 动态解析页面左侧拥有的所有类别目录 (通过匹配对应的榜单路由规律)
         categories_js = """
@@ -99,18 +140,47 @@ def run_scraper(channel="0", rank_type="1", limit=30, sleep_sec=5, output_dir=No
                 continue
                 
             print(f"[{datetime.now().strftime('%H:%M:%S')}] 模拟点击执行类别切换 -> {cat_name}")
-            try:
-                # 使用 Playwright 模拟真实的人为鼠标定位与点击跳转分类
-                page.locator(f"a[href='{cat_href}']").click()
-                time.sleep(2) # 等待 SPA 页面骨架和组件请求的动画渲染完毕
-                page.wait_for_selector('a[href^="/page/"]', timeout=5000)
-            except Exception as e:
-                print(f"切换分类出错或加载超时 {cat_name}: {e}")
-            
-            # Scroll to load top ~30 books
-            for _ in range(3):
-                page.evaluate("window.scrollBy(0, window.innerHeight)")
-                time.sleep(1.5)
+            category_url = cat_href if cat_href.startswith("http") else "https://fanqienovel.com" + cat_href
+            category_ready = False
+            for attempt in range(3):
+                try:
+                    # Direct navigation avoids extracting the previous category while the SPA route changes.
+                    page.goto(category_url, wait_until="domcontentloaded", timeout=30000)
+                    try:
+                        page.wait_for_function(
+                            "expected => document.title.includes(expected)",
+                            cat_name,
+                            timeout=10000,
+                        )
+                    except Exception:
+                        pass
+                    page.wait_for_timeout(1800)
+
+                    previous_count = 0
+                    stable_rounds = 0
+                    for _ in range(8):
+                        current_count = page.locator('a[href^="/page/"]').count()
+                        if current_count == previous_count:
+                            stable_rounds += 1
+                        else:
+                            stable_rounds = 0
+                        previous_count = current_count
+                        if current_count >= min(limit, min_category_books) and stable_rounds >= 1:
+                            break
+                        page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                        page.wait_for_timeout(1200)
+
+                    if previous_count >= min(limit, min_category_books):
+                        category_ready = True
+                        break
+                    print(f"分类 {cat_name} 第 {attempt + 1} 次仅加载 {previous_count} 个作品，准备重试")
+                except Exception as e:
+                    print(f"分类 {cat_name} 第 {attempt + 1} 次加载失败: {e}")
+
+            if not category_ready:
+                raise RuntimeError(
+                    f"分类 {cat_name} 未加载到至少 {min_category_books} 本书，拒绝发布不完整榜单"
+                )
                 
             # Extract cards. Based on helper.js: books usually are inside links a[href^="/page/"]
             # Let's use playwright evaluate to reliably traverse DOM the same way script did.
@@ -220,6 +290,11 @@ def run_scraper(channel="0", rank_type="1", limit=30, sleep_sec=5, output_dir=No
                 })
             
             # 收集分类数据到内存，并增量写入 JSON
+            if len(category_books) < min_category_books:
+                raise RuntimeError(
+                    f"分类 {cat_name} 最终只解析到 {len(category_books)} 本书，拒绝发布不完整榜单"
+                )
+
             all_categories.append({
                 "name": cat_name,
                 "books": category_books
@@ -254,6 +329,7 @@ if __name__ == "__main__":
     parser.add_argument("--limit", type=int, default=30, help="每个分类最多抓取数量")
     parser.add_argument("--sleep", type=float, default=5, help="分类之间等待秒数")
     parser.add_argument("--output-dir", default=None, help="数据输出目录")
+    parser.add_argument("--min-category-books", type=int, default=15, help="每个分类至少解析的作品数")
     args = parser.parse_args()
     print(f"开始执行番茄榜单：channel={args.channel} type={args.rank_type}")
     run_scraper(
@@ -262,4 +338,5 @@ if __name__ == "__main__":
         limit=args.limit,
         sleep_sec=args.sleep,
         output_dir=args.output_dir,
+        min_category_books=args.min_category_books,
     )
