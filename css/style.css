@@ -301,6 +301,45 @@ input:focus-visible {
     font-weight: 650;
 }
 
+.rank-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 16px;
+}
+
+.rank-switch-btn {
+    min-height: 32px;
+    padding: 6px 11px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    background: var(--surface-soft);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-size: 0.74rem;
+    font-weight: 740;
+    white-space: nowrap;
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease,
+        transform 0.18s ease;
+}
+
+.rank-switch-btn:hover {
+    border-color: rgba(240, 79, 56, 0.28);
+    background: var(--accent-wash);
+    color: var(--accent-strong);
+    transform: translateY(-1px);
+}
+
+.rank-switch-btn.active {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-on);
+    box-shadow: 0 8px 18px rgba(240, 79, 56, 0.16);
+}
+
 .header-right {
     display: flex;
     align-items: center;
@@ -1666,6 +1705,10 @@ input:focus-visible {
     .header-left {
         grid-column: 2;
         grid-row: 1;
+    }
+
+    .rank-switcher {
+        margin-top: 12px;
     }
 
     .header-right {
