@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>番茄女频新书榜 · 风向标 | 每日女频趋势追踪</title>
+    <title>番茄四榜 · 风向标 | 每日榜单趋势追踪</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="番茄小说女频新书榜趋势分析与风向标">
+    <meta name="description" content="番茄小说男频、女频阅读榜与新书榜趋势分析与风向标">
 </head>
 <body>
     <div class="app-container">
@@ -13,7 +13,7 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <h1>番茄风向标</h1>
-                <p class="sidebar-subtitle">女频新书榜追踪</p>
+                <p class="sidebar-subtitle">男频 / 女频 · 阅读榜 / 新书榜</p>
                 <p id="update-date" class="update-date">加载中...</p>
             </div>
             <nav class="category-nav">
@@ -29,6 +29,12 @@
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="菜单">☰</button>
                 <div class="header-left">
                     <h2 id="current-category-title">全部分类</h2>
+                    <div class="rank-switcher" id="rank-switcher" role="tablist" aria-label="榜单切换">
+                        <button class="rank-switch-btn" type="button" role="tab" data-rank="male_read">男频阅读榜</button>
+                        <button class="rank-switch-btn" type="button" role="tab" data-rank="male_new">男频新书榜</button>
+                        <button class="rank-switch-btn" type="button" role="tab" data-rank="female_read">女频阅读榜</button>
+                        <button class="rank-switch-btn active" type="button" role="tab" data-rank="female_new">女频新书榜</button>
+                    </div>
                 </div>
                 <div class="header-right">
                     <a class="github-link-btn" href="https://github.com/wen1701/FanqieRankTracker" target="_blank" rel="noopener noreferrer" aria-label="打开 GitHub 仓库">

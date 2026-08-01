@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 import os
 import json
 import time
+import argparse
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 
@@ -26,11 +28,16 @@ def decode_text(text: str) -> str:
 
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 
-def run_scraper(limit=30, sleep_sec=5):
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+def run_scraper(channel="0", rank_type="1", limit=30, sleep_sec=5, output_dir=None):
+    os.makedirs(output_dir or OUTPUT_DIR, exist_ok=True)
     date_str = datetime.now().strftime("%Y%m%d")
-    output_file = os.path.join(OUTPUT_DIR, f"fanqie_female_new_ranks_{date_str}.json")
-    state_file = os.path.join(OUTPUT_DIR, f"task_state_{date_str}.json")
+    gender = "female" if channel == "0" else "male"
+    rank_name = "new" if rank_type == "1" else "read"
+    output_root = output_dir or OUTPUT_DIR
+    output_file = os.path.join(output_root, f"fanqie_{gender}_{rank_name}_ranks_{date_str}.json")
+    state_file = os.path.join(output_root, f"task_state_{gender}_{rank_name}_{date_str}.json")
+    category_id = "1139" if channel == "0" else "1141"
+    rank_prefix = f"/rank/{channel}_{rank_type}_"
     
     # ------------- 状态恢复逻辑 -------------
     completed_cats = []
@@ -64,23 +71,23 @@ def run_scraper(limit=30, sleep_sec=5):
         page = context.new_page()
         
         # 先访问新书榜的基准前缀页面，以此为入口模拟人工作业
-        init_url = "https://fanqienovel.com/rank/0_1_1139"
+        init_url = f"https://fanqienovel.com/rank/{channel}_{rank_type}_{category_id}"
         print(f"[{datetime.now().strftime('%H:%M:%S')}] 正在初始化并访问基础榜单页：{init_url}")
         page.goto(init_url, wait_until="load", timeout=15000)
         page.wait_for_selector('a[href^="/page/"]', timeout=5000)
         
         # 动态解析页面左侧拥有的所有类别目录 (通过匹配对应的榜单路由规律)
         categories_js = """
-        () => {
+        (rankPrefix) => {
             return Array.from(document.querySelectorAll('a'))
-                .filter(a => a.href.includes('/rank/0_1_'))
+                .filter(a => a.href.includes(rankPrefix))
                 .map(a => ({
                     name: a.innerText.trim(),
                     href: a.getAttribute('href')
                 }));
         }
         """
-        categories = page.evaluate(categories_js)
+        categories = page.evaluate(categories_js, rank_prefix)
         print(f"✅ 成功自适应提取到 {len(categories)} 个分类标签。开始全量模拟点击抓取下级数据...")
         
         for cat in categories:
@@ -241,5 +248,18 @@ def run_scraper(limit=30, sleep_sec=5):
     print(f"\n✅ 当日选定类目任务已完毕或刷新！数据源：{output_file}")
 
 if __name__ == "__main__":
-    print("开始执行番茄女频新书榜抓取计划...")
-    run_scraper(limit=30, sleep_sec=5)
+    parser = argparse.ArgumentParser(description="番茄榜单采集（基于 FanqieRankTracker 原版 Playwright + 字体解码）")
+    parser.add_argument("--channel", choices=["0", "1"], default="0", help="0=女频，1=男频")
+    parser.add_argument("--type", dest="rank_type", choices=["1", "2"], default="1", help="1=新书榜，2=阅读榜")
+    parser.add_argument("--limit", type=int, default=30, help="每个分类最多抓取数量")
+    parser.add_argument("--sleep", type=float, default=5, help="分类之间等待秒数")
+    parser.add_argument("--output-dir", default=None, help="数据输出目录")
+    args = parser.parse_args()
+    print(f"开始执行番茄榜单：channel={args.channel} type={args.rank_type}")
+    run_scraper(
+        channel=args.channel,
+        rank_type=args.rank_type,
+        limit=args.limit,
+        sleep_sec=args.sleep,
+        output_dir=args.output_dir,
+    )
