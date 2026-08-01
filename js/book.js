@@ -2,6 +2,32 @@ document.addEventListener('DOMContentLoaded', () => {
     const detail = document.getElementById('book-detail');
     const cacheBuster = `v=${Math.floor(Date.now() / 600000)}`;
     const maxDays = 30;
+    const rankConfigs = {
+        male_read: {
+            key: 'male_read',
+            label: '男频阅读榜',
+            datesFile: 'data/dates_male_read.json',
+            snapshotPrefix: 'fanqie_male_read_ranks_',
+        },
+        male_new: {
+            key: 'male_new',
+            label: '男频新书榜',
+            datesFile: 'data/dates_male_new.json',
+            snapshotPrefix: 'fanqie_male_new_ranks_',
+        },
+        female_read: {
+            key: 'female_read',
+            label: '女频阅读榜',
+            datesFile: 'data/dates_female_read.json',
+            snapshotPrefix: 'fanqie_female_read_ranks_',
+        },
+        female_new: {
+            key: 'female_new',
+            label: '女频新书榜',
+            datesFile: 'data/dates.json',
+            snapshotPrefix: 'fanqie_female_new_ranks_',
+        },
+    };
     const copyToast = document.createElement('div');
     copyToast.className = 'copy-toast';
     copyToast.textContent = '书本信息已复制';
@@ -14,18 +40,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const params = new URLSearchParams(window.location.search);
         const bookId = params.get('id');
         const bookTitle = params.get('title');
+        const requestedRank = params.get('rank');
         if (!bookId && !bookTitle) {
             renderEmpty('缺少作品 ID。');
             return;
         }
 
         try {
-            const dateIndex = await fetchJson(`data/dates.json?${cacheBuster}`);
-            const dates = (dateIndex.dates || []).slice().sort().slice(-maxDays);
-            const snapshots = await Promise.all(
-                dates.map(date => fetchJson(`${snapshotUrl(date)}?${cacheBuster}`).catch(() => null))
-            );
-            const records = collectBookRecords(bookId, bookTitle, dates, snapshots);
+            const configs = requestedRank && rankConfigs[requestedRank]
+                ? [rankConfigs[requestedRank]]
+                : Object.values(rankConfigs);
+            const sources = (await Promise.all(configs.map(loadSource))).filter(Boolean);
+            const records = collectBookRecords(bookId, bookTitle, sources);
 
             if (!records.length) {
                 renderEmpty('最近 30 天榜单中没有找到这本书。');
@@ -39,8 +65,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function snapshotUrl(date) {
-        return `data/fanqie_female_new_ranks_${date.replace(/-/g, '')}.json`;
+    async function loadSource(config) {
+        try {
+            const dateIndex = await fetchJson(`${config.datesFile}?${cacheBuster}`);
+            const dates = (dateIndex.dates || []).slice().sort().slice(-maxDays);
+            const snapshots = await Promise.all(
+                dates.map(date => fetchJson(`${snapshotUrl(config, date)}?${cacheBuster}`).catch(() => null))
+            );
+            return { config, dates, snapshots };
+        } catch (err) {
+            console.warn(`跳过不可用榜单 ${config.label}`, err);
+            return null;
+        }
+    }
+
+    function snapshotUrl(config, date) {
+        return `data/${config.snapshotPrefix}${date.replace(/-/g, '')}.json`;
     }
 
     function fetchJson(url) {
@@ -50,27 +90,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function collectBookRecords(bookId, bookTitle, dates, snapshots) {
+    function collectBookRecords(bookId, bookTitle, sources) {
         const records = [];
-        snapshots.forEach((snapshot, snapshotIndex) => {
-            if (!snapshot || !snapshot.categories) return;
-            const date = dates[snapshotIndex];
-            snapshot.categories.forEach(cat => {
-                (cat.books || []).forEach((book, index) => {
-                    if (bookId && extractBookId(book.url) !== bookId) return;
-                    if (!bookId && book.title !== bookTitle) return;
-                    records.push({
-                        date,
-                        category: cat.name,
-                        rank: index + 1,
-                        readsLabel: book.reads || '未知',
-                        readsValue: parseReads(book.reads),
-                        book,
+        sources.forEach(source => {
+            source.snapshots.forEach((snapshot, snapshotIndex) => {
+                if (!snapshot || !snapshot.categories) return;
+                const date = source.dates[snapshotIndex];
+                snapshot.categories.forEach(cat => {
+                    (cat.books || []).forEach((book, index) => {
+                        if (bookId && extractBookId(book.url) !== bookId) return;
+                        if (!bookId && book.title !== bookTitle) return;
+                        records.push({
+                            date,
+                            rankKey: source.config.key,
+                            rankLabel: source.config.label,
+                            category: cat.name,
+                            rank: index + 1,
+                            readsLabel: book.reads || '未知',
+                            readsValue: parseReads(book.reads),
+                            book,
+                        });
                     });
                 });
             });
         });
-        return records.sort((a, b) => a.date.localeCompare(b.date));
+        return records.sort((a, b) => a.date.localeCompare(b.date) || a.rankKey.localeCompare(b.rankKey));
     }
 
     function renderBook(records) {
@@ -85,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${book.cover ? `<img src="${book.cover}" alt="${escapeAttr(book.title)}">` : '<div class="no-cover">暂无封面</div>'}
                 </div>
                 <div class="detail-main">
-                    <span class="panel-kicker">${escapeHtml(latest.category)} · 第 ${latest.rank} 名</span>
+                    <span class="panel-kicker">${escapeHtml(latest.rankLabel)} · ${escapeHtml(latest.category)} · 第 ${latest.rank} 名</span>
                     <h1>${escapeHtml(book.title)}</h1>
                     <p class="detail-author">作者：${escapeHtml(book.author || '未知')}</p>
                     <div class="detail-stats">
@@ -125,7 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const btn = e.currentTarget;
         const text = `${book.title}
 作者：${book.author || '未知'}
-阅读量：${latest.readsLabel}
+在读：${latest.readsLabel}
+总阅读：番茄榜单未提供
 简介：${book.intro || '无'}
 链接：${book.url || '无'}`;
         copyText(text).then(() => {
@@ -298,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return `
             <div class="book-history-row">
                 <time>${escapeHtml(record.date)}</time>
-                <strong>${escapeHtml(record.category)} · 第 ${record.rank} 名</strong>
+                <strong>${escapeHtml(record.rankLabel)} · ${escapeHtml(record.category)} · 第 ${record.rank} 名</strong>
                 <span>${escapeHtml(record.readsLabel)}</span>
             </div>
         `;

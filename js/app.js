@@ -12,15 +12,66 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateInput = document.getElementById('date-input');
     const datePrevBtn = document.getElementById('date-prev');
     const dateNextBtn = document.getElementById('date-next');
+    const rankSwitcher = document.getElementById('rank-switcher');
+    const rankButtons = rankSwitcher ? rankSwitcher.querySelectorAll('[data-rank]') : [];
+
+    // Four stable entry points. Daily Actions refresh these files while
+    // date-specific snapshots remain available for historical browsing.
+    const rankConfigs = {
+        male_read: {
+            label: '男频阅读榜',
+            latestFile: 'data/latest_male_read_ranks.json',
+            datesFile: 'data/dates_male_read.json',
+            snapshotPrefix: 'fanqie_male_read_ranks_',
+            trendsDir: 'data/trends/male_read',
+        },
+        male_new: {
+            label: '男频新书榜',
+            latestFile: 'data/latest_male_new_ranks.json',
+            datesFile: 'data/dates_male_new.json',
+            snapshotPrefix: 'fanqie_male_new_ranks_',
+            trendsDir: 'data/trends/male_new',
+        },
+        female_read: {
+            label: '女频阅读榜',
+            latestFile: 'data/latest_female_read_ranks.json',
+            datesFile: 'data/dates_female_read.json',
+            snapshotPrefix: 'fanqie_female_read_ranks_',
+            trendsDir: 'data/trends/female_read',
+        },
+        female_new: {
+            label: '女频新书榜',
+            latestFile: 'data/latest_ranks.json',
+            datesFile: 'data/dates.json',
+            snapshotPrefix: 'fanqie_female_new_ranks_',
+            trendsDir: 'data/trends',
+        },
+    };
 
     let allData = null;
     let typingTimer = null;
     let availableDates = [];   // sorted list of "YYYY-MM-DD"
     let currentDateIndex = -1; // index into availableDates
     let currentCategory = null; // preserve selected category across date switches
+    let currentRankKey = 'female_new';
 
     // Cache-busting: 每10分钟一个新key，避免浏览器缓存旧JSON
     const cacheBuster = `v=${Math.floor(Date.now() / 600000)}`;
+
+    function currentRankConfig() {
+        return rankConfigs[currentRankKey] || rankConfigs.female_new;
+    }
+
+    function updateRankSwitcher() {
+        const config = currentRankConfig();
+        rankButtons.forEach(button => {
+            const active = button.dataset.rank === currentRankKey;
+            button.classList.toggle('active', active);
+            button.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        const subtitle = document.querySelector('.sidebar-subtitle');
+        if (subtitle) subtitle.textContent = `${config.label}追踪 · 可切换四榜`;
+    }
 
     // ========== Copy Toast ==========
     const copyToast = document.createElement('div');
@@ -75,6 +126,10 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.addEventListener('click', () => {
         sidebar.classList.remove('open');
         overlay.classList.remove('show');
+    });
+
+    rankButtons.forEach(button => {
+        button.addEventListener('click', () => switchRank(button.dataset.rank));
     });
 
     // ========== Date Navigation ==========
@@ -169,27 +224,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ========== Load dates index, then load latest ==========
-    fetch(`data/dates.json?${cacheBuster}`)
-        .then(r => r.ok ? r.json() : Promise.reject('No dates.json'))
-        .then(idx => {
-            availableDates = idx.dates || [];
-            if (availableDates.length > 0) {
-                // Set min/max for native date input
-                dateInput.min = availableDates[0];
-                dateInput.max = availableDates[availableDates.length - 1];
-            }
-            // Start by loading latest_ranks.json (already has trend data baked in)
-            return loadLatestData();
-        })
-        .catch(() => {
-            // Fallback: no dates.json available, just load latest
-            console.warn('dates.json not found, falling back to latest only');
-            loadLatestData();
-        });
+    // ========== Load the selected rank's date index, then its latest data ==========
+    function switchRank(rankKey) {
+        if (!rankConfigs[rankKey]) return;
+        currentRankKey = rankKey;
+        currentCategory = null;
+        allData = null;
+        availableDates = [];
+        currentDateIndex = -1;
+        updateRankSwitcher();
+        categoryList.innerHTML = '<li class="loading-item">加载中...</li>';
+        waterfall.innerHTML = '<p style="color:var(--text-muted);padding:20px;">正在读取榜单...</p>';
+        aiContent.innerHTML = '<span class="ai-loading">正在读取趋势数据...</span>';
+
+        const config = currentRankConfig();
+        fetch(`${config.datesFile}?${cacheBuster}`)
+            .then(r => r.ok ? r.json() : Promise.reject(`No ${config.datesFile}`))
+            .then(idx => {
+                availableDates = (idx.dates || []).slice().sort();
+                if (availableDates.length > 0) {
+                    dateInput.min = availableDates[0];
+                    dateInput.max = availableDates[availableDates.length - 1];
+                }
+                return loadLatestData();
+            })
+            .catch(err => {
+                console.warn(`${config.label} 日期索引不可用，尝试读取最新入口`, err);
+                loadLatestData();
+            });
+    }
+
+    switchRank(currentRankKey);
 
     function loadLatestData() {
-        return fetch(`data/latest_ranks.json?${cacheBuster}`)
+        const config = currentRankConfig();
+        return fetch(`${config.latestFile}?${cacheBuster}`)
             .then(r => {
                 if (!r.ok) throw new Error('Network error');
                 return r.json();
@@ -214,9 +283,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function loadDateData(dateStr) {
-        // dateStr = "YYYY-MM-DD", file = fanqie_female_new_ranks_YYYYMMDD.json
+        // dateStr = "YYYY-MM-DD", file name depends on the selected rank.
         const fileDateStr = dateStr.replace(/-/g, '');
         const isLatest = currentDateIndex === availableDates.length - 1;
+        const config = currentRankConfig();
 
         if (isLatest) {
             // Just load the pre-built latest with trends
@@ -227,8 +297,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show loading state
         waterfall.innerHTML = '<p style="color:var(--text-muted);padding:20px;">加载中...</p>';
 
-        const snapshotUrl = `data/fanqie_female_new_ranks_${fileDateStr}.json?${cacheBuster}`;
-        const trendUrl = `data/trends/${dateStr}.json?${cacheBuster}`;
+        const snapshotUrl = `data/${config.snapshotPrefix}${fileDateStr}.json?${cacheBuster}`;
+        const trendUrl = `${config.trendsDir}/${dateStr}.json?${cacheBuster}`;
 
         // Load snapshot + trends in parallel
         Promise.all([
@@ -448,7 +518,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const rank = index + 1;
             const card = document.createElement('a');
             const bookId = extractBookId(book.url);
-            card.href = bookId ? `book.html?id=${encodeURIComponent(bookId)}` : 'javascript:void(0)';
+            card.href = bookId
+                ? `book.html?id=${encodeURIComponent(bookId)}&rank=${encodeURIComponent(currentRankKey)}`
+                : 'javascript:void(0)';
             card.rel = 'noopener';
             card.className = 'book-card';
 
