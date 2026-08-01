@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateNextBtn = document.getElementById('date-next');
     const rankSwitcher = document.getElementById('rank-switcher');
     const rankButtons = rankSwitcher ? rankSwitcher.querySelectorAll('[data-rank]') : [];
+    const trendLink = document.querySelector('.trend-link-btn');
 
     // Four stable entry points. Daily Actions refresh these files while
     // date-specific snapshots remain available for historical browsing.
@@ -71,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const subtitle = document.querySelector('.sidebar-subtitle');
         if (subtitle) subtitle.textContent = `${config.label}追踪 · 可切换四榜`;
+        if (trendLink) trendLink.href = `trend.html?rank=${encodeURIComponent(currentRankKey)}`;
     }
 
     // ========== Copy Toast ==========

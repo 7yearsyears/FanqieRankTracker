@@ -2,7 +2,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryButtons = document.getElementById('trend-category-buttons');
     const subtitle = document.getElementById('trend-subtitle');
     const rangeButtons = document.querySelectorAll('.range-btn');
+    const rankSwitcher = document.getElementById('trend-rank-switcher');
+    const rankButtons = rankSwitcher ? rankSwitcher.querySelectorAll('[data-rank]') : [];
     const cacheBuster = `v=${Math.floor(Date.now() / 600000)}`;
+
+    const rankConfigs = {
+        male_read: {
+            label: '男频阅读榜',
+            latestFile: 'data/latest_male_read_ranks.json',
+            datesFile: 'data/dates_male_read.json',
+            trendsDir: 'data/trends/male_read',
+            marketSummaryFile: 'data/market_summary_male_read.json',
+        },
+        male_new: {
+            label: '男频新书榜',
+            latestFile: 'data/latest_male_new_ranks.json',
+            datesFile: 'data/dates_male_new.json',
+            trendsDir: 'data/trends/male_new',
+            marketSummaryFile: 'data/market_summary_male_new.json',
+        },
+        female_read: {
+            label: '女频阅读榜',
+            latestFile: 'data/latest_female_read_ranks.json',
+            datesFile: 'data/dates_female_read.json',
+            trendsDir: 'data/trends/female_read',
+            marketSummaryFile: 'data/market_summary_female_read.json',
+        },
+        female_new: {
+            label: '女频新书榜',
+            latestFile: 'data/latest_ranks.json',
+            datesFile: 'data/dates.json',
+            trendsDir: 'data/trends',
+            marketSummaryFile: 'data/market_summary.json',
+        },
+    };
 
     let categories = [];
     let trendRows = [];
@@ -10,8 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let marketSummaryData = null;
     let selectedCategory = '';
     let selectedDays = 7;
+    let currentRankKey = getInitialRankKey();
+    let allTrendDates = [];
+    let allTrendLoaded = false;
 
-    const genreGroups = [
+    const femaleGenreGroups = [
         { name: '古风言情', categories: ['古风世情', '古言脑洞', '宫斗宅斗', '种田'] },
         { name: '现代言情', categories: ['现言脑洞', '豪门总裁', '职场婚恋', '青春甜宠'] },
         { name: '幻想言情', categories: ['玄幻言情', '科幻末世', '悬疑脑洞', '女频悬疑'] },
@@ -19,6 +55,15 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: '年代民国', categories: ['年代', '民国言情'] },
         { name: '娱乐星光', categories: ['星光璀璨'] },
         { name: '游戏体育', categories: ['游戏体育'] },
+    ];
+
+    const maleGenreGroups = [
+        { name: '玄幻仙侠', categories: ['传统玄幻', '东方仙侠', '玄幻脑洞'] },
+        { name: '都市题材', categories: ['都市日常', '都市脑洞', '都市高武', '都市修真', '都市种田', '战神赘婿'] },
+        { name: '历史军事', categories: ['历史古代', '历史脑洞', '抗战谍战'] },
+        { name: '科幻悬疑', categories: ['科幻末世', '悬疑脑洞', '悬疑灵异'] },
+        { name: '衍生游戏', categories: ['动漫衍生', '男频衍生', '游戏体育'] },
+        { name: '西方奇幻', categories: ['西方奇幻'] },
     ];
 
     const els = {
@@ -37,29 +82,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function init() {
         try {
-            const [dateIndex, latestIndex, latestAll, marketSummary] = await Promise.all([
-                fetchJson(`data/dates.json?${cacheBuster}`),
-                fetchJson(`api/lastest.json?${cacheBuster}`).catch(() => null),
-                fetchJson(`api/lastest/all.json?${cacheBuster}`)
-                    .catch(() => fetchJson(`data/latest_ranks.json?${cacheBuster}`)),
-                fetchJson(`data/market_summary.json?${cacheBuster}`).catch(() => null),
+            const config = currentRankConfig();
+            updateRankSwitcher();
+            document.title = `${config.label} · 类型风向标`;
+            const [dateIndex, latestAll, marketSummary] = await Promise.all([
+                fetchJson(`${config.datesFile}?${cacheBuster}`),
+                fetchJson(`${config.latestFile}?${cacheBuster}`),
+                fetchJson(`${config.marketSummaryFile}?${cacheBuster}`).catch(() => null),
             ]);
             latestData = latestAll;
             marketSummaryData = marketSummary;
 
-            categories = latestIndex && latestIndex.types
-                ? latestIndex.types.filter(item => item.type !== 'all').map(item => item.type)
+            categories = latestAll && latestAll.categories
+                ? latestAll.categories.map(item => item.name).filter(Boolean)
                 : await loadCategoriesFallback();
 
-            const dates = (dateIndex.dates || []).slice().sort();
-            const trendDates = dates.slice(1);
-            const trendFiles = await Promise.all(
-                trendDates.map(date => fetchJson(`data/trends/${date}.json?${cacheBuster}`).catch(() => null))
-            );
-            trendRows = trendFiles
-                .filter(Boolean)
-                .map(item => ({ date: item.date, prevDate: item.prev_date, trends: item.trends || {} }))
-                .sort((a, b) => a.date.localeCompare(b.date));
+            allTrendDates = (dateIndex.dates || []).slice().sort();
+            // Include the first observation day. It has a clear "首日数据" state
+            // and becomes a full comparison automatically after the next update.
+            // Load a bounded window first; the "全部" button loads older files on demand.
+            const initialTrendDates = allTrendDates.slice(-Math.max(30, selectedDays));
+            trendRows = await loadTrendRows(initialTrendDates);
+            allTrendLoaded = initialTrendDates.length >= allTrendDates.length;
 
             if (trendRows.length === 0 || categories.length === 0) {
                 renderEmpty('暂无可分析的趋势数据。');
@@ -77,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function loadCategoriesFallback() {
-        const latest = await fetchJson(`data/latest_ranks.json?${cacheBuster}`);
+        const latest = await fetchJson(`${currentRankConfig().latestFile}?${cacheBuster}`);
         return (latest.categories || []).map(cat => cat.name);
     }
 
@@ -89,14 +133,63 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function bindEvents() {
+        rankButtons.forEach(btn => {
+            btn.addEventListener('click', () => switchRank(btn.dataset.rank));
+        });
         rangeButtons.forEach(btn => {
             btn.addEventListener('click', () => {
                 rangeButtons.forEach(item => item.classList.remove('active'));
                 btn.classList.add('active');
                 selectedDays = btn.dataset.days === 'all' ? 'all' : Number(btn.dataset.days);
-                render();
+                if (selectedDays === 'all' && !allTrendLoaded) {
+                    subtitle.textContent = `${currentRankConfig().label} · 正在读取完整历史...`;
+                    loadTrendRows(allTrendDates).then(rows => {
+                        trendRows = rows;
+                        allTrendLoaded = true;
+                        render();
+                    }).catch(() => render());
+                } else {
+                    render();
+                }
             });
         });
+    }
+
+    async function loadTrendRows(dates) {
+        const config = currentRankConfig();
+        const trendFiles = await Promise.all(
+            dates.map(date => fetchJson(`${config.trendsDir}/${date}.json?${cacheBuster}`).catch(() => null))
+        );
+        return trendFiles
+            .filter(Boolean)
+            .map(item => ({ date: item.date, prevDate: item.prev_date, trends: item.trends || {} }))
+            .sort((a, b) => a.date.localeCompare(b.date));
+    }
+
+    function getInitialRankKey() {
+        const params = new URLSearchParams(window.location.search);
+        const requested = params.get('rank');
+        return requested && rankConfigs[requested] ? requested : 'female_new';
+    }
+
+    function currentRankConfig() {
+        return rankConfigs[currentRankKey] || rankConfigs.female_new;
+    }
+
+    function updateRankSwitcher() {
+        rankButtons.forEach(button => {
+            const active = button.dataset.rank === currentRankKey;
+            button.classList.toggle('active', active);
+            button.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+    }
+
+    function switchRank(rankKey) {
+        if (!rankConfigs[rankKey] || rankKey === currentRankKey) return;
+        const url = new URL(window.location.href);
+        url.searchParams.set('rank', rankKey);
+        url.searchParams.delete('type');
+        window.location.assign(url.toString());
     }
 
     function getInitialCategory() {
@@ -128,7 +221,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function render() {
-        const rows = getWindowRows()
+        const windowRows = getWindowRows();
+        const rows = windowRows
             .map(row => ({
                 date: row.date,
                 prevDate: row.prevDate,
@@ -141,9 +235,9 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        subtitle.textContent = `${selectedCategory} · ${rows[0].date} 至 ${rows[rows.length - 1].date} · ${rows.length} 个观察日`;
+        subtitle.textContent = `${currentRankConfig().label} · ${selectedCategory} · ${rows[0].date} 至 ${rows[rows.length - 1].date} · ${rows.length} 个观察日`;
 
-        renderMarketBoard(getWindowRows());
+        renderMarketBoard(windowRows);
         renderList(els.reads, collectReads(rows));
         renderList(els.newBooks, collectNewBooks(rows));
         renderList(els.risers, collectRisers(rows));
@@ -176,35 +270,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderMarketBoard(rowsWindow) {
-        const hotGenres = collectHotGenres(rowsWindow);
-        const hotTypes = collectHotTypes(rowsWindow);
+        let hotGenres = collectHotGenres(rowsWindow);
+        let hotTypes = collectHotTypes(rowsWindow);
         const hotThemes = collectHotThemes(rowsWindow);
 
         if (!hotTypes.length) {
-            els.marketSummary.textContent = '暂无足够数据判断全站热点。';
-            els.marketSource.textContent = '暂无数据';
-            els.hotGenres.innerHTML = '<p class="muted-line">暂无数据。</p>';
-            els.hotTypes.innerHTML = '<p class="muted-line">暂无数据。</p>';
-            els.hotThemes.innerHTML = '<p class="muted-line">暂无数据。</p>';
-            return;
+            hotTypes = collectSnapshotTypes();
+            hotGenres = collectHotGenres([], hotTypes);
+            if (!hotTypes.length) {
+                els.marketSummary.textContent = '暂无足够数据判断全站热点。';
+                els.marketSource.textContent = '暂无数据';
+                els.hotGenres.innerHTML = '<p class="muted-line">暂无数据。</p>';
+                els.hotTypes.innerHTML = '<p class="muted-line">暂无数据。</p>';
+                els.hotThemes.innerHTML = '<p class="muted-line">暂无数据。</p>';
+                return;
+            }
+            els.marketSummary.textContent = `${currentRankConfig().label} 已完成首日采集；趋势对比将在下一次采集后生成。`;
+            els.marketSource.textContent = `首日快照 · ${latestData && latestData.date ? latestData.date : ''}`;
+        } else {
+            const topGenres = hotGenres.slice(0, 2).map(item => item.name).join('、');
+            const topTypes = hotTypes.slice(0, 3).map(item => item.name).join('、');
+            const topThemes = hotThemes.slice(0, 6).map(item => item.name).join('、');
+            const period = selectedDays === 'all' ? '全部样本' : `近 ${selectedDays} 日`;
+            const fallbackSummary = `${period}里，${topGenres || topTypes} 的阅读增长更强，具体分类以 ${topTypes} 的新增在读更集中；新书题材上 ${topThemes} 更高频，说明读者仍偏好强设定、强情绪钩子和明确爽点。`;
+            const summaryData = getMarketSummaryForPeriod();
+            els.marketSummary.textContent = summaryData ? summaryData.summary : fallbackSummary;
+            els.marketSource.textContent = summaryData && summaryData.source === 'ai'
+                ? `AI 总结 · ${summaryData.period || period}`
+                : `规则统计 · ${period}`;
         }
-
-        const topGenres = hotGenres.slice(0, 2).map(item => item.name).join('、');
-        const topTypes = hotTypes.slice(0, 3).map(item => item.name).join('、');
-        const topThemes = hotThemes.slice(0, 6).map(item => item.name).join('、');
-        const period = selectedDays === 'all' ? '全部样本' : `近 ${selectedDays} 日`;
-        const fallbackSummary = `${period}里，${topGenres || topTypes} 的阅读增长更强，具体分类以 ${topTypes} 的新增在读更集中；新书题材上 ${topThemes} 更高频，说明读者仍偏好强设定、强情绪钩子和明确爽点。`;
-        const summaryData = getMarketSummaryForPeriod();
-        els.marketSummary.textContent = summaryData ? summaryData.summary : fallbackSummary;
-        els.marketSource.textContent = summaryData && summaryData.source === 'ai'
-            ? `AI 总结 · ${summaryData.period || period}`
-            : `规则统计 · ${period}`;
 
         els.hotGenres.innerHTML = hotGenres.slice(0, 5).map((item, index) => `
             <div class="hot-type-row hot-type-row-static genre-row">
                 <span>${index + 1}</span>
                 <strong>${escapeHtml(item.name)}</strong>
-                <small>${escapeHtml(item.categoryText)} · 新增在读 ${formatReads(item.readGrowthTotal)} · 增长作品 ${item.readCount}</small>
+                <small>${escapeHtml(item.categoryText)} · ${item.metricLabel || '新增在读'} ${formatReads(item.readGrowthTotal)} · ${item.snapshot ? '上榜作品' : '增长作品'} ${item.readCount}</small>
                 <em>${formatReads(item.readGrowthTotal)}</em>
             </div>
         `).join('');
@@ -213,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="hot-type-row" type="button" data-type="${escapeAttr(item.name)}">
                 <span>${index + 1}</span>
                 <strong>${escapeHtml(item.name)}</strong>
-                <small>新增在读 ${formatReads(item.readGrowthTotal)} · 增长作品 ${item.readCount}</small>
+                <small>${item.metricLabel || '新增在读'} ${formatReads(item.readGrowthTotal)} · ${item.snapshot ? '上榜作品' : '增长作品'} ${item.readCount}</small>
                 <em>${formatReads(item.readGrowthTotal)}</em>
             </button>
         `).join('');
@@ -231,9 +331,10 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
-    function collectHotGenres(rowsWindow) {
-        const hotTypes = collectHotTypes(rowsWindow);
+    function collectHotGenres(rowsWindow, typeItems) {
+        const hotTypes = typeItems || collectHotTypes(rowsWindow);
         const hotTypeMap = new Map(hotTypes.map(item => [item.name, item]));
+        const genreGroups = currentRankKey.startsWith('male_') ? maleGenreGroups : femaleGenreGroups;
 
         return genreGroups.map(group => {
             const matched = group.categories
@@ -258,6 +359,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 readCount: matched.reduce((sum, item) => sum + item.readCount, 0),
                 readGrowthTotal: matched.reduce((sum, item) => sum + item.readGrowthTotal, 0),
                 activeDays: matched.reduce((sum, item) => sum + item.activeDays, 0),
+                snapshot: matched.some(item => item.snapshot),
+                metricLabel: matched.some(item => item.snapshot) ? '当前在读' : '新增在读',
                 leadCategory: lead ? lead.name : group.categories[0],
                 categoryText: matched.map(item => item.name).join(' / '),
             };
@@ -267,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function collectHotTypes(rowsWindow) {
-        return categories.map(name => {
+        const result = categories.map(name => {
             const rows = rowsWindow
                 .map(row => ({ trend: row.trends[name] || null }))
                 .filter(row => row.trend);
@@ -284,6 +387,28 @@ document.addEventListener('DOMContentLoaded', () => {
         })
             .filter(item => item.readGrowthTotal > 0)
             .sort((a, b) => b.readGrowthTotal - a.readGrowthTotal || b.readCount - a.readCount);
+        return result;
+    }
+
+    function collectSnapshotTypes() {
+        const snapshotCategories = latestData && latestData.categories ? latestData.categories : [];
+        return snapshotCategories.map(cat => {
+            const books = cat.books || [];
+            const totalReads = books.reduce((sum, book) => sum + parseReadsGrowth(book.reads), 0);
+            return {
+                name: cat.name,
+                score: totalReads,
+                newCount: 0,
+                droppedCount: 0,
+                readCount: books.length,
+                readGrowthTotal: totalReads,
+                activeDays: 1,
+                snapshot: true,
+                metricLabel: '当前在读',
+            };
+        })
+            .filter(item => item.score > 0)
+            .sort((a, b) => b.score - a.score || b.readCount - a.readCount);
     }
 
     function collectHotThemes(rowsWindow) {
