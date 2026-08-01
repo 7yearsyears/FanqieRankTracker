@@ -365,7 +365,7 @@ def write_json(path: str, payload: dict):
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
-def build_lastest_api(output: dict, base_dir: str):
+def build_lastest_api(output: dict, base_dir: str, api_root_rel: str = "api"):
     """生成静态 lastest 数据接口。
 
     GitHub Pages 不支持动态 query API，因此这里将 type 参数映射为静态文件：
@@ -373,7 +373,7 @@ def build_lastest_api(output: dict, base_dir: str):
     - api/lastest/<type>.json：单个类型数据
     - api/lastest.json / api/lastest/index.json：类型索引
     """
-    api_root = os.path.join(base_dir, "api")
+    api_root = os.path.join(base_dir, api_root_rel)
     lastest_dir = os.path.join(api_root, "lastest")
     os.makedirs(lastest_dir, exist_ok=True)
     for old_path in glob.glob(os.path.join(lastest_dir, "*.json")):
@@ -951,16 +951,39 @@ def main():
                         help="强制重新生成所有 AI 总结，忽略已有总结")
     parser.add_argument("--date", type=str, default="",
                         help="指定目标日期 (YYYY-MM-DD)，默认使用最新快照")
+    parser.add_argument("--channel", choices=["0", "1"], default="0",
+                        help="榜单频道：0=女频，1=男频")
+    parser.add_argument("--type", dest="rank_type", choices=["1", "2"], default="1",
+                        help="榜单类型：1=新书榜，2=阅读榜")
+    parser.add_argument("--latest-name", default="",
+                        help="最新聚合文件名，默认女频新书榜为 latest_ranks.json")
+    parser.add_argument("--trends-dir", default="",
+                        help="趋势目录，默认女频新书榜为 trends，其余按榜单分目录")
+    parser.add_argument("--dates-name", default="",
+                        help="日期索引文件名，默认女频新书榜为 dates.json")
+    parser.add_argument("--market-name", default="",
+                        help="市场摘要文件名，默认女频新书榜为 market_summary.json")
+    parser.add_argument("--api-root", default="",
+                        help="静态 API 根目录，默认女频新书榜为 api")
     args = parser.parse_args()
 
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     data_dir = os.path.join(base_dir, "data")
-    trends_dir = os.path.join(data_dir, "trends")
+    gender = "female" if args.channel == "0" else "male"
+    rank_name = "new" if args.rank_type == "1" else "read"
+    rank_key = f"{gender}_{rank_name}"
+    snapshot_prefix = f"fanqie_{rank_key}_ranks_"
+    trends_rel = args.trends_dir or ("trends" if rank_key == "female_new" else f"trends/{rank_key}")
+    dates_name = args.dates_name or ("dates.json" if rank_key == "female_new" else f"dates_{rank_key}.json")
+    latest_name = args.latest_name or ("latest_ranks.json" if rank_key == "female_new" else f"latest_{rank_key}_ranks.json")
+    market_name = args.market_name or ("market_summary.json" if rank_key == "female_new" else f"market_summary_{rank_key}.json")
+    api_root = args.api_root or ("api" if rank_key == "female_new" else f"api/{rank_key}")
+    trends_dir = os.path.join(data_dir, trends_rel)
     os.makedirs(trends_dir, exist_ok=True)
 
     # 查找 JSON 快照文件
     snapshots = sorted(
-        glob.glob(os.path.join(data_dir, "fanqie_female_new_ranks_*.json"))
+        glob.glob(os.path.join(data_dir, f"{snapshot_prefix}*.json"))
     )
 
     if not snapshots:
@@ -971,7 +994,7 @@ def main():
     if args.date:
         target_date_compact = args.date.replace("-", "")
         target_path = os.path.join(
-            data_dir, f"fanqie_female_new_ranks_{target_date_compact}.json"
+            data_dir, f"{snapshot_prefix}{target_date_compact}.json"
         )
         if not os.path.exists(target_path):
             print(f"❌ 未找到 {args.date} 的快照文件: {target_path}")
@@ -1079,13 +1102,13 @@ def main():
         output["categories"].append(cat_output)
 
     # 写入 latest_ranks.json
-    out_path = os.path.join(data_dir, "latest_ranks.json")
+    out_path = os.path.join(data_dir, latest_name)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"\n✅ 已生成: {out_path}")
 
     # 生成静态 API 文件：api/lastest/all.json + api/lastest/<type>.json
-    api_dir = build_lastest_api(output, base_dir)
+    api_dir = build_lastest_api(output, base_dir, api_root)
     print(f"✅ Lastest API: {api_dir}")
 
     # 写入 trends/YYYY-MM-DD.json
@@ -1104,7 +1127,7 @@ def main():
         market_payload = enrich_market_summary_with_ai(
             market_payload, api_key, api_base_url, api_model
         )
-    market_path = os.path.join(data_dir, "market_summary.json")
+    market_path = os.path.join(data_dir, market_name)
     write_json(market_path, market_payload)
     print(f"✅ 全站热点总结: {market_path}")
 
@@ -1112,11 +1135,11 @@ def main():
     date_list = []
     for s in snapshots:
         fname = os.path.basename(s)
-        # fanqie_female_new_ranks_YYYYMMDD.json -> YYYY-MM-DD
+        # fanqie_<gender>_<type>_ranks_YYYYMMDD.json -> YYYY-MM-DD
         m = re.search(r"(\d{4})(\d{2})(\d{2})", fname)
         if m:
             date_list.append(f"{m.group(1)}-{m.group(2)}-{m.group(3)}")
-    dates_path = os.path.join(data_dir, "dates.json")
+    dates_path = os.path.join(data_dir, dates_name)
     with open(dates_path, "w", encoding="utf-8") as f:
         json.dump({"dates": sorted(date_list)}, f, ensure_ascii=False, indent=2)
     print(f"✅ 日期索引: {dates_path} ({len(date_list)} 个日期)")
