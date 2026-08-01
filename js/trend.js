@@ -550,10 +550,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         els.summaries.innerHTML = rowsWithSummary.map(row => `
             <article class="summary-item">
-                <time>${escapeHtml(row.date)}</time>
+                <time>${escapeHtml(row.date)} · ${getSummarySource(row.trend) === 'ai' ? 'AI 分析' : '规则摘要'}</time>
                 <div>${renderMarkdown(row.trend.summary)}</div>
             </article>
         `).join('');
+    }
+
+    function getSummarySource(trend) {
+        if (trend && trend.source === 'ai') return 'ai';
+        if (trend && trend.source === 'rule') return 'rule';
+        const text = String((trend && trend.summary) || '');
+        return text.length >= 150 || text.includes('\n') ? 'ai' : 'rule';
     }
 
     function renderEmpty(message) {

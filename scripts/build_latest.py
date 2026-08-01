@@ -122,7 +122,8 @@ def compare_categories(today_cats: list, prev_cats: list) -> dict:
             "top_risers": risers[:3],
             "top_fallers": fallers[:3],
             "reads_growth": reads_growth[:3],
-            "summary": "",  # AI 总结，由 generate_ai_summaries 填充
+            "summary": "",
+            "source": "rule",
         }
 
     return trends
@@ -821,6 +822,7 @@ def generate_ai_summaries(categories: list, trends: dict,
             existing_summary = existing_trends.get(cat_name, {}).get("summary", "")
             if existing_summary and not is_rule_summary(existing_summary):
                 trends[cat_name]["summary"] = existing_summary
+                trends[cat_name]["source"] = "ai"
                 skipped += 1
                 continue
 
@@ -870,6 +872,7 @@ def generate_ai_summaries(categories: list, trends: dict,
                 if parsed:
                     for name, summary in parsed.items():
                         trends[name]["summary"] = summary
+                        trends[name]["source"] = "ai"
                         print(f"    ✅ {name}")
 
                     # 未解析出的分类加入失败队列
@@ -919,6 +922,7 @@ def generate_ai_summaries(categories: list, trends: dict,
                     if not content or not content.strip():
                         raise ValueError("API 返回空内容")
                     trends[cat_name]["summary"] = content.strip()
+                    trends[cat_name]["source"] = "ai"
                     print(f"    ✅ {cat_name}")
                     _save_trends_incremental(
                         trend_path, trend_date, prev_date, trends
@@ -936,11 +940,13 @@ def generate_ai_summaries(categories: list, trends: dict,
                 old = existing_trends.get(cat_name, {}).get("summary", "")
                 if old and not is_rule_summary(old):
                     trends[cat_name]["summary"] = old
+                    trends[cat_name]["source"] = "ai"
                     print(f"    ↩️  保留旧 AI 总结: {cat_name}")
                 else:
                     trends[cat_name]["summary"] = generate_trend_summary_text(
                         cat_name, trend
                     )
+                    trends[cat_name]["source"] = "rule"
 
     return trends
 
@@ -1053,6 +1059,7 @@ def main():
                 "top_fallers": [],
                 "reads_growth": [],
                 "summary": "首日数据，暂无趋势对比。",
+                "source": "rule",
             }
             for cat in latest_data["categories"]
         }
@@ -1078,12 +1085,9 @@ def main():
         missing = [k for k, v in {"API_BASE_URL": api_base_url, "API_KEY": api_key, "API_MODEL": api_model}.items() if not v]
         print(f"\n未配置 AI 服务（缺少: {', '.join(missing)}），使用规则摘要替代。")
         for cat_name, trend in trends.items():
-            # 保留已有 AI 总结
-            old = existing_trends.get(cat_name, {}).get("summary", "")
-            if old and not is_rule_summary(old):
-                trend["summary"] = old
-            elif not trend.get("summary"):
-                trend["summary"] = generate_trend_summary_text(cat_name, trend)
+            # 未调用 AI 时，必须覆盖旧的 AI 摘要，避免页面继续误显示 AI 结果。
+            trend["summary"] = generate_trend_summary_text(cat_name, trend)
+            trend["source"] = "rule"
 
     # 组装输出
     output = {

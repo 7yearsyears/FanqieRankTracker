@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const waterfall = document.getElementById('books-waterfall');
     const updateDate = document.getElementById('update-date');
     const categoryTitle = document.getElementById('current-category-title');
+    const aiLabel = document.getElementById('ai-label');
     const aiContent = document.getElementById('ai-content');
     const trendPanel = document.getElementById('trend-panel');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -452,9 +453,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ========== Render Trend Panel ==========
+    function getSummarySource(trend) {
+        if (trend && trend.source === 'ai') return 'ai';
+        if (trend && trend.source === 'rule') return 'rule';
+        // Historical files created before source was persisted may still contain
+        // long, multi-line AI summaries. Keep their label truthful when possible.
+        const text = String((trend && trend.summary) || '');
+        return text.length >= 150 || text.includes('\n') ? 'ai' : 'rule';
+    }
+
     function renderTrend(cat) {
         const trend = cat.trend || {};
         const summary = trend.summary || '';
+        if (aiLabel) {
+            aiLabel.textContent = getSummarySource(trend) === 'ai'
+                ? 'AI 分析摘要'
+                : '规则摘要';
+        }
         typewriterEffect(summary);
     }
 
