@@ -37,13 +37,23 @@ jobs:
       id: check_data
       run: |
         TODAY=$(date -u +"%Y%m%d")
-        FILE="data/fanqie_female_new_ranks_${TODAY}.json"
-        if [ -f "$FILE" ]; then
+        missing=0
+        for FILE in \
+          "data/fanqie_female_new_ranks_${TODAY}.json" \
+          "data/fanqie_female_read_ranks_${TODAY}.json" \
+          "data/fanqie_male_new_ranks_${TODAY}.json" \
+          "data/fanqie_male_read_ranks_${TODAY}.json"; do
+          if [ ! -f "$FILE" ]; then
+            missing=1
+            echo "📭 缺少今日快照: $FILE"
+          fi
+        done
+        if [ "$missing" -eq 0 ]; then
           echo "exists=true" >> $GITHUB_OUTPUT
-          echo "✅ 今日数据已存在: $FILE，跳过爬取"
+          echo "✅ 四个榜单今日快照均已存在，跳过爬取"
         else
           echo "exists=false" >> $GITHUB_OUTPUT
-          echo "📭 今日数据不存在，将执行爬取"
+          echo "📭 至少一个榜单缺少今日快照，将执行四榜补齐"
         fi
 
     - name: Set up Python
@@ -60,14 +70,32 @@ jobs:
           playwright install --with-deps chromium
         fi
 
-    - name: Run Scraper
+    - name: Run Four Rank Scrapers
       if: steps.check_data.outputs.exists == 'false'
-      run: python scrape_fanqie_ranks.py
+      run: |
+        set -e
+        python scrape_fanqie_ranks.py --channel 0 --type 1 --limit 30 --sleep 5
+        python scrape_fanqie_ranks.py --channel 0 --type 2 --limit 30 --sleep 5
+        python scrape_fanqie_ranks.py --channel 1 --type 1 --limit 30 --sleep 5
+        python scrape_fanqie_ranks.py --channel 1 --type 2 --limit 30 --sleep 5
       env:
         GITHUB_ACTIONS: true
 
+    - name: Update Stable Latest Entrances
+      run: |
+        TODAY=$(date -u +"%Y%m%d")
+        cp "data/fanqie_female_new_ranks_${TODAY}.json" data/latest_female_new_ranks.json
+        cp "data/fanqie_female_read_ranks_${TODAY}.json" data/latest_female_read_ranks.json
+        cp "data/fanqie_male_new_ranks_${TODAY}.json" data/latest_male_new_ranks.json
+        cp "data/fanqie_male_read_ranks_${TODAY}.json" data/latest_male_read_ranks.json
+
     - name: Build Latest Data with AI Summary
-      run: pip install openai && python scripts/build_latest.py
+      run: |
+        pip install openai
+        python scripts/build_latest.py --channel 0 --type 1
+        python scripts/build_latest.py --channel 0 --type 2
+        python scripts/build_latest.py --channel 1 --type 1
+        python scripts/build_latest.py --channel 1 --type 2
       env:
         API_BASE_URL: ${{ secrets.API_BASE_URL }}
         API_KEY: ${{ secrets.API_KEY }}
