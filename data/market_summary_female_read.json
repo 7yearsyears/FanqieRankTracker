@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-01",
-  "prev_date": "",
+  "date": "2026-08-02",
+  "prev_date": "2026-08-01",
   "periods": {
     "7": {
       "period": "近 7 日",
@@ -9,7 +9,78 @@
       "fallback_summary": "近 7 日暂无足够数据判断全站热点。",
       "hot_genres": [],
       "hot_types": [],
-      "hot_themes": []
+      "hot_themes": [
+        {
+          "name": "系统",
+          "count": 23,
+          "category_count": 14
+        },
+        {
+          "name": "重生",
+          "count": 13,
+          "category_count": 8
+        },
+        {
+          "name": "甜宠",
+          "count": 12,
+          "category_count": 8
+        },
+        {
+          "name": "团宠",
+          "count": 10,
+          "category_count": 7
+        },
+        {
+          "name": "双洁",
+          "count": 10,
+          "category_count": 5
+        },
+        {
+          "name": "反派",
+          "count": 8,
+          "category_count": 6
+        },
+        {
+          "name": "年代",
+          "count": 8,
+          "category_count": 4
+        },
+        {
+          "name": "穿书",
+          "count": 7,
+          "category_count": 7
+        },
+        {
+          "name": "种田",
+          "count": 7,
+          "category_count": 3
+        },
+        {
+          "name": "无CP",
+          "count": 7,
+          "category_count": 3
+        },
+        {
+          "name": "空间",
+          "count": 6,
+          "category_count": 4
+        },
+        {
+          "name": "炮灰",
+          "count": 6,
+          "category_count": 4
+        },
+        {
+          "name": "末世",
+          "count": 6,
+          "category_count": 3
+        },
+        {
+          "name": "快穿",
+          "count": 6,
+          "category_count": 2
+        }
+      ]
     },
     "14": {
       "period": "近 14 日",
@@ -18,7 +89,78 @@
       "fallback_summary": "近 14 日暂无足够数据判断全站热点。",
       "hot_genres": [],
       "hot_types": [],
-      "hot_themes": []
+      "hot_themes": [
+        {
+          "name": "系统",
+          "count": 23,
+          "category_count": 14
+        },
+        {
+          "name": "重生",
+          "count": 13,
+          "category_count": 8
+        },
+        {
+          "name": "甜宠",
+          "count": 12,
+          "category_count": 8
+        },
+        {
+          "name": "团宠",
+          "count": 10,
+          "category_count": 7
+        },
+        {
+          "name": "双洁",
+          "count": 10,
+          "category_count": 5
+        },
+        {
+          "name": "反派",
+          "count": 8,
+          "category_count": 6
+        },
+        {
+          "name": "年代",
+          "count": 8,
+          "category_count": 4
+        },
+        {
+          "name": "穿书",
+          "count": 7,
+          "category_count": 7
+        },
+        {
+          "name": "种田",
+          "count": 7,
+          "category_count": 3
+        },
+        {
+          "name": "无CP",
+          "count": 7,
+          "category_count": 3
+        },
+        {
+          "name": "空间",
+          "count": 6,
+          "category_count": 4
+        },
+        {
+          "name": "炮灰",
+          "count": 6,
+          "category_count": 4
+        },
+        {
+          "name": "末世",
+          "count": 6,
+          "category_count": 3
+        },
+        {
+          "name": "快穿",
+          "count": 6,
+          "category_count": 2
+        }
+      ]
     },
     "30": {
       "period": "近 30 日",
@@ -27,7 +169,78 @@
       "fallback_summary": "近 30 日暂无足够数据判断全站热点。",
       "hot_genres": [],
       "hot_types": [],
-      "hot_themes": []
+      "hot_themes": [
+        {
+          "name": "系统",
+          "count": 23,
+          "category_count": 14
+        },
+        {
+          "name": "重生",
+          "count": 13,
+          "category_count": 8
+        },
+        {
+          "name": "甜宠",
+          "count": 12,
+          "category_count": 8
+        },
+        {
+          "name": "团宠",
+          "count": 10,
+          "category_count": 7
+        },
+        {
+          "name": "双洁",
+          "count": 10,
+          "category_count": 5
+        },
+        {
+          "name": "反派",
+          "count": 8,
+          "category_count": 6
+        },
+        {
+          "name": "年代",
+          "count": 8,
+          "category_count": 4
+        },
+        {
+          "name": "穿书",
+          "count": 7,
+          "category_count": 7
+        },
+        {
+          "name": "种田",
+          "count": 7,
+          "category_count": 3
+        },
+        {
+          "name": "无CP",
+          "count": 7,
+          "category_count": 3
+        },
+        {
+          "name": "空间",
+          "count": 6,
+          "category_count": 4
+        },
+        {
+          "name": "炮灰",
+          "count": 6,
+          "category_count": 4
+        },
+        {
+          "name": "末世",
+          "count": 6,
+          "category_count": 3
+        },
+        {
+          "name": "快穿",
+          "count": 6,
+          "category_count": 2
+        }
+      ]
     },
     "all": {
       "period": "全部样本",
@@ -36,7 +249,78 @@
       "fallback_summary": "全部样本暂无足够数据判断全站热点。",
       "hot_genres": [],
       "hot_types": [],
-      "hot_themes": []
+      "hot_themes": [
+        {
+          "name": "系统",
+          "count": 23,
+          "category_count": 14
+        },
+        {
+          "name": "重生",
+          "count": 13,
+          "category_count": 8
+        },
+        {
+          "name": "甜宠",
+          "count": 12,
+          "category_count": 8
+        },
+        {
+          "name": "团宠",
+          "count": 10,
+          "category_count": 7
+        },
+        {
+          "name": "双洁",
+          "count": 10,
+          "category_count": 5
+        },
+        {
+          "name": "反派",
+          "count": 8,
+          "category_count": 6
+        },
+        {
+          "name": "年代",
+          "count": 8,
+          "category_count": 4
+        },
+        {
+          "name": "穿书",
+          "count": 7,
+          "category_count": 7
+        },
+        {
+          "name": "种田",
+          "count": 7,
+          "category_count": 3
+        },
+        {
+          "name": "无CP",
+          "count": 7,
+          "category_count": 3
+        },
+        {
+          "name": "空间",
+          "count": 6,
+          "category_count": 4
+        },
+        {
+          "name": "炮灰",
+          "count": 6,
+          "category_count": 4
+        },
+        {
+          "name": "末世",
+          "count": 6,
+          "category_count": 3
+        },
+        {
+          "name": "快穿",
+          "count": 6,
+          "category_count": 2
+        }
+      ]
     }
   }
 }

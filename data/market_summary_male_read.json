@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-01",
-  "prev_date": "",
+  "date": "2026-08-02",
+  "prev_date": "2026-08-01",
   "periods": {
     "7": {
       "period": "近 7 日",
@@ -9,7 +9,78 @@
       "fallback_summary": "近 7 日暂无足够数据判断全站热点。",
       "hot_genres": [],
       "hot_types": [],
-      "hot_themes": []
+      "hot_themes": [
+        {
+          "name": "系统",
+          "count": 37,
+          "category_count": 17
+        },
+        {
+          "name": "修仙",
+          "count": 11,
+          "category_count": 7
+        },
+        {
+          "name": "重生",
+          "count": 9,
+          "category_count": 7
+        },
+        {
+          "name": "直播",
+          "count": 4,
+          "category_count": 2
+        },
+        {
+          "name": "种田",
+          "count": 3,
+          "category_count": 2
+        },
+        {
+          "name": "年代",
+          "count": 3,
+          "category_count": 2
+        },
+        {
+          "name": "末世",
+          "count": 3,
+          "category_count": 1
+        },
+        {
+          "name": "反派",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "总裁",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "异能",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "空间",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "炮灰",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "美食",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "废土",
+          "count": 1,
+          "category_count": 1
+        }
+      ]
     },
     "14": {
       "period": "近 14 日",
@@ -18,7 +89,78 @@
       "fallback_summary": "近 14 日暂无足够数据判断全站热点。",
       "hot_genres": [],
       "hot_types": [],
-      "hot_themes": []
+      "hot_themes": [
+        {
+          "name": "系统",
+          "count": 37,
+          "category_count": 17
+        },
+        {
+          "name": "修仙",
+          "count": 11,
+          "category_count": 7
+        },
+        {
+          "name": "重生",
+          "count": 9,
+          "category_count": 7
+        },
+        {
+          "name": "直播",
+          "count": 4,
+          "category_count": 2
+        },
+        {
+          "name": "种田",
+          "count": 3,
+          "category_count": 2
+        },
+        {
+          "name": "年代",
+          "count": 3,
+          "category_count": 2
+        },
+        {
+          "name": "末世",
+          "count": 3,
+          "category_count": 1
+        },
+        {
+          "name": "反派",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "总裁",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "异能",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "空间",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "炮灰",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "美食",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "废土",
+          "count": 1,
+          "category_count": 1
+        }
+      ]
     },
     "30": {
       "period": "近 30 日",
@@ -27,7 +169,78 @@
       "fallback_summary": "近 30 日暂无足够数据判断全站热点。",
       "hot_genres": [],
       "hot_types": [],
-      "hot_themes": []
+      "hot_themes": [
+        {
+          "name": "系统",
+          "count": 37,
+          "category_count": 17
+        },
+        {
+          "name": "修仙",
+          "count": 11,
+          "category_count": 7
+        },
+        {
+          "name": "重生",
+          "count": 9,
+          "category_count": 7
+        },
+        {
+          "name": "直播",
+          "count": 4,
+          "category_count": 2
+        },
+        {
+          "name": "种田",
+          "count": 3,
+          "category_count": 2
+        },
+        {
+          "name": "年代",
+          "count": 3,
+          "category_count": 2
+        },
+        {
+          "name": "末世",
+          "count": 3,
+          "category_count": 1
+        },
+        {
+          "name": "反派",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "总裁",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "异能",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "空间",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "炮灰",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "美食",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "废土",
+          "count": 1,
+          "category_count": 1
+        }
+      ]
     },
     "all": {
       "period": "全部样本",
@@ -36,7 +249,78 @@
       "fallback_summary": "全部样本暂无足够数据判断全站热点。",
       "hot_genres": [],
       "hot_types": [],
-      "hot_themes": []
+      "hot_themes": [
+        {
+          "name": "系统",
+          "count": 37,
+          "category_count": 17
+        },
+        {
+          "name": "修仙",
+          "count": 11,
+          "category_count": 7
+        },
+        {
+          "name": "重生",
+          "count": 9,
+          "category_count": 7
+        },
+        {
+          "name": "直播",
+          "count": 4,
+          "category_count": 2
+        },
+        {
+          "name": "种田",
+          "count": 3,
+          "category_count": 2
+        },
+        {
+          "name": "年代",
+          "count": 3,
+          "category_count": 2
+        },
+        {
+          "name": "末世",
+          "count": 3,
+          "category_count": 1
+        },
+        {
+          "name": "反派",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "总裁",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "异能",
+          "count": 2,
+          "category_count": 2
+        },
+        {
+          "name": "空间",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "炮灰",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "美食",
+          "count": 1,
+          "category_count": 1
+        },
+        {
+          "name": "废土",
+          "count": 1,
+          "category_count": 1
+        }
+      ]
     }
   }
 }
