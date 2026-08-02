@@ -273,6 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let hotGenres = collectHotGenres(rowsWindow);
         let hotTypes = collectHotTypes(rowsWindow);
         const hotThemes = collectHotThemes(rowsWindow);
+        const hasComparison = rowsWindow.some(row => row.prevDate && row.prevDate !== row.date);
 
         if (!hotTypes.length) {
             hotTypes = collectSnapshotTypes();
@@ -285,8 +286,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 els.hotThemes.innerHTML = '<p class="muted-line">暂无数据。</p>';
                 return;
             }
-            els.marketSummary.textContent = `${currentRankConfig().label} 已完成首日采集；趋势对比将在下一次采集后生成。`;
-            els.marketSource.textContent = `首日快照 · ${latestData && latestData.date ? latestData.date : ''}`;
+            const period = selectedDays === 'all' ? '全部样本' : `近 ${selectedDays} 日`;
+            const summaryData = getMarketSummaryForPeriod();
+            if (hasComparison) {
+                els.marketSummary.textContent = summaryData
+                    ? summaryData.summary
+                    : `${currentRankConfig().label} 已有多日数据，但当前周期暂无阅读增长数据。`;
+                els.marketSource.textContent = summaryData && summaryData.source === 'ai'
+                    ? `AI 总结 · ${summaryData.period || period}`
+                    : `规则统计 · ${summaryData ? (summaryData.period || period) : period}`;
+            } else {
+                els.marketSummary.textContent = `${currentRankConfig().label} 已完成首日采集；趋势对比将在下一次采集后生成。`;
+                els.marketSource.textContent = `首日快照 · ${latestData && latestData.date ? latestData.date : ''}`;
+            }
         } else {
             const topGenres = hotGenres.slice(0, 2).map(item => item.name).join('、');
             const topTypes = hotTypes.slice(0, 3).map(item => item.name).join('、');
