@@ -51,6 +51,35 @@ boards=(
   "male_read 1 2"
 )
 
+scrape_board() {
+  local key="$1"
+  local channel="$2"
+  local rank_type="$3"
+  local snapshot="$4"
+  local max_attempts="${SCRAPE_RETRIES:-3}"
+  local retry_delay="${SCRAPE_RETRY_DELAY:-30}"
+  local attempt
+
+  for ((attempt = 1; attempt <= max_attempts; attempt++)); do
+    log "Scrape start: $key (attempt $attempt/$max_attempts)"
+    if run_python "$PROJECT_ROOT/scrape_fanqie_ranks.py" \
+      --channel "$channel" --type "$rank_type" --limit 30 --sleep 5 \
+      && valid_snapshot "$snapshot"; then
+      log "Snapshot passed quality check: $key"
+      return 0
+    fi
+
+    log "Scrape or quality check failed: $key (attempt $attempt/$max_attempts)"
+    if (( attempt < max_attempts )); then
+      log "Retrying $key from checkpoint in ${retry_delay}s"
+      sleep "$retry_delay"
+    fi
+  done
+
+  log "Snapshot failed after $max_attempts attempts: $key"
+  return 1
+}
+
 log "Daily four-board update started for $DISPLAY_DATE"
 
 if [ -x "$PROJECT_ROOT/scripts/check_upstream.sh" ]; then
@@ -66,11 +95,7 @@ for board in "${boards[@]}"; do
     log "Skip validated snapshot: $key"
     continue
   fi
-  log "Scrape start: $key"
-  run_python "$PROJECT_ROOT/scrape_fanqie_ranks.py" \
-    --channel "$channel" --type "$rank_type" --limit 30 --sleep 5
-  valid_snapshot "$snapshot" || { log "Snapshot failed quality check: $key"; exit 1; }
-  log "Snapshot passed quality check: $key"
+  scrape_board "$key" "$channel" "$rank_type" "$snapshot" || exit 1
 done
 
 for board in "${boards[@]}"; do
