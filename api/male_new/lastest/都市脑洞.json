@@ -1,264 +1,251 @@
 {
   "type": "都市脑洞",
-  "date": "2026-08-14",
-  "prev_date": "2026-08-13",
+  "date": "2026-08-15",
+  "prev_date": "2026-08-14",
   "category": {
     "name": "都市脑洞",
     "trend": {
-      "new_count": 4,
-      "dropped_count": 4,
+      "new_count": 3,
+      "dropped_count": 3,
       "new_books": [
-        "让你设计游戏，你开发三角洲？",
-        "和校花分手后，睡了病娇女教授！",
-        "预知未来躲子弹，顶美校花喊宝宝",
-        "霸道女总裁爱上离婚带娃的我"
+        "抑郁少女总想自杀？那就狠狠恶堕",
+        "为了盘活乐队，我去参加恋综",
+        "婚礼现场，系统让我别叫她嫂子"
       ],
       "dropped_books": [
         {
-          "title": "实习教出金牌班，家长要换班主任",
-          "intro": "【脑洞+系统+不憋屈+buff+卡牌+词条+爽文】 陆谦毕业后，成为高二七班的实习班主任。 入职当天，觉醒【最强教师系统】，给学生上buff，提高学习效率和天赋。 其他学生一天学会，七班学生一小时学会"
+          "title": "你管这叫少女养成？",
+          "intro": "(新书评分低，之后会涨) 「轻小说+附身+多女主+系统+恋爱喜剧」 【正在加载《少女养成计划》】 【您可以指定一名符合条件的角色，干涉她的人生，使她成长为你理想中的样子。】 【游戏可能会发布一些特殊任"
         },
         {
-          "title": "抑郁少女总想自杀？那就狠狠恶堕",
-          "intro": "新作品出炉,大家可以前往番茄小说阅读我的作品哦,希望大家能够喜欢,你们的关注是我写作的动力,我会努力讲好每个故事! 。。。。。。。。。。。。。。。。"
+          "title": "预知未来躲子弹，顶美校花喊宝宝",
+          "intro": "【无系统+多女主+纯都市+爆爽人生】 江阳原本只是一个普通的大学生，没有轰轰烈烈的爱情，也没有跌宕起伏的故事，更没有波澜壮阔的未来。 有时候，他也会很羡慕电影、小说中的主角，能把人生过得那么精彩。 一"
         },
         {
-          "title": "荒岛求生：绿茶赶我走？谁稀罕啊",
-          "intro": "【海岛求生+慢节奏+多女主+异世界】 原本勤工俭学，在豪华游轮上打工的林默，被卷入海难之中。 醒来，就被绿茶的女妆博主林梦瑶赶走。 这里有国内最年轻的三金影后柳如烟； 有号称情歌天后的白凝冰； 也有国"
-        },
-        {
-          "title": "恋综：和绝美大小姐的对抗路日常",
-          "intro": "【沙雕玩梗+单女主+小甜文+娱乐圈+恋综+文抄公+轻松日常+恋爱日常】 （评分刚出，后面会涨的） 网络作家江远穿越平行世界，面临分手开局，江远也不惯着，直接喷得狗男女直吐血。 本想从拾老本行，谁知老妈"
+          "title": "超时空导演：从忽悠小天仙开始",
+          "intro": "李小白意外获得一枚银色U盘，能穿越过去，但只能带回数据文件。 靠着卖歌赚到第一桶金后，他做了一个疯狂的决定——去1998年忽悠11岁的刘奕菲拍《巴啦啦小魔仙》，带回2026年全网发布。 视频炸了。 刘"
         }
       ],
       "top_risers": [
         {
-          "title": "相亲失败！我把精神小妹捧成天后",
-          "change": "+4"
-        },
-        {
           "title": "别人召唤棋圣，我召唤出了柯洁？",
-          "change": "+4"
+          "change": "+3"
         },
         {
-          "title": "只因我写了诛仙，校花给我寄刀片",
-          "change": "+4"
+          "title": "霸道女总裁爱上离婚带娃的我",
+          "change": "+3"
+        },
+        {
+          "title": "让你当众写检讨，你作洛神赋？",
+          "change": "+2"
         }
       ],
       "top_fallers": [
         {
-          "title": "网约车百倍补贴，我转身提迈巴赫",
-          "change": "-2"
+          "title": "离婚后，我成了刀枪炮！",
+          "change": "-5"
         },
         {
-          "title": "只要我失恋，华语乐坛就过年！",
-          "change": "-1"
+          "title": "与钱老同程，我用新药赚万亿外汇",
+          "change": "-5"
         },
         {
-          "title": "三棍打散兄妹情，我家兄长不当人",
-          "change": "-1"
+          "title": "重生后，成了妹妹的专属爱物",
+          "change": "-3"
         }
       ],
       "reads_growth": [
         {
+          "title": "十岁混圈，小爷娱乐圈圈霸",
+          "growth": "+3.3万"
+        },
+        {
           "title": "人在潮汕，开局连抛十八圣杯",
-          "growth": "+2.1万"
+          "growth": "+3.1万"
         },
         {
           "title": "相亲失败！我把精神小妹捧成天后",
-          "growth": "+2.0万"
-        },
-        {
-          "title": "让你当众写检讨，你作洛神赋？",
-          "growth": "+1.9万"
+          "growth": "+2.3万"
         }
       ],
-      "summary": "新增4本上榜；4本掉出（《实习教出金牌班，家长要换班主任》、《抑郁少女总想自杀？那就狠狠恶堕》、《荒岛求生：绿茶赶我走？谁稀罕啊》、《恋综：和绝美大小姐的对抗路日常》）；《相亲失败！我把精神小妹捧成天后》排名上升+4位；《人在潮汕，开局连抛十八圣杯》阅读量+2.1万。",
+      "summary": "新增3本上榜；3本掉出（《你管这叫少女养成？》、《预知未来躲子弹，顶美校花喊宝宝》、《超时空导演：从忽悠小天仙开始》）；《别人召唤棋圣，我召唤出了柯洁？》排名上升+3位；《十岁混圈，小爷娱乐圈圈霸》阅读量+3.3万。",
       "source": "rule"
     },
     "books": [
       {
         "title": "说好造桥游戏，打穿天山什么鬼？",
         "author": "天选红中",
-        "reads": "60.4万",
+        "reads": "60.1万",
         "intro": "（评分刚出，会涨的！） 【游戏制作】+【轻松搞笑】+【致郁玩家】+【反套路】 方源穿越平行世界，继承一家游戏公司。 觉醒【情绪收割系统】，只要让玩家悲伤、悔恨、破防、抑郁……就能获得奖励。 于是…… 画面一： “造桥游戏？桥梁造价越低，排名越高？” “吃我一计豆腐渣工程！预算2万8，只花2千8！” “什么叫小孩翻了四座山给我送糯米饭，感谢我来给他们修桥的？” “别过桥！要塌了！不！” 200斤的主播在直播间哭得像个孩子。 画面二： “这次是天山挖隧道？” “贪！我要狠狠的贪！我就不信还有NPC来刀我！” “……什么叫这是山里人民走出大山唯一的路？” “盾构机呢！给我竖起来打！打穿天山！！！” 画面三： 骑砍游戏。 “大人，能吃饱饭俺们兄弟就跟着你了！” “侯爷，俺兄弟这几条命早就给你了。” “大王快走，我们几个为你殿后！” “陛下，家父和叔伯当年就在您麾下效力。” 玩之前：一将功成万骨枯！慈不掌兵！ 玩之后：都有爹有娘，八个人的命不是命啊！！！这都是跟着朕白手起家的兄弟们啊！ …… 我叫陆小可，我觉醒了投资返利系统，只要投资亏损就能N倍返现。 我投了方源的游戏公司，现在我有点不妙的预感，请问我现在撤资还来得及吗？ ┭┮﹏┭┮",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o9d0a1da244978518b4ce6bec75e69f8a~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=YMIKS%2FnRptUs%2FDx9pjtBUq%2BFgxQ%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o9d0a1da244978518b4ce6bec75e69f8a~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=LhlcP6P4m6QaNanyoOZop4OmNc8%3D",
         "url": "https://fanqienovel.com/page/7661298205925051417"
       },
       {
         "title": "十岁混圈，小爷娱乐圈圈霸",
         "author": "坑多话不多",
-        "reads": "41.8万",
+        "reads": "45.1万",
         "intro": "【穿越】【乐子文】【各种文娱文抄公】【火爆脾气】【现代公羊儒】【属相平头哥】【刑天圣体】 我叫王斯农，信奉儒家公羊学说。 所以我人如其名，不爽的我就往死弄。 上辈子仗着家里有钱有势混迹娱乐圈，嚣张跋扈，得罪了不少人，或许是遭了报应，被雷公劈死了。 不过老天垂怜，让我穿越在活一世。 我寻思着这辈子一定要，低调，低调，还是特么低调。 但这槽蛋的原生家庭，这槽蛋文娱圈子，就是不让小爷低调。 我算是明白了，我天生就是为战斗而生。 何况老子才十岁，又有六字红底的“丹书铁卷”护身，注定了我不能平凡！ 既然人生注定如此，那特么就干！往死干！！ 九世犹可以复仇乎？虽百世可也！！！！！！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc03df7dc79858c1b1987101180214528~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=EnVrL9xnRU3IpK57h97eTIZ0x%2F0%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc03df7dc79858c1b1987101180214528~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=6SVmMETq8npdyw0Gxna8%2B%2BePRDc%3D",
         "url": "https://fanqienovel.com/page/7657920667857194009"
-      },
-      {
-        "title": "重生后，成了妹妹的专属爱物",
-        "author": "清清籽衿",
-        "reads": "34.9万",
-        "intro": "（评分刚出，会涨！）【病娇VS魔丸】【单女主】【又神又疯】【日常】【窒息】【猎奇】 我叫陈远，是个坏事做尽的恶人。 自从宋梨来到我们家后，我就把魔爪伸向了她 …… 我假装网友接近她，和她网恋，在她爱得最深的时候告诉她真相，以此让她的世界崩塌。 “为什么要这样对我！？” “为什么要骗我？” 当她得知最爱的男友竟是整天欺负她的我时，还被我看光了时，她崩溃了…… 当天晚上，我被她捅了108刀，因此丧命。 不过好在我重生了，并且还绑定了系统！！ 我要报仇！ 不过等等…… 这系统，怎么不对劲！？居然强行让我一个恶人对她好？不然就立刻暴毙而亡……？ 还有，妹妹她看我的眼神好像也不对劲！ 她不是在看人，而是一件……物品！？专属于她的爱物！ 【无任何血缘关系】【又疯又神】",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o46a3c40da0e4d3d6486f9c55ec16c474~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=q33QLh2%2BrXNhFU74HGnBlqT7%2Fv8%3D",
-        "url": "https://fanqienovel.com/page/7643862585124588606"
-      },
-      {
-        "title": "离婚后，我成了刀枪炮！",
-        "author": "飞翔的蜗牛1",
-        "reads": "34万",
-        "intro": "王刚活了三十多年，刚刚跟谈了半年的相亲对象李思雨结婚，没过多久李思雨就怀孕了。 本来生活还算凑合，可是当他仔细一算怀孕日期，竟然完全对不上！ 这意味着什么不言而喻！ 王刚可不是什么受气包，直接开始暗中收集证据，起诉离婚！ 在法院调解下，王刚同意撤诉。 但要求李思雨净身出户，并且退回三万八彩礼和五万精神损失费！ 李思雨咬着牙认了。 王刚这下没什么好说的了，人家媳妇不光让白嫖了半年，还给钱，这还追究什么？ 刚从民政局离婚出来。 王刚脑子里“叮”一声。 “叮，随机身份系统已绑定！”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o927ff642cfb514efa15bd9b920c1a50b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=TvkiLmHK1MY7krL7pLC9YZzgngE%3D",
-        "url": "https://fanqienovel.com/page/7659657303020293145"
       },
       {
         "title": "让你当众写检讨，你作洛神赋？",
         "author": "肤白貌美没有腿",
-        "reads": "33.8万",
+        "reads": "35.1万",
         "intro": "【评分刚出】【爽文】【人前显圣】【多女主】【无毒不虐】 刚穿越就被通知要全校检讨。 原因竟是写情书影响其他女同学备考？ 这要是能低头。 那我岂不是白穿越了？ 迎接来自地球最顶级文学的降维打击吧。 一首洛神赋全网哗然。 即便如此，依旧有文坛老登诟病辞藻浮华，没有内核。 嘴是真的硬啊。 那么我高考作文写滕王阁序，阁下作何应对？ 国际奥数赛场，各国洋鬼子欺我大夏无人。 陆离信步走上舞台。 连写五十块黑板推演公式。 满堂哄笑刺耳，哪来的傻小子在这哗众取宠？ 陆离：闭嘴！ 陆离：你们影响我证明黎曼猜想了！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o5bc74df1a9613e06d072f8b4258bf7c4~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=xh8iAHeEtG2wAtihBtIPjU8X7oo%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o5bc74df1a9613e06d072f8b4258bf7c4~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=TIm9Vngn81rBcCEK8P0yOw%2BjQUw%3D",
         "url": "https://fanqienovel.com/page/7657401918917987352"
       },
       {
         "title": "人在潮汕，开局连抛十八圣杯",
         "author": "九月十三",
-        "reads": "31.8万",
+        "reads": "34.9万",
         "intro": "【评分刚出，会涨】+【言出法随】+【神之气运】+【爽文】+【日常】+【多女主】 失业当天，女友扔下一句 \"我们不是一个世界的人\"，转身就走。 张远气笑了，反手拉黑，意外激活圣杯系统，拥有神之气运。 开局当着大佬的面连抛十八次圣杯。 大佬震怖：“月薪八万，什么都不用干” 股票买哪个哪个涨停，经商投资哪个哪个爆赚。 直播刷到通缉犯随口说了句花盆。 第二天人贩子就被花盆砸中，全网震惊。 病危的八十岁老头见他一面，当场康复。 濒临破产的公司老板供他照片，隔天就翻盘。 大佬膜拜，权贵供奉！ 张远在神的道路上越走越远。 女友悔不当初，跪求原谅！ 张远只给她一个字：滚！ 直至有天， 某国犯我疆域，伤我国民。 张远对着镜头淡淡一句：天黑了！ 下一秒，灾难降临。 全网集体下跪：哥，求你别再说了。 张远：不是，你们拜神啊，拜我干嘛？",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od87aa1b2a9f4534048a2be2c46d561a5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=eFxnbDW1IZbQrd2QybbbgwGsnjA%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od87aa1b2a9f4534048a2be2c46d561a5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=sUjARHHEgVO%2BBjwKFchvQ5ksU9c%3D",
         "url": "https://fanqienovel.com/page/7664434604320754750"
+      },
+      {
+        "title": "抑郁少女总想自杀？那就狠狠恶堕",
+        "author": "零林吃不饱",
+        "reads": "33.7万",
+        "intro": "【单女主+治愈+甜日常+微病娇(只娇不病)】　　 宁玄上辈子攻略了好久，总算是把抑郁少女给治愈好了。　　 然后又好不容易发现，原来只需要做一些简单的调查，就能把好感度给拉爆了。　　 但这才刚发现，系统也被刷疯的好感度，给撑爆了！　　 现在他又重生回到了最初去攻略的时候。　　 系统也还是老样子，要让那个有自杀倾向的抑郁少女重新想活下去。　　 可她缩在沙发角落里，连话都不跟他说，好感度每分钟都在往下掉。　　 宁玄只好用自己的方式了。　　 听说你想自杀？　　 那就先让他调查一下。　　 然后就狠狠的恶堕吧......　　 桀桀桀.......",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od5035cbb1a19c613edd8f1a357ea5cce~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=nl8CmUXgyDVBHgPGkL3a5tq85ZQ%3D",
+        "url": "https://fanqienovel.com/page/7660406941344091161"
+      },
+      {
+        "title": "重生后，成了妹妹的专属爱物",
+        "author": "清清籽衿",
+        "reads": "33.5万",
+        "intro": "（评分刚出，会涨！）【病娇VS魔丸】【单女主】【又神又疯】【日常】【窒息】【猎奇】 我叫陈远，是个坏事做尽的恶人。 自从宋梨来到我们家后，我就把魔爪伸向了她 …… 我假装网友接近她，和她网恋，在她爱得最深的时候告诉她真相，以此让她的世界崩塌。 “为什么要这样对我！？” “为什么要骗我？” 当她得知最爱的男友竟是整天欺负她的我时，还被我看光了时，她崩溃了…… 当天晚上，我被她捅了108刀，因此丧命。 不过好在我重生了，并且还绑定了系统！！ 我要报仇！ 不过等等…… 这系统，怎么不对劲！？居然强行让我一个恶人对她好？不然就立刻暴毙而亡……？ 还有，妹妹她看我的眼神好像也不对劲！ 她不是在看人，而是一件……物品！？专属于她的爱物！ 【无任何血缘关系】【又疯又神】",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o46a3c40da0e4d3d6486f9c55ec16c474~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=CQSW0kOzUmxwWJzheJxXU2%2BiiaY%3D",
+        "url": "https://fanqienovel.com/page/7643862585124588606"
       },
       {
         "title": "我一写龙族的，你让我上恋综？",
         "author": "故事始于忆",
-        "reads": "31.8万",
+        "reads": "33.2万",
         "intro": "（评分刚刚出，后面会涨的~~） 【恋综】【文娱】【单女主】【系统】【双向奔赴】【甜向日常】 “我们都是小怪兽，有一天会被正义的奥特曼杀死。” 深夜，《龙族3》大结局，绘梨衣之死让全网读者彻底疯狂！ “渡鸦老贼！杀妻之仇不共戴天！拔刀吧！” 而身为罪魁祸首的江时予，本想躲避网友的四十米大刀，却被亲姐一脚踹进了全网直播的恋爱综艺《心动小屋2026》。 白天，他是清冷制作人沈听澜的专属厨师兼司机，两人同框即撒糖！ 全网狂嗑“老夫老妻”！ 夜晚，全网扒出了那个写出一首首封神金曲的神秘音乐人“青灯”，以及那个害千万读者深夜痛哭的虐文老贼“渡鸦”的IP。 居然全在心动小屋！ 当江时予马甲掉落的那一天，全网都炸了！ 沈听澜将他堵在厨房角落，红着眼眶：“说好是写小甜文的呢？” 江时予擦擦手上的水渍，一把将她搂进怀里：“乖，小说是小说。” “但遇到你之后，我的生活确实只剩下小甜文了。” （70章掉第一个马甲！）",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od3415073763acf0aec884a1b1444c91f~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=wIyqQZ4zkOTs0Qc7wGba%2BNmBxoI%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od3415073763acf0aec884a1b1444c91f~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=pahsaA%2BQKNLM%2BTRfS3uwEA01w%2FI%3D",
         "url": "https://fanqienovel.com/page/7642238301285403672"
       },
       {
         "title": "网约车百倍补贴，我转身提迈巴赫",
         "author": "懒洋洋本懒",
-        "reads": "31.7万",
+        "reads": "31.6万",
         "intro": "【评分刚出，应该会涨吧？】【多女主】【多】【多】【重要的事情说三遍】【无绿无毒无龟】【日常生活】 网约车百倍补贴，我还开什么特惠，转身就提迈巴。 【提示：恭喜宿主，本次订单获得百倍补贴，总计…】 身体素质差，颜值身高不够？ 解锁各种成就，提高身体素质，夜夜笙歌，肆意人生不是梦。 豪车，别墅… 清纯甜美的小学妹，明媚动人的白月光，高冷傲慢的女总裁，英姿飒爽… 转过身，陈勋已经抵达山巅… 回首望去，曾经遥不可及之物，触手可及。 从网约车司机到最年轻的慈善家，再到投资大亨，胡润最年轻的富豪，再到世界之巅。 当被问到如何发家之际，陈勋对着镜头： “曾经，我只是一名网约车司机。”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oebc3922b2086f0fe1cb751699ee311bd~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=722yLI2LNvsse06lT%2BfV4676jLU%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oebc3922b2086f0fe1cb751699ee311bd~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=0RQB%2FcCHZ9gYuZQqaaK4fPMr99U%3D",
         "url": "https://fanqienovel.com/page/7657121282969832473"
+      },
+      {
+        "title": "离婚后，我成了刀枪炮！",
+        "author": "飞翔的蜗牛1",
+        "reads": "30.5万",
+        "intro": "王刚活了三十多年，刚刚跟谈了半年的相亲对象李思雨结婚，没过多久李思雨就怀孕了。 本来生活还算凑合，可是当他仔细一算怀孕日期，竟然完全对不上！ 这意味着什么不言而喻！ 王刚可不是什么受气包，直接开始暗中收集证据，起诉离婚！ 在法院调解下，王刚同意撤诉。 但要求李思雨净身出户，并且退回三万八彩礼和五万精神损失费！ 李思雨咬着牙认了。 王刚这下没什么好说的了，人家媳妇不光让白嫖了半年，还给钱，这还追究什么？ 刚从民政局离婚出来。 王刚脑子里“叮”一声。 “叮，随机身份系统已绑定！”",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o927ff642cfb514efa15bd9b920c1a50b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=CeNRmCB5r5r%2BRlv7F5t9j9qIlC8%3D",
+        "url": "https://fanqienovel.com/page/7659657303020293145"
       },
       {
         "title": "1953，旅长把我拐进哈工大",
         "author": "不想更新鸭呀",
-        "reads": "29万",
+        "reads": "29.6万",
         "intro": "【本书又名《从学霸变成国防大佬》。 穿越至1953年黑江省哈市，林言绑定大国学霸系统，只要读书就能赚取系统积分，并且可以在系统商城中购买各种科技成果乃至道具。 而恰好是这年，旅长奉命带一批毛熊顾问和专家来建设军事工程学院。 在这里学习毛熊国知识的学生们，被那些堪称天书的毛熊资料折磨的苦不堪言，在寒假里也在各种补习，恰好碰到在图书馆力碰到正在研读毛熊机械设计书籍的林言，于是....... “嗯？这个机械的知识点没弄懂？那你把最基本的力矩分析图画给我看看。” “应力状态都不明白？你这得从头开始补课啊。” “问我这个零件为什么会坏？最基本的积屑瘤知识点都不知道吗。” 等到一个寒假过去，旅长看着成绩突飞猛进的学生们，发出如土匪般的咆哮声： “他娘的，在劳资眼皮底下还能漏掉这样的人才，这合理吗？” “拐来，必须给我拐来！” 数年后，旅长挂完电话，看着手底下一项又一项的新型成果被打包带走，一脸心疼：“奶奶滴，我居然也有被打劫的一天？”】",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o0ef2aa5d4bdfda5654274e3b9ac02d19~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=JDKWc0fUGPJBo4DO%2Fi0jwClEtmk%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o0ef2aa5d4bdfda5654274e3b9ac02d19~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=RCL%2FlPYML%2BwZNZDsT0v8NbFvIAg%3D",
         "url": "https://fanqienovel.com/page/7657965600831966233"
       },
       {
         "title": "只想躺平开民宿，咋就活成顶流了",
         "author": "今月曾经照故人",
-        "reads": "27万",
+        "reads": "28.5万",
         "intro": "——新书评分刚出—— 徐之舟穿越了，穿成了被全网黑到退圈的落魄音乐制作人。 顶流前妻踩着他立人设，全网骂他软饭男、PUA、江郎才尽。 换别人早就炸锅洗白撕逼了，徐之舟偏不。 封口费原路退回，社交账号一键注销，拍拍屁股直接去大理开民宿躺平。 什么娱乐圈顶流，什么恩怨情仇，哪有洱海边晒太阳舒服？ 可他越想躺，世界越不让他躺： 民宿刚开业直接被挤爆，订单排到半年后，连骂过他的网友都抢着来打卡。 院墙上随手刻两句诗，成了全网封神的写景神句。 停电随口讲个故事，百万网友连夜蹲守小院听书。 随性弹唱一曲，全网循环刷屏奉为传世金曲。 徐之舟：？ 我就想开个民宿躺平，怎么混成文旅标杆了？",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od30577fa400bc8f372385239e478b1ab~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=oV1rjKge%2BQ4ykkhE4ty60u%2FejdA%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od30577fa400bc8f372385239e478b1ab~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=gdRoq%2BqQhxj%2F5DFmgPYir8p7WwU%3D",
         "url": "https://fanqienovel.com/page/7661942550818737214"
-      },
-      {
-        "title": "同归于尽后，宿敌跟我回到现实！",
-        "author": "赵泰大人",
-        "reads": "21.3万",
-        "intro": "（单女主）＋（日常）＋（甜文）＋（古武世界） 顾渊一名刚高考完的高中生，在一次熬夜看小说的时候，意外穿越进了小说里。 但他获得了反派系统，系统给他布置下，最终任务，成就大帝之资并杀死女主凌清雪。 顾渊在这本小说中，熬了千年终于在成就大帝之资，并在最终决战。 拼尽全力，跟女主凌清雪同归于尽。 回到现实世界的顾渊欣喜落狂！ “系统！老子的奖励呢？！” 而就在这时，回应她的并不是系统的声音，而是一脚。 “卧槽！” 当他睁眼看清是谁打的他时。 他的冷汗瞬间布满他的额头。 “凌清雪？！”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o806af1f3f81e8c199819246a17da4dfa~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=GwWvWW7WZWmbkjRzHW05uNrzMPY%3D",
-        "url": "https://fanqienovel.com/page/7656761589273480254"
-      },
-      {
-        "title": "我，死灵法师，遵纪守法",
-        "author": "任怨",
-        "reads": "20万",
-        "intro": "我不知道你活不活，但我知道你死没死。 谢安得到一个死灵法师传承系统。 既不知道世界走向，也不想掀起亡灵天灾被集火洗地，身为一个臭名昭著的死灵法师，还能怎么样？ 那就只能装逼了！ 本本分分做事。 老老实实做人。 偷偷摸摸发财。 开开心心生活。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o2669e8a2daa262d24f2dafdaf5510a8e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=p2R2q2W3FOx878RIsfQxD%2BIb6Ms%3D",
-        "url": "https://fanqienovel.com/page/7654482268634745880"
-      },
-      {
-        "title": "高考后，我每天一亿美金零花钱",
-        "author": "可乐煮鸡翅",
-        "reads": "18.5万",
-        "intro": "【神豪 校园生活 轻松日常 多女主 不装X不打脸 全文配图】 高考后，陈远绑定神豪系统，每天一亿美金零花钱，人生从此开启简单模式。 CS百万龙狙，买。 布加迪千万跑车，买。 深圳湾壹号上亿豪宅，买。 同龄人在为实习工作毕业论文而烦恼，陈远却在马尔代夫与校花一起打水仗。 人生有百分之九十九的烦恼是因为穷，还有百分之一是因为不够有钱，而我陈远恰好足够有钱！ 泡些妹，交些朋友，玩会游戏，旅个游，人生就是如此惬意！ 【本文没有装X打脸，只是日常生活，不会经常出现百亿千亿的金额，货币不会崩。】",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o034645c46667f57e7cbf0969a862a7a7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=DBySJDqgjefPBvVkstjtNJ4Sdq4%3D",
-        "url": "https://fanqienovel.com/page/7643817741610126398"
       },
       {
         "title": "相亲失败！我把精神小妹捧成天后",
         "author": "心有浩然气",
-        "reads": "18.3万",
+        "reads": "20.6万",
         "intro": "刚和相亲对象分手，江枫就在路上偶遇了三个‘精神小妹’，阴差阳错下，他发现上辈子五音不全的自己，现在竟然有一副好嗓子，可是，他选择先捧红她们……",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7dbe2e5ed8ff73cb713065f93c38f206~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=%2BxKlQyfqDt62ykQvZhQtvPb8pqE%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7dbe2e5ed8ff73cb713065f93c38f206~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=WQAD0CIRIFVvij7W8e0OsmMYVPM%3D",
         "url": "https://fanqienovel.com/page/7657372181734624281"
       },
       {
-        "title": "你管这叫少女养成？",
-        "author": "淋浴煮地瓜",
-        "reads": "17万",
-        "intro": "(新书评分低，之后会涨) 「轻小说+附身+多女主+系统+恋爱喜剧」 【正在加载《少女养成计划》】 【您可以指定一名符合条件的角色，干涉她的人生，使她成长为你理想中的样子。】 【游戏可能会发布一些特殊任务，任务完成即可获取奖励，您可自主选择接受或拒绝】 穿越到平行世界，黎川觉醒了一个云养女儿系统。 点击【开始匹配】后，他却附身到被绑架的富家千金上。 “如果神明大人能帮帮我的话，什么都可以做噢？” 意外救下集团千金叶汐璃，黎川借用她的身体学习了诸多技能，这才得以在这个世界站稳脚跟。 只不过，少女对自己的感情似乎发生了一点变化？ “今天也请随意占据我吧，神明大人！” (魂穿，女主们不认识原主或者压根不熟，介意勿看)",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o55a18593e5a490ae3343e6af356e737c~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=i8SP%2FxZ8IGGa9payUmUia1WfzL4%3D",
-        "url": "https://fanqienovel.com/page/7638633854625909784"
+        "title": "同归于尽后，宿敌跟我回到现实！",
+        "author": "赵泰大人",
+        "reads": "20.4万",
+        "intro": "（单女主）＋（日常）＋（甜文）＋（古武世界） 顾渊一名刚高考完的高中生，在一次熬夜看小说的时候，意外穿越进了小说里。 但他获得了反派系统，系统给他布置下，最终任务，成就大帝之资并杀死女主凌清雪。 顾渊在这本小说中，熬了千年终于在成就大帝之资，并在最终决战。 拼尽全力，跟女主凌清雪同归于尽。 回到现实世界的顾渊欣喜落狂！ “系统！老子的奖励呢？！” 而就在这时，回应她的并不是系统的声音，而是一脚。 “卧槽！” 当他睁眼看清是谁打的他时。 他的冷汗瞬间布满他的额头。 “凌清雪？！”",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o806af1f3f81e8c199819246a17da4dfa~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=Flhdrqa3dV4Z%2FBDiYBUr5t9fm1s%3D",
+        "url": "https://fanqienovel.com/page/7656761589273480254"
+      },
+      {
+        "title": "高考后，我每天一亿美金零花钱",
+        "author": "可乐煮鸡翅",
+        "reads": "20.4万",
+        "intro": "【神豪 校园生活 轻松日常 多女主 不装X不打脸 全文配图】 高考后，陈远绑定神豪系统，每天一亿美金零花钱，人生从此开启简单模式。 CS百万龙狙，买。 布加迪千万跑车，买。 深圳湾壹号上亿豪宅，买。 同龄人在为实习工作毕业论文而烦恼，陈远却在马尔代夫与校花一起打水仗。 人生有百分之九十九的烦恼是因为穷，还有百分之一是因为不够有钱，而我陈远恰好足够有钱！ 泡些妹，交些朋友，玩会游戏，旅个游，人生就是如此惬意！ 【本文没有装X打脸，只是日常生活，不会经常出现百亿千亿的金额，货币不会崩。】",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o034645c46667f57e7cbf0969a862a7a7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=9yzfG%2FzOQGX1fXPw3SSx4bywI%2B4%3D",
+        "url": "https://fanqienovel.com/page/7643817741610126398"
+      },
+      {
+        "title": "我，死灵法师，遵纪守法",
+        "author": "任怨",
+        "reads": "18.8万",
+        "intro": "我不知道你活不活，但我知道你死没死。 谢安得到一个死灵法师传承系统。 既不知道世界走向，也不想掀起亡灵天灾被集火洗地，身为一个臭名昭著的死灵法师，还能怎么样？ 那就只能装逼了！ 本本分分做事。 老老实实做人。 偷偷摸摸发财。 开开心心生活。",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o2669e8a2daa262d24f2dafdaf5510a8e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=BJx5axBVqQTpsqu3RJmOWtrhCrw%3D",
+        "url": "https://fanqienovel.com/page/7654482268634745880"
       },
       {
         "title": "拒白月光不做冤大头七零留城享福",
         "author": "霖狐",
-        "reads": "16.5万",
+        "reads": "16.7万",
         "intro": "【年代+空间+不下乡】 傅南霆睁开眼，就变成了1970年，一名刚失去父亲，母亲要再嫁的家中长子。 面对母亲要带他们一起再嫁的提议，傅南霆直接拒绝，并且迅速将财产分割清楚，又劝说姐妹和唯一的弟弟不要和母亲一起过去。重组家庭的难处，大家都知道。 之后，又迅速的拒绝了白月光，绝对不会给别人养孩子，浪费了自己的一生。至于母亲再嫁家庭的小女儿要下乡？那关我什么事情？我们都不是一家人，爱上哪上哪。 前世觉醒的空间也跟来了？还有他花费了所有金钱，囤积的物资也来了？ 这日子不就好过了么？ 什么？要我分一点给继父？我哪来的继父？ 你爱吃苦，你自己吃去。我不伺候。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4d2627162a0345c4fbb9fb6ce567f275~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=repjZKKAYetMsi3PCmtQagaQxyE%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4d2627162a0345c4fbb9fb6ce567f275~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=o62RSlIv%2FwrPdpiIKkbzwmBvEQQ%3D",
         "url": "https://fanqienovel.com/page/7657155697712319513"
-      },
-      {
-        "title": "透视：这个高考状元还是亿万富豪",
-        "author": "奶味猕猴桃",
-        "reads": "15.8万",
-        "intro": "【透视+捡漏+爽文+多女】 陆元在高考前夕觉醒透视眼轻松通关高考拿下粤省高考状元，第二天前往平洲赌石，轻松日赚一亿。 顶级翡翠、国宝文物、千万豪车、十亿豪宅、角色美女……应有尽有！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7ecf6c7302059c6f260b750e2833c54d~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=P%2FafwHCb%2BfsUEQvytCkXVF9QEbU%3D",
-        "url": "https://fanqienovel.com/page/7659303778960542745"
-      },
-      {
-        "title": "只要我失恋，华语乐坛就过年！",
-        "author": "念旧歌",
-        "reads": "15.3万",
-        "intro": "【单女主】【文娱】 江游穿越成被全网群嘲的过气顶流，开局就被当红小花前女友递上分手协议。 全网黑粉和前女友都坐等他痛哭流涕，发长文卖惨求复合。 结果江游大笔一挥，转头背着一把红电吉他杀入Livehouse。 一首《你要跳舞吗》，带着全场黑粉疯狂蹦迪，硬生生把分手开成了狂欢派对！ 黑粉懵了：“卧槽？神特么分手快乐，他被甩了怎么比过年还高兴？！” 绑定【万象人生体验系统】，只要体验红尘百态，产生最真实的纯粹情绪，就能解锁地球文娱宝库。 于是，内娱少了一个流水线假人偶像，多了一个野生吟游诗人。 他去川藏线骑行，去街边撸串，去剧组蹲盒饭，去深山支教…… 当一首首神作横空出世，彻底撕碎塑料文娱时代的虚伪时，前女友悔不当初哭求复合，资本挥舞钞票跪求合作。 然而，江游的粉丝却在发现“江游只要恋爱，必出神级金曲”的定律后，彻底黑化了！ “江哥，求你快去谈个恋爱吧！然后赶紧被甩，华语乐坛等挺急的！” “听说江哥今天相亲又失败了？太好了，今晚必有神级苦情歌，兄弟们把纸巾备好！” “江哥今天去工地搬砖了吗？没有？那新歌肯定没内味儿，散了吧散了吧。” 江游：“我只想安安静静当个红尘体验派，你们这群假粉丝能盼我点好吗？！”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o5dc84e50f6b5c4810b0fe09a31c10c4f~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=T%2FHkmFBZgkpa5oSi0A%2BOVHWr7tc%3D",
-        "url": "https://fanqienovel.com/page/7661015753490959384"
-      },
-      {
-        "title": "与钱老同程，我用新药赚万亿外汇",
-        "author": "白肉卷皮蛋",
-        "reads": "15.2万",
-        "intro": "评分刚出会很低，后面会升，2050年顶尖生物医药院士，意外穿越到1945年的阿米利卡！ 穿越到1945，主角觉醒超强脑力，思维速度超越常人三倍，过目不忘、细思即通，所有前世科研知识、海量医学储备尽数留存脑海。 此时祖国百废待兴，医药工业一片空白，疫病横行、特效药被西方层层垄断，无数国人与前线伤员无药可医。 为报效家国，主角沉心苦读五年，以惊人天赋拿下博士学位，冲破美方重重阻挠，与钱老等一众国士同批归国！ 进入国内研究所后，他凭借跨时代的生物医药技术，接连攻克多种流行传染病特效药，淘汰劣质药品，斩断黑心药商牟利渠道，拯救万千民众性命。 前期攻坚克难，补齐祖国医药短板；后期放眼全球，接连研发出多款世界顶尖新药！ 在各国药企对华技术封锁的时代，主角以自研特效药打开国际市场，源源不断赚取万亿外汇，换回精密机床、工业设备、科研仪器，全方位加速祖国工业与科技崛起。 以一剂国药破百年封锁，以毕生所学助华夏腾飞！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc4f1bec2d7cc673999e7ac201acd1c6b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=Bq%2FGx9xAueYiSlO%2BDrQkaTPexAY%3D",
-        "url": "https://fanqienovel.com/page/7661704161058114585"
       },
       {
         "title": "别人召唤棋圣，我召唤出了柯洁？",
         "author": "东云浅",
-        "reads": "15.1万",
+        "reads": "16.3万",
         "intro": "【全民觉醒＋围棋竞技＋穿越＋轻松搞笑】 别人召唤棋圣，我召唤出了个金铲铲玩家？ 萧衍穿越到了一个围棋成为世界第一运动的时代。 在这里，每个人都有机会觉醒本命棋魂。 棋魂的等级越高，契约者未来的成就便越高。 而在觉醒仪式上，萧衍召唤出的，却是一个查不到任何生平的年轻人。 “有金铲铲吗？” “我马上就要上大师了。” 一时之间，萧衍沦为全校笑柄。 所有人都以为，萧衍觉醒了一个沉迷金铲铲的F级废棋魂。 只有萧衍知道，站在自己身后的，是曾经统治一个时代，又亲眼见证人工智能颠覆围棋的——九冠王柯洁。 古今棋圣，皆要重新落子。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6804be4872b4a129fd10cc93833a231c~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=Hz6JPSPnlM1%2B3EB5PlUw5szPhYw%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6804be4872b4a129fd10cc93833a231c~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=5Ly7szyjRDY26alGOJ8k1%2Fva8Sw%3D",
         "url": "https://fanqienovel.com/page/7668599135578115096"
+      },
+      {
+        "title": "透视：这个高考状元还是亿万富豪",
+        "author": "奶味猕猴桃",
+        "reads": "15.6万",
+        "intro": "【透视+捡漏+爽文+多女】 陆元在高考前夕觉醒透视眼轻松通关高考拿下粤省高考状元，第二天前往平洲赌石，轻松日赚一亿。 顶级翡翠、国宝文物、千万豪车、十亿豪宅、角色美女……应有尽有！",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7ecf6c7302059c6f260b750e2833c54d~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=4l4f6ZayVMscENbRNfx%2FWjVMFWg%3D",
+        "url": "https://fanqienovel.com/page/7659303778960542745"
       },
       {
         "title": "只因我写了诛仙，校花给我寄刀片",
         "author": "想rua鱼",
-        "reads": "14.6万",
+        "reads": "14.9万",
         "intro": "有人写书，有人唱歌，有人拍电影。 而林渊，三者全占了。 随手一本《诛仙》，引爆全网，多所高校校花组团追更，虐到集体寄刀片。 闲来唱首歌，美女总裁在公司车里循环了一百遍，红着眼眶拨通了他电话。 随手拍部电影，女教师看完沉默良久，在社交平台写下一句影评——\"这是我见过最好的国产电影。\" 所有人都以为他是天才。 只有林渊知道，他只是把前世的东西，搬到了这个世界。 而这个世界，为他疯狂。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obda3816a1a964f8a3b4a2c562b7cc7e7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=A6jJ214Kv%2BTjhZ%2BpR6i8onSSHQc%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obda3816a1a964f8a3b4a2c562b7cc7e7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=iOCPZj8eZO1T9mAfeI3Qsatw%2Feo%3D",
         "url": "https://fanqienovel.com/page/7655146998667955224"
+      },
+      {
+        "title": "只要我失恋，华语乐坛就过年！",
+        "author": "念旧歌",
+        "reads": "13.6万",
+        "intro": "【单女主】【文娱】 江游穿越成被全网群嘲的过气顶流，开局就被当红小花前女友递上分手协议。 全网黑粉和前女友都坐等他痛哭流涕，发长文卖惨求复合。 结果江游大笔一挥，转头背着一把红电吉他杀入Livehouse。 一首《你要跳舞吗》，带着全场黑粉疯狂蹦迪，硬生生把分手开成了狂欢派对！ 黑粉懵了：“卧槽？神特么分手快乐，他被甩了怎么比过年还高兴？！” 绑定【万象人生体验系统】，只要体验红尘百态，产生最真实的纯粹情绪，就能解锁地球文娱宝库。 于是，内娱少了一个流水线假人偶像，多了一个野生吟游诗人。 他去川藏线骑行，去街边撸串，去剧组蹲盒饭，去深山支教…… 当一首首神作横空出世，彻底撕碎塑料文娱时代的虚伪时，前女友悔不当初哭求复合，资本挥舞钞票跪求合作。 然而，江游的粉丝却在发现“江游只要恋爱，必出神级金曲”的定律后，彻底黑化了！ “江哥，求你快去谈个恋爱吧！然后赶紧被甩，华语乐坛等挺急的！” “听说江哥今天相亲又失败了？太好了，今晚必有神级苦情歌，兄弟们把纸巾备好！” “江哥今天去工地搬砖了吗？没有？那新歌肯定没内味儿，散了吧散了吧。” 江游：“我只想安安静静当个红尘体验派，你们这群假粉丝能盼我点好吗？！”",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o5dc84e50f6b5c4810b0fe09a31c10c4f~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=9CXQaZH7YNsOLzDuejWcUchY4H4%3D",
+        "url": "https://fanqienovel.com/page/7661015753490959384"
       },
       {
         "title": "给员工发超跑，你当死士养呢？",
         "author": "无关风风风月",
-        "reads": "13.5万",
+        "reads": "13万",
         "intro": "林澈绑定了“良心企业返现系统”。给员工花的钱，都能1:1全额返现至个人账户！ 但前提是：员工身心健康度必须达标，否则返现暴跌！ 为了薅秃系统，林澈定下铁律：员工工资行业顶薪1.5倍、955双休、带薪年假30天，不加班、拒绝内卷！ 下午茶、健身房、米其林食堂只是标配，各种补贴拿到手软，优秀员工甚至直接奖励海景别墅！ 然而，员工看着逆天福利和“入不敷出”的公司，感动得热泪盈眶。 “老板为了我们，宁可自己背负亏损也要给我们发奖金！他就是我们的再生父母！” “林总待我如国士，我必报之以国士！兄弟们，偷偷加班，绝对不能让这么好的公司破产倒闭！” 当林澈半夜突击，看着灯火通明、疯狂写代码的员工，看着暴跌的健康度，气得吐血大骂。 员工却泪流满面：“老板宁愿骂我们，也要逼我们休息……他真的，我哭死！兄弟们，明天再定早一点的闹钟，决不能让老板的心血倒闭！” 甚至，连竞争对手派来的内鬼，也直接叛变，并高喊： “星瀚，忠诚！！！”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1d78d2b9b57333a6c95b081e17e8d6a7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=dPZKiHKNbEQiAJDEyxaIiJN9myQ%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1d78d2b9b57333a6c95b081e17e8d6a7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=Ubv8pu0DoDtqjgfBFtSOUMsGIMM%3D",
         "url": "https://fanqienovel.com/page/7636415867592395838"
       },
       {
         "title": "三棍打散兄妹情，我家兄长不当人",
         "author": "往事如烟",
-        "reads": "13.3万",
+        "reads": "12.7万",
         "intro": "修仙的哥，作死的妹，绿茶的弟弟，无能的爹。 一个家分两派:武力派，心机派。 遇到一个先动手后拱火的大哥，是我上辈子造的孽。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oafd59c711ece4b93c5193698e95e03d1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=oOQUStFJkh9pNxcMX8BrbXvRNkk%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oafd59c711ece4b93c5193698e95e03d1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=%2BgiACfftTcDShf637JtNyd%2Boyk8%3D",
         "url": "https://fanqienovel.com/page/7641618871547350040"
       },
       {
@@ -266,56 +253,64 @@
         "author": "黄连煮咖啡",
         "reads": "12.1万",
         "intro": "【轻松幽默向神医文】沈浪本是一家三甲肿瘤医院的医生，因为反对医院给癌症晚期病人用高价药，被医院开除，最后只能回老家继承了祖上的中医馆。 哪想院长认为沈浪有举报自己的行为，要对其斩尽杀绝。 就在医馆开业后不久，当地药监局执法科的科长万强就来到医馆， 以非法行医为名将医馆查封，结果万强刚出门，腿就被毒蛇咬了。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oa6c6b1cb6b9c6c61819449531f72c80b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=mxjVJYEjHz8u%2BtsR4qEQ1b3tSII%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oa6c6b1cb6b9c6c61819449531f72c80b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=M9J22S6AuaLAWTxV0fXZlhWdMk0%3D",
         "url": "https://fanqienovel.com/page/7659592058109168702"
+      },
+      {
+        "title": "与钱老同程，我用新药赚万亿外汇",
+        "author": "白肉卷皮蛋",
+        "reads": "11.8万",
+        "intro": "评分刚出会很低，后面会升，2050年顶尖生物医药院士，意外穿越到1945年的阿米利卡！ 穿越到1945，主角觉醒超强脑力，思维速度超越常人三倍，过目不忘、细思即通，所有前世科研知识、海量医学储备尽数留存脑海。 此时祖国百废待兴，医药工业一片空白，疫病横行、特效药被西方层层垄断，无数国人与前线伤员无药可医。 为报效家国，主角沉心苦读五年，以惊人天赋拿下博士学位，冲破美方重重阻挠，与钱老等一众国士同批归国！ 进入国内研究所后，他凭借跨时代的生物医药技术，接连攻克多种流行传染病特效药，淘汰劣质药品，斩断黑心药商牟利渠道，拯救万千民众性命。 前期攻坚克难，补齐祖国医药短板；后期放眼全球，接连研发出多款世界顶尖新药！ 在各国药企对华技术封锁的时代，主角以自研特效药打开国际市场，源源不断赚取万亿外汇，换回精密机床、工业设备、科研仪器，全方位加速祖国工业与科技崛起。 以一剂国药破百年封锁，以毕生所学助华夏腾飞！",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc4f1bec2d7cc673999e7ac201acd1c6b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=xeyj%2BlDOXYgsuNWCOdZdF9oUoPQ%3D",
+        "url": "https://fanqienovel.com/page/7661704161058114585"
       },
       {
         "title": "从获得马符咒开始影响世界",
         "author": "难得葫芦",
-        "reads": "11.8万",
+        "reads": "11.7万",
         "intro": "人体是有极限的， 对此陆川深信不疑，毕竟人体是血肉骨骼组成的，并不是可以熔炼的钢铁。 那如果拥有马符咒呢？ 看着自己手心里纹着中的正八边形石头，上面是紫色的骏马， 身体在崩溃重组中变强，马符咒负责消去身体损失，并且恢复精气神，让他能够持续不断地锻炼…… 通过这个“锻炼-成长-修复”循环， 这个人会以惊人的速度成为人类有史以来最强大的个体，在所有身体素质项目上都达到甚至超越目前所有世界纪录的总和。 他将是力量、速度、耐力、敏捷、反应、恢复能力的完美结合体，是碳基生命体的终极形态。 …… 它能将一个人推送到“人”这个概念的极限顶点…… 是药三分毒，类固醇最起码有七分，但那在我马符咒面前翻得起什么风浪？ “副作用？那是什么？” “副作用越大越好……我要打兽药，一人一管……” “健美圈传来噩耗……呸…喜讯…” “健美圈传来喜讯，类固醇星球迎来真神！” 多年以后，多项世界记录保持者，征服多个联赛的无冕之王，世界第一强公司创建者……陆川笑了。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2of08efe828bc6e2b38084505ad1059d91~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=T1xn02mVyMlrckDplyUu8nnWN9c%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2of08efe828bc6e2b38084505ad1059d91~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=cB8n2X5%2Fgyp%2B3fINoih52eLCPnI%3D",
         "url": "https://fanqienovel.com/page/7554063382085635134"
       },
       {
         "title": "让你设计游戏，你开发三角洲？",
         "author": "辉光闪耀",
-        "reads": "10.8万",
+        "reads": "11.4万",
         "intro": "林肖穿越到一个科技发达但游戏玩法落后、氪金严重的平行世界，成为一个扑街游戏设计师！ 绑定“游戏制作人系统”后，林肖制作出一款主打“搜、打、撤”玩法的硬核射击游戏：《三角洲行动》！ 没有炫酷的技能，没有升级加点，画质写实到极致，甚至连个充值弹窗都没有。 最离谱的是，这游戏死了竟然会掉光所有装备！ 可就是这么一款被骂“反人类”的游戏刚发布，全网玩家却彻底上头了！ “卧槽！血压拉满了！我在大坝捡了把满改AK，还没捂热乎就被草丛老六一枪秒了！装备全没了啊！” “兄弟们我撤出来了！一把血赚三百万！红卡房YYDS！这游戏太刺激了，心脏病都要犯了！” “跑刀才是这游戏的精髓！！” “别搜打撤了，全面战场开了！开坦克开飞机，32v32据点战，干翻他们！什么？后面还有《我的世界》和《英雄联盟》？！”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o149a7e7b1bbbfe53d01ea71b2ec7fcea~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=hHnxnSOhTR4s4K1366rZ0in93dY%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o149a7e7b1bbbfe53d01ea71b2ec7fcea~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=%2Bd8ktwKxRXLWKJcv0VuQUxKkbnE%3D",
         "url": "https://fanqienovel.com/page/7663130140917910552"
-      },
-      {
-        "title": "和校花分手后，睡了病娇女教授！",
-        "author": "比奇堡恶霸y",
-        "reads": "10.2万",
-        "intro": "【多女主+教授姐姐+校花+纯甜+校园+不墨迹+同居】 大一新生陆羽因为失恋去酒吧买醉，结果第二天醒来，发现身边躺着一个倾国倾城的绝世大美女。 本以为要完蛋了，结果下一秒【好感度APP】绑定！ 陆羽看着系统面板上高达98分的绝世容颜，以及那行【隐藏身份：南大经济学院新聘任的最年轻副教授】的字样…… 等等！那不是我下周一要去上的专业必修课吗？！丸辣！ 结果她不仅没发火，反而是：“别怕，姐姐会对你负责的，盖个章，从今天起你就是我男朋友了。” 于是…… 白天的南大讲台上，沈教授一袭正装，高冷严厉，拒人于千里之外。 晚上的海景套房里，沈乐瑶软绵绵地赖在他怀里： “男朋友，我腿酸，要抱抱~”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oeb9e7048b2bbe8ce31ab2c397bb60a9b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=%2B8nG4fOH1Ddsj9raRrsr4uTDsNU%3D",
-        "url": "https://fanqienovel.com/page/7662674218949037081"
-      },
-      {
-        "title": "预知未来躲子弹，顶美校花喊宝宝",
-        "author": "阿伟已经丝了",
-        "reads": "10.1万",
-        "intro": "【无系统+多女主+纯都市+爆爽人生】 江阳原本只是一个普通的大学生，没有轰轰烈烈的爱情，也没有跌宕起伏的故事，更没有波澜壮阔的未来。 有时候，他也会很羡慕电影、小说中的主角，能把人生过得那么精彩。 一次意外，江阳遭遇金铺抢劫，这样的经历足够精彩，但当子弹射向他的时候，他的一生也快要结束了。 就在江阳以为自己会唏嘘地带着遗憾死去时，却发现自己竟能预知未来，更是靠着这个能力直接躲避子弹！ 从此，江阳逆天改命，美人财富权力接踵而来，他的人生突然就精彩了起来！ 长腿顶美校花：“宝宝~咱几个把日子过好，比什么都重要~。”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o126a5ec12e15a468dc4e5f433c1183b1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=nlZvKHj%2BBDKmkaFCMTjQScNU6Po%3D",
-        "url": "https://fanqienovel.com/page/7651446049550126142"
-      },
-      {
-        "title": "超时空导演：从忽悠小天仙开始",
-        "author": "咸鱼不翻锅",
-        "reads": "10万",
-        "intro": "李小白意外获得一枚银色U盘，能穿越过去，但只能带回数据文件。 靠着卖歌赚到第一桶金后，他做了一个疯狂的决定——去1998年忽悠11岁的刘奕菲拍《巴啦啦小魔仙》，带回2026年全网发布。 视频炸了。 刘奕菲本人看到后当场社死，死去的记忆疯狂攻击，脚趾扣出三室一厅。更离谱的是，那根塑料魔法棒居然激活了真正的魔法传承，把她变成了货真价实的\"魔仙本仙\"。 然后刘奕菲加入了。两人带着U盘穿梭于1998年的武汉胡同和北京街头，把12岁的杨蜜、刘狮狮挨个\"忽悠\"进剧组。二十多年后视频发布，杨蜜对着自己转圈喊小魔仙变身的片段气急败坏，刘奕菲@她：\"嘿嘿。\" 什么幂幂、诗诗、唐糖、胖迪……娱乐圈半壁江山的童年黑历史被一网打尽。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7474df3a9427bc0c95836414f525ffd1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=RNIIKyAZxrf6hmvEvADqmUwFf40%3D",
-        "url": "https://fanqienovel.com/page/7662019158145518617"
       },
       {
         "title": "霸道女总裁爱上离婚带娃的我",
         "author": "云南小辣椒",
-        "reads": "10万",
+        "reads": "10.5万",
         "intro": "三年赘婿，惨遭离婚，净身出户，受尽世人嘲讽！ 前妻逼女儿选豪门富贵，六岁萌娃誓死追随落魄老爸！ 林辰毫无留恋，欣然签字，绝境觉醒一元三选秒杀神系统！ 一日一元，日日逆天，解锁豪宅、百亿人脉、无敌神技！ 前妻嚣张嘲讽，最终悔断肝肠； 岳家仗势欺人，最终彻底落魄！ 无人理解，高冷霸道女总裁为何执念倒追离异带娃的他！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o189a4351a991a32eeb8fd2937fc64ec6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=AV8GFDjxcVGGeHAuKB%2BcTu0H3Zs%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o189a4351a991a32eeb8fd2937fc64ec6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=tbJrruCS81RTFw4w%2BAisFMDg9HU%3D",
         "url": "https://fanqienovel.com/page/7657194661945019454"
+      },
+      {
+        "title": "和校花分手后，睡了病娇女教授！",
+        "author": "比奇堡恶霸y",
+        "reads": "10.4万",
+        "intro": "【多女主+教授姐姐+校花+纯甜+校园+不墨迹+同居】 大一新生陆羽因为失恋去酒吧买醉，结果第二天醒来，发现身边躺着一个倾国倾城的绝世大美女。 本以为要完蛋了，结果下一秒【好感度APP】绑定！ 陆羽看着系统面板上高达98分的绝世容颜，以及那行【隐藏身份：南大经济学院新聘任的最年轻副教授】的字样…… 等等！那不是我下周一要去上的专业必修课吗？！丸辣！ 结果她不仅没发火，反而是：“别怕，姐姐会对你负责的，盖个章，从今天起你就是我男朋友了。” 于是…… 白天的南大讲台上，沈教授一袭正装，高冷严厉，拒人于千里之外。 晚上的海景套房里，沈乐瑶软绵绵地赖在他怀里： “男朋友，我腿酸，要抱抱~”",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oeb9e7048b2bbe8ce31ab2c397bb60a9b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=8lWSblwjP1LSSD3FsgcjYuTWHeM%3D",
+        "url": "https://fanqienovel.com/page/7662674218949037081"
+      },
+      {
+        "title": "为了盘活乐队，我去参加恋综",
+        "author": "7个柒",
+        "reads": "10.3万",
+        "intro": "【娱乐+日常+恋综开局+乐队+单女主+非全能+无马甲（要装杯就装好了）】 本书又名【我们要组一辈子的乐队啊】。 张屿一觉睡醒，成为了一个乐队的主唱。 可是，这个乐队在昨天就解散了！ 富二代键盘手家里破产了，回家赚钱照顾老妈和妹妹了。 鼓手喜欢键盘手，和键盘手共患难去了。 贝斯手也另寻生计了。 天崩开局，但张屿会从一档恋综开始将大局逆转！ “你说是吧，我的系统！” “叮……” “大家好，我是爱与和平乐队的主唱张屿，aka章鱼哥。”",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obbebddf1ebb65a99d32c748d69fcebb0~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=lGYwooT%2BohqXbju4BPOPCBwhCkE%3D",
+        "url": "https://fanqienovel.com/page/7657579318557543448"
+      },
+      {
+        "title": "婚礼现场，系统让我别叫她嫂子",
+        "author": "请喝一杯咖啡",
+        "reads": "10万",
+        "intro": "班长婚礼上，所有人都等着陈野喊一声“嫂子”。 下一秒，系统突然绑定。 【检测到错误称呼！】 【请宿主拒绝叫她嫂子！】 【任务完成，奖励现金八万八！】 陈野当场改口。 整桌人都愣住了。 更离谱的是，婚礼还没结束，新娘突然把一个红色喜糖袋砸进他怀里。 袋子里没有喜糖。 只有一张写着“2306”的卡。 从那天开始，系统每天都会发布一个让人摸不着头脑的任务。 帮女老板解决合同危机。 替邻居姐姐处理燃眉之急。 让嘴硬的合作对象主动低头。 任务越离谱，奖励越夸张。 现金、豪车、房产、公司、身体强化接连到账。 陈野只想老老实实完成任务。 可他很快发现。 系统每一次让他出手，都刚好撞上了别人最需要他的时刻",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o26b6842a1ed0bac38d708913edd0b12e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=g3m7bNh6JOTn3AGkxd7Co6L1ezc%3D",
+        "url": "https://fanqienovel.com/page/7662264858917735486"
       }
     ]
   },
@@ -323,260 +318,247 @@
     {
       "name": "都市脑洞",
       "trend": {
-        "new_count": 4,
-        "dropped_count": 4,
+        "new_count": 3,
+        "dropped_count": 3,
         "new_books": [
-          "让你设计游戏，你开发三角洲？",
-          "和校花分手后，睡了病娇女教授！",
-          "预知未来躲子弹，顶美校花喊宝宝",
-          "霸道女总裁爱上离婚带娃的我"
+          "抑郁少女总想自杀？那就狠狠恶堕",
+          "为了盘活乐队，我去参加恋综",
+          "婚礼现场，系统让我别叫她嫂子"
         ],
         "dropped_books": [
           {
-            "title": "实习教出金牌班，家长要换班主任",
-            "intro": "【脑洞+系统+不憋屈+buff+卡牌+词条+爽文】 陆谦毕业后，成为高二七班的实习班主任。 入职当天，觉醒【最强教师系统】，给学生上buff，提高学习效率和天赋。 其他学生一天学会，七班学生一小时学会"
+            "title": "你管这叫少女养成？",
+            "intro": "(新书评分低，之后会涨) 「轻小说+附身+多女主+系统+恋爱喜剧」 【正在加载《少女养成计划》】 【您可以指定一名符合条件的角色，干涉她的人生，使她成长为你理想中的样子。】 【游戏可能会发布一些特殊任"
           },
           {
-            "title": "抑郁少女总想自杀？那就狠狠恶堕",
-            "intro": "新作品出炉,大家可以前往番茄小说阅读我的作品哦,希望大家能够喜欢,你们的关注是我写作的动力,我会努力讲好每个故事! 。。。。。。。。。。。。。。。。"
+            "title": "预知未来躲子弹，顶美校花喊宝宝",
+            "intro": "【无系统+多女主+纯都市+爆爽人生】 江阳原本只是一个普通的大学生，没有轰轰烈烈的爱情，也没有跌宕起伏的故事，更没有波澜壮阔的未来。 有时候，他也会很羡慕电影、小说中的主角，能把人生过得那么精彩。 一"
           },
           {
-            "title": "荒岛求生：绿茶赶我走？谁稀罕啊",
-            "intro": "【海岛求生+慢节奏+多女主+异世界】 原本勤工俭学，在豪华游轮上打工的林默，被卷入海难之中。 醒来，就被绿茶的女妆博主林梦瑶赶走。 这里有国内最年轻的三金影后柳如烟； 有号称情歌天后的白凝冰； 也有国"
-          },
-          {
-            "title": "恋综：和绝美大小姐的对抗路日常",
-            "intro": "【沙雕玩梗+单女主+小甜文+娱乐圈+恋综+文抄公+轻松日常+恋爱日常】 （评分刚出，后面会涨的） 网络作家江远穿越平行世界，面临分手开局，江远也不惯着，直接喷得狗男女直吐血。 本想从拾老本行，谁知老妈"
+            "title": "超时空导演：从忽悠小天仙开始",
+            "intro": "李小白意外获得一枚银色U盘，能穿越过去，但只能带回数据文件。 靠着卖歌赚到第一桶金后，他做了一个疯狂的决定——去1998年忽悠11岁的刘奕菲拍《巴啦啦小魔仙》，带回2026年全网发布。 视频炸了。 刘"
           }
         ],
         "top_risers": [
           {
-            "title": "相亲失败！我把精神小妹捧成天后",
-            "change": "+4"
-          },
-          {
             "title": "别人召唤棋圣，我召唤出了柯洁？",
-            "change": "+4"
+            "change": "+3"
           },
           {
-            "title": "只因我写了诛仙，校花给我寄刀片",
-            "change": "+4"
+            "title": "霸道女总裁爱上离婚带娃的我",
+            "change": "+3"
+          },
+          {
+            "title": "让你当众写检讨，你作洛神赋？",
+            "change": "+2"
           }
         ],
         "top_fallers": [
           {
-            "title": "网约车百倍补贴，我转身提迈巴赫",
-            "change": "-2"
+            "title": "离婚后，我成了刀枪炮！",
+            "change": "-5"
           },
           {
-            "title": "只要我失恋，华语乐坛就过年！",
-            "change": "-1"
+            "title": "与钱老同程，我用新药赚万亿外汇",
+            "change": "-5"
           },
           {
-            "title": "三棍打散兄妹情，我家兄长不当人",
-            "change": "-1"
+            "title": "重生后，成了妹妹的专属爱物",
+            "change": "-3"
           }
         ],
         "reads_growth": [
           {
+            "title": "十岁混圈，小爷娱乐圈圈霸",
+            "growth": "+3.3万"
+          },
+          {
             "title": "人在潮汕，开局连抛十八圣杯",
-            "growth": "+2.1万"
+            "growth": "+3.1万"
           },
           {
             "title": "相亲失败！我把精神小妹捧成天后",
-            "growth": "+2.0万"
-          },
-          {
-            "title": "让你当众写检讨，你作洛神赋？",
-            "growth": "+1.9万"
+            "growth": "+2.3万"
           }
         ],
-        "summary": "新增4本上榜；4本掉出（《实习教出金牌班，家长要换班主任》、《抑郁少女总想自杀？那就狠狠恶堕》、《荒岛求生：绿茶赶我走？谁稀罕啊》、《恋综：和绝美大小姐的对抗路日常》）；《相亲失败！我把精神小妹捧成天后》排名上升+4位；《人在潮汕，开局连抛十八圣杯》阅读量+2.1万。",
+        "summary": "新增3本上榜；3本掉出（《你管这叫少女养成？》、《预知未来躲子弹，顶美校花喊宝宝》、《超时空导演：从忽悠小天仙开始》）；《别人召唤棋圣，我召唤出了柯洁？》排名上升+3位；《十岁混圈，小爷娱乐圈圈霸》阅读量+3.3万。",
         "source": "rule"
       },
       "books": [
         {
           "title": "说好造桥游戏，打穿天山什么鬼？",
           "author": "天选红中",
-          "reads": "60.4万",
+          "reads": "60.1万",
           "intro": "（评分刚出，会涨的！） 【游戏制作】+【轻松搞笑】+【致郁玩家】+【反套路】 方源穿越平行世界，继承一家游戏公司。 觉醒【情绪收割系统】，只要让玩家悲伤、悔恨、破防、抑郁……就能获得奖励。 于是…… 画面一： “造桥游戏？桥梁造价越低，排名越高？” “吃我一计豆腐渣工程！预算2万8，只花2千8！” “什么叫小孩翻了四座山给我送糯米饭，感谢我来给他们修桥的？” “别过桥！要塌了！不！” 200斤的主播在直播间哭得像个孩子。 画面二： “这次是天山挖隧道？” “贪！我要狠狠的贪！我就不信还有NPC来刀我！” “……什么叫这是山里人民走出大山唯一的路？” “盾构机呢！给我竖起来打！打穿天山！！！” 画面三： 骑砍游戏。 “大人，能吃饱饭俺们兄弟就跟着你了！” “侯爷，俺兄弟这几条命早就给你了。” “大王快走，我们几个为你殿后！” “陛下，家父和叔伯当年就在您麾下效力。” 玩之前：一将功成万骨枯！慈不掌兵！ 玩之后：都有爹有娘，八个人的命不是命啊！！！这都是跟着朕白手起家的兄弟们啊！ …… 我叫陆小可，我觉醒了投资返利系统，只要投资亏损就能N倍返现。 我投了方源的游戏公司，现在我有点不妙的预感，请问我现在撤资还来得及吗？ ┭┮﹏┭┮",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o9d0a1da244978518b4ce6bec75e69f8a~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=YMIKS%2FnRptUs%2FDx9pjtBUq%2BFgxQ%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o9d0a1da244978518b4ce6bec75e69f8a~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=LhlcP6P4m6QaNanyoOZop4OmNc8%3D",
           "url": "https://fanqienovel.com/page/7661298205925051417"
         },
         {
           "title": "十岁混圈，小爷娱乐圈圈霸",
           "author": "坑多话不多",
-          "reads": "41.8万",
+          "reads": "45.1万",
           "intro": "【穿越】【乐子文】【各种文娱文抄公】【火爆脾气】【现代公羊儒】【属相平头哥】【刑天圣体】 我叫王斯农，信奉儒家公羊学说。 所以我人如其名，不爽的我就往死弄。 上辈子仗着家里有钱有势混迹娱乐圈，嚣张跋扈，得罪了不少人，或许是遭了报应，被雷公劈死了。 不过老天垂怜，让我穿越在活一世。 我寻思着这辈子一定要，低调，低调，还是特么低调。 但这槽蛋的原生家庭，这槽蛋文娱圈子，就是不让小爷低调。 我算是明白了，我天生就是为战斗而生。 何况老子才十岁，又有六字红底的“丹书铁卷”护身，注定了我不能平凡！ 既然人生注定如此，那特么就干！往死干！！ 九世犹可以复仇乎？虽百世可也！！！！！！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc03df7dc79858c1b1987101180214528~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=EnVrL9xnRU3IpK57h97eTIZ0x%2F0%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc03df7dc79858c1b1987101180214528~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=6SVmMETq8npdyw0Gxna8%2B%2BePRDc%3D",
           "url": "https://fanqienovel.com/page/7657920667857194009"
-        },
-        {
-          "title": "重生后，成了妹妹的专属爱物",
-          "author": "清清籽衿",
-          "reads": "34.9万",
-          "intro": "（评分刚出，会涨！）【病娇VS魔丸】【单女主】【又神又疯】【日常】【窒息】【猎奇】 我叫陈远，是个坏事做尽的恶人。 自从宋梨来到我们家后，我就把魔爪伸向了她 …… 我假装网友接近她，和她网恋，在她爱得最深的时候告诉她真相，以此让她的世界崩塌。 “为什么要这样对我！？” “为什么要骗我？” 当她得知最爱的男友竟是整天欺负她的我时，还被我看光了时，她崩溃了…… 当天晚上，我被她捅了108刀，因此丧命。 不过好在我重生了，并且还绑定了系统！！ 我要报仇！ 不过等等…… 这系统，怎么不对劲！？居然强行让我一个恶人对她好？不然就立刻暴毙而亡……？ 还有，妹妹她看我的眼神好像也不对劲！ 她不是在看人，而是一件……物品！？专属于她的爱物！ 【无任何血缘关系】【又疯又神】",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o46a3c40da0e4d3d6486f9c55ec16c474~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=q33QLh2%2BrXNhFU74HGnBlqT7%2Fv8%3D",
-          "url": "https://fanqienovel.com/page/7643862585124588606"
-        },
-        {
-          "title": "离婚后，我成了刀枪炮！",
-          "author": "飞翔的蜗牛1",
-          "reads": "34万",
-          "intro": "王刚活了三十多年，刚刚跟谈了半年的相亲对象李思雨结婚，没过多久李思雨就怀孕了。 本来生活还算凑合，可是当他仔细一算怀孕日期，竟然完全对不上！ 这意味着什么不言而喻！ 王刚可不是什么受气包，直接开始暗中收集证据，起诉离婚！ 在法院调解下，王刚同意撤诉。 但要求李思雨净身出户，并且退回三万八彩礼和五万精神损失费！ 李思雨咬着牙认了。 王刚这下没什么好说的了，人家媳妇不光让白嫖了半年，还给钱，这还追究什么？ 刚从民政局离婚出来。 王刚脑子里“叮”一声。 “叮，随机身份系统已绑定！”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o927ff642cfb514efa15bd9b920c1a50b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=TvkiLmHK1MY7krL7pLC9YZzgngE%3D",
-          "url": "https://fanqienovel.com/page/7659657303020293145"
         },
         {
           "title": "让你当众写检讨，你作洛神赋？",
           "author": "肤白貌美没有腿",
-          "reads": "33.8万",
+          "reads": "35.1万",
           "intro": "【评分刚出】【爽文】【人前显圣】【多女主】【无毒不虐】 刚穿越就被通知要全校检讨。 原因竟是写情书影响其他女同学备考？ 这要是能低头。 那我岂不是白穿越了？ 迎接来自地球最顶级文学的降维打击吧。 一首洛神赋全网哗然。 即便如此，依旧有文坛老登诟病辞藻浮华，没有内核。 嘴是真的硬啊。 那么我高考作文写滕王阁序，阁下作何应对？ 国际奥数赛场，各国洋鬼子欺我大夏无人。 陆离信步走上舞台。 连写五十块黑板推演公式。 满堂哄笑刺耳，哪来的傻小子在这哗众取宠？ 陆离：闭嘴！ 陆离：你们影响我证明黎曼猜想了！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o5bc74df1a9613e06d072f8b4258bf7c4~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=xh8iAHeEtG2wAtihBtIPjU8X7oo%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o5bc74df1a9613e06d072f8b4258bf7c4~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=TIm9Vngn81rBcCEK8P0yOw%2BjQUw%3D",
           "url": "https://fanqienovel.com/page/7657401918917987352"
         },
         {
           "title": "人在潮汕，开局连抛十八圣杯",
           "author": "九月十三",
-          "reads": "31.8万",
+          "reads": "34.9万",
           "intro": "【评分刚出，会涨】+【言出法随】+【神之气运】+【爽文】+【日常】+【多女主】 失业当天，女友扔下一句 \"我们不是一个世界的人\"，转身就走。 张远气笑了，反手拉黑，意外激活圣杯系统，拥有神之气运。 开局当着大佬的面连抛十八次圣杯。 大佬震怖：“月薪八万，什么都不用干” 股票买哪个哪个涨停，经商投资哪个哪个爆赚。 直播刷到通缉犯随口说了句花盆。 第二天人贩子就被花盆砸中，全网震惊。 病危的八十岁老头见他一面，当场康复。 濒临破产的公司老板供他照片，隔天就翻盘。 大佬膜拜，权贵供奉！ 张远在神的道路上越走越远。 女友悔不当初，跪求原谅！ 张远只给她一个字：滚！ 直至有天， 某国犯我疆域，伤我国民。 张远对着镜头淡淡一句：天黑了！ 下一秒，灾难降临。 全网集体下跪：哥，求你别再说了。 张远：不是，你们拜神啊，拜我干嘛？",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od87aa1b2a9f4534048a2be2c46d561a5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=eFxnbDW1IZbQrd2QybbbgwGsnjA%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od87aa1b2a9f4534048a2be2c46d561a5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=sUjARHHEgVO%2BBjwKFchvQ5ksU9c%3D",
           "url": "https://fanqienovel.com/page/7664434604320754750"
+        },
+        {
+          "title": "抑郁少女总想自杀？那就狠狠恶堕",
+          "author": "零林吃不饱",
+          "reads": "33.7万",
+          "intro": "【单女主+治愈+甜日常+微病娇(只娇不病)】　　 宁玄上辈子攻略了好久，总算是把抑郁少女给治愈好了。　　 然后又好不容易发现，原来只需要做一些简单的调查，就能把好感度给拉爆了。　　 但这才刚发现，系统也被刷疯的好感度，给撑爆了！　　 现在他又重生回到了最初去攻略的时候。　　 系统也还是老样子，要让那个有自杀倾向的抑郁少女重新想活下去。　　 可她缩在沙发角落里，连话都不跟他说，好感度每分钟都在往下掉。　　 宁玄只好用自己的方式了。　　 听说你想自杀？　　 那就先让他调查一下。　　 然后就狠狠的恶堕吧......　　 桀桀桀.......",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od5035cbb1a19c613edd8f1a357ea5cce~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=nl8CmUXgyDVBHgPGkL3a5tq85ZQ%3D",
+          "url": "https://fanqienovel.com/page/7660406941344091161"
+        },
+        {
+          "title": "重生后，成了妹妹的专属爱物",
+          "author": "清清籽衿",
+          "reads": "33.5万",
+          "intro": "（评分刚出，会涨！）【病娇VS魔丸】【单女主】【又神又疯】【日常】【窒息】【猎奇】 我叫陈远，是个坏事做尽的恶人。 自从宋梨来到我们家后，我就把魔爪伸向了她 …… 我假装网友接近她，和她网恋，在她爱得最深的时候告诉她真相，以此让她的世界崩塌。 “为什么要这样对我！？” “为什么要骗我？” 当她得知最爱的男友竟是整天欺负她的我时，还被我看光了时，她崩溃了…… 当天晚上，我被她捅了108刀，因此丧命。 不过好在我重生了，并且还绑定了系统！！ 我要报仇！ 不过等等…… 这系统，怎么不对劲！？居然强行让我一个恶人对她好？不然就立刻暴毙而亡……？ 还有，妹妹她看我的眼神好像也不对劲！ 她不是在看人，而是一件……物品！？专属于她的爱物！ 【无任何血缘关系】【又疯又神】",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o46a3c40da0e4d3d6486f9c55ec16c474~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=CQSW0kOzUmxwWJzheJxXU2%2BiiaY%3D",
+          "url": "https://fanqienovel.com/page/7643862585124588606"
         },
         {
           "title": "我一写龙族的，你让我上恋综？",
           "author": "故事始于忆",
-          "reads": "31.8万",
+          "reads": "33.2万",
           "intro": "（评分刚刚出，后面会涨的~~） 【恋综】【文娱】【单女主】【系统】【双向奔赴】【甜向日常】 “我们都是小怪兽，有一天会被正义的奥特曼杀死。” 深夜，《龙族3》大结局，绘梨衣之死让全网读者彻底疯狂！ “渡鸦老贼！杀妻之仇不共戴天！拔刀吧！” 而身为罪魁祸首的江时予，本想躲避网友的四十米大刀，却被亲姐一脚踹进了全网直播的恋爱综艺《心动小屋2026》。 白天，他是清冷制作人沈听澜的专属厨师兼司机，两人同框即撒糖！ 全网狂嗑“老夫老妻”！ 夜晚，全网扒出了那个写出一首首封神金曲的神秘音乐人“青灯”，以及那个害千万读者深夜痛哭的虐文老贼“渡鸦”的IP。 居然全在心动小屋！ 当江时予马甲掉落的那一天，全网都炸了！ 沈听澜将他堵在厨房角落，红着眼眶：“说好是写小甜文的呢？” 江时予擦擦手上的水渍，一把将她搂进怀里：“乖，小说是小说。” “但遇到你之后，我的生活确实只剩下小甜文了。” （70章掉第一个马甲！）",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od3415073763acf0aec884a1b1444c91f~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=wIyqQZ4zkOTs0Qc7wGba%2BNmBxoI%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od3415073763acf0aec884a1b1444c91f~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=pahsaA%2BQKNLM%2BTRfS3uwEA01w%2FI%3D",
           "url": "https://fanqienovel.com/page/7642238301285403672"
         },
         {
           "title": "网约车百倍补贴，我转身提迈巴赫",
           "author": "懒洋洋本懒",
-          "reads": "31.7万",
+          "reads": "31.6万",
           "intro": "【评分刚出，应该会涨吧？】【多女主】【多】【多】【重要的事情说三遍】【无绿无毒无龟】【日常生活】 网约车百倍补贴，我还开什么特惠，转身就提迈巴。 【提示：恭喜宿主，本次订单获得百倍补贴，总计…】 身体素质差，颜值身高不够？ 解锁各种成就，提高身体素质，夜夜笙歌，肆意人生不是梦。 豪车，别墅… 清纯甜美的小学妹，明媚动人的白月光，高冷傲慢的女总裁，英姿飒爽… 转过身，陈勋已经抵达山巅… 回首望去，曾经遥不可及之物，触手可及。 从网约车司机到最年轻的慈善家，再到投资大亨，胡润最年轻的富豪，再到世界之巅。 当被问到如何发家之际，陈勋对着镜头： “曾经，我只是一名网约车司机。”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oebc3922b2086f0fe1cb751699ee311bd~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=722yLI2LNvsse06lT%2BfV4676jLU%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oebc3922b2086f0fe1cb751699ee311bd~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=0RQB%2FcCHZ9gYuZQqaaK4fPMr99U%3D",
           "url": "https://fanqienovel.com/page/7657121282969832473"
+        },
+        {
+          "title": "离婚后，我成了刀枪炮！",
+          "author": "飞翔的蜗牛1",
+          "reads": "30.5万",
+          "intro": "王刚活了三十多年，刚刚跟谈了半年的相亲对象李思雨结婚，没过多久李思雨就怀孕了。 本来生活还算凑合，可是当他仔细一算怀孕日期，竟然完全对不上！ 这意味着什么不言而喻！ 王刚可不是什么受气包，直接开始暗中收集证据，起诉离婚！ 在法院调解下，王刚同意撤诉。 但要求李思雨净身出户，并且退回三万八彩礼和五万精神损失费！ 李思雨咬着牙认了。 王刚这下没什么好说的了，人家媳妇不光让白嫖了半年，还给钱，这还追究什么？ 刚从民政局离婚出来。 王刚脑子里“叮”一声。 “叮，随机身份系统已绑定！”",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o927ff642cfb514efa15bd9b920c1a50b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=CeNRmCB5r5r%2BRlv7F5t9j9qIlC8%3D",
+          "url": "https://fanqienovel.com/page/7659657303020293145"
         },
         {
           "title": "1953，旅长把我拐进哈工大",
           "author": "不想更新鸭呀",
-          "reads": "29万",
+          "reads": "29.6万",
           "intro": "【本书又名《从学霸变成国防大佬》。 穿越至1953年黑江省哈市，林言绑定大国学霸系统，只要读书就能赚取系统积分，并且可以在系统商城中购买各种科技成果乃至道具。 而恰好是这年，旅长奉命带一批毛熊顾问和专家来建设军事工程学院。 在这里学习毛熊国知识的学生们，被那些堪称天书的毛熊资料折磨的苦不堪言，在寒假里也在各种补习，恰好碰到在图书馆力碰到正在研读毛熊机械设计书籍的林言，于是....... “嗯？这个机械的知识点没弄懂？那你把最基本的力矩分析图画给我看看。” “应力状态都不明白？你这得从头开始补课啊。” “问我这个零件为什么会坏？最基本的积屑瘤知识点都不知道吗。” 等到一个寒假过去，旅长看着成绩突飞猛进的学生们，发出如土匪般的咆哮声： “他娘的，在劳资眼皮底下还能漏掉这样的人才，这合理吗？” “拐来，必须给我拐来！” 数年后，旅长挂完电话，看着手底下一项又一项的新型成果被打包带走，一脸心疼：“奶奶滴，我居然也有被打劫的一天？”】",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o0ef2aa5d4bdfda5654274e3b9ac02d19~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=JDKWc0fUGPJBo4DO%2Fi0jwClEtmk%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o0ef2aa5d4bdfda5654274e3b9ac02d19~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361256&x-signature=RCL%2FlPYML%2BwZNZDsT0v8NbFvIAg%3D",
           "url": "https://fanqienovel.com/page/7657965600831966233"
         },
         {
           "title": "只想躺平开民宿，咋就活成顶流了",
           "author": "今月曾经照故人",
-          "reads": "27万",
+          "reads": "28.5万",
           "intro": "——新书评分刚出—— 徐之舟穿越了，穿成了被全网黑到退圈的落魄音乐制作人。 顶流前妻踩着他立人设，全网骂他软饭男、PUA、江郎才尽。 换别人早就炸锅洗白撕逼了，徐之舟偏不。 封口费原路退回，社交账号一键注销，拍拍屁股直接去大理开民宿躺平。 什么娱乐圈顶流，什么恩怨情仇，哪有洱海边晒太阳舒服？ 可他越想躺，世界越不让他躺： 民宿刚开业直接被挤爆，订单排到半年后，连骂过他的网友都抢着来打卡。 院墙上随手刻两句诗，成了全网封神的写景神句。 停电随口讲个故事，百万网友连夜蹲守小院听书。 随性弹唱一曲，全网循环刷屏奉为传世金曲。 徐之舟：？ 我就想开个民宿躺平，怎么混成文旅标杆了？",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od30577fa400bc8f372385239e478b1ab~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277253&x-signature=oV1rjKge%2BQ4ykkhE4ty60u%2FejdA%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od30577fa400bc8f372385239e478b1ab~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=gdRoq%2BqQhxj%2F5DFmgPYir8p7WwU%3D",
           "url": "https://fanqienovel.com/page/7661942550818737214"
-        },
-        {
-          "title": "同归于尽后，宿敌跟我回到现实！",
-          "author": "赵泰大人",
-          "reads": "21.3万",
-          "intro": "（单女主）＋（日常）＋（甜文）＋（古武世界） 顾渊一名刚高考完的高中生，在一次熬夜看小说的时候，意外穿越进了小说里。 但他获得了反派系统，系统给他布置下，最终任务，成就大帝之资并杀死女主凌清雪。 顾渊在这本小说中，熬了千年终于在成就大帝之资，并在最终决战。 拼尽全力，跟女主凌清雪同归于尽。 回到现实世界的顾渊欣喜落狂！ “系统！老子的奖励呢？！” 而就在这时，回应她的并不是系统的声音，而是一脚。 “卧槽！” 当他睁眼看清是谁打的他时。 他的冷汗瞬间布满他的额头。 “凌清雪？！”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o806af1f3f81e8c199819246a17da4dfa~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=GwWvWW7WZWmbkjRzHW05uNrzMPY%3D",
-          "url": "https://fanqienovel.com/page/7656761589273480254"
-        },
-        {
-          "title": "我，死灵法师，遵纪守法",
-          "author": "任怨",
-          "reads": "20万",
-          "intro": "我不知道你活不活，但我知道你死没死。 谢安得到一个死灵法师传承系统。 既不知道世界走向，也不想掀起亡灵天灾被集火洗地，身为一个臭名昭著的死灵法师，还能怎么样？ 那就只能装逼了！ 本本分分做事。 老老实实做人。 偷偷摸摸发财。 开开心心生活。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o2669e8a2daa262d24f2dafdaf5510a8e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=p2R2q2W3FOx878RIsfQxD%2BIb6Ms%3D",
-          "url": "https://fanqienovel.com/page/7654482268634745880"
-        },
-        {
-          "title": "高考后，我每天一亿美金零花钱",
-          "author": "可乐煮鸡翅",
-          "reads": "18.5万",
-          "intro": "【神豪 校园生活 轻松日常 多女主 不装X不打脸 全文配图】 高考后，陈远绑定神豪系统，每天一亿美金零花钱，人生从此开启简单模式。 CS百万龙狙，买。 布加迪千万跑车，买。 深圳湾壹号上亿豪宅，买。 同龄人在为实习工作毕业论文而烦恼，陈远却在马尔代夫与校花一起打水仗。 人生有百分之九十九的烦恼是因为穷，还有百分之一是因为不够有钱，而我陈远恰好足够有钱！ 泡些妹，交些朋友，玩会游戏，旅个游，人生就是如此惬意！ 【本文没有装X打脸，只是日常生活，不会经常出现百亿千亿的金额，货币不会崩。】",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o034645c46667f57e7cbf0969a862a7a7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=DBySJDqgjefPBvVkstjtNJ4Sdq4%3D",
-          "url": "https://fanqienovel.com/page/7643817741610126398"
         },
         {
           "title": "相亲失败！我把精神小妹捧成天后",
           "author": "心有浩然气",
-          "reads": "18.3万",
+          "reads": "20.6万",
           "intro": "刚和相亲对象分手，江枫就在路上偶遇了三个‘精神小妹’，阴差阳错下，他发现上辈子五音不全的自己，现在竟然有一副好嗓子，可是，他选择先捧红她们……",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7dbe2e5ed8ff73cb713065f93c38f206~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=%2BxKlQyfqDt62ykQvZhQtvPb8pqE%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7dbe2e5ed8ff73cb713065f93c38f206~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=WQAD0CIRIFVvij7W8e0OsmMYVPM%3D",
           "url": "https://fanqienovel.com/page/7657372181734624281"
         },
         {
-          "title": "你管这叫少女养成？",
-          "author": "淋浴煮地瓜",
-          "reads": "17万",
-          "intro": "(新书评分低，之后会涨) 「轻小说+附身+多女主+系统+恋爱喜剧」 【正在加载《少女养成计划》】 【您可以指定一名符合条件的角色，干涉她的人生，使她成长为你理想中的样子。】 【游戏可能会发布一些特殊任务，任务完成即可获取奖励，您可自主选择接受或拒绝】 穿越到平行世界，黎川觉醒了一个云养女儿系统。 点击【开始匹配】后，他却附身到被绑架的富家千金上。 “如果神明大人能帮帮我的话，什么都可以做噢？” 意外救下集团千金叶汐璃，黎川借用她的身体学习了诸多技能，这才得以在这个世界站稳脚跟。 只不过，少女对自己的感情似乎发生了一点变化？ “今天也请随意占据我吧，神明大人！” (魂穿，女主们不认识原主或者压根不熟，介意勿看)",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o55a18593e5a490ae3343e6af356e737c~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=i8SP%2FxZ8IGGa9payUmUia1WfzL4%3D",
-          "url": "https://fanqienovel.com/page/7638633854625909784"
+          "title": "同归于尽后，宿敌跟我回到现实！",
+          "author": "赵泰大人",
+          "reads": "20.4万",
+          "intro": "（单女主）＋（日常）＋（甜文）＋（古武世界） 顾渊一名刚高考完的高中生，在一次熬夜看小说的时候，意外穿越进了小说里。 但他获得了反派系统，系统给他布置下，最终任务，成就大帝之资并杀死女主凌清雪。 顾渊在这本小说中，熬了千年终于在成就大帝之资，并在最终决战。 拼尽全力，跟女主凌清雪同归于尽。 回到现实世界的顾渊欣喜落狂！ “系统！老子的奖励呢？！” 而就在这时，回应她的并不是系统的声音，而是一脚。 “卧槽！” 当他睁眼看清是谁打的他时。 他的冷汗瞬间布满他的额头。 “凌清雪？！”",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o806af1f3f81e8c199819246a17da4dfa~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=Flhdrqa3dV4Z%2FBDiYBUr5t9fm1s%3D",
+          "url": "https://fanqienovel.com/page/7656761589273480254"
+        },
+        {
+          "title": "高考后，我每天一亿美金零花钱",
+          "author": "可乐煮鸡翅",
+          "reads": "20.4万",
+          "intro": "【神豪 校园生活 轻松日常 多女主 不装X不打脸 全文配图】 高考后，陈远绑定神豪系统，每天一亿美金零花钱，人生从此开启简单模式。 CS百万龙狙，买。 布加迪千万跑车，买。 深圳湾壹号上亿豪宅，买。 同龄人在为实习工作毕业论文而烦恼，陈远却在马尔代夫与校花一起打水仗。 人生有百分之九十九的烦恼是因为穷，还有百分之一是因为不够有钱，而我陈远恰好足够有钱！ 泡些妹，交些朋友，玩会游戏，旅个游，人生就是如此惬意！ 【本文没有装X打脸，只是日常生活，不会经常出现百亿千亿的金额，货币不会崩。】",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o034645c46667f57e7cbf0969a862a7a7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=9yzfG%2FzOQGX1fXPw3SSx4bywI%2B4%3D",
+          "url": "https://fanqienovel.com/page/7643817741610126398"
+        },
+        {
+          "title": "我，死灵法师，遵纪守法",
+          "author": "任怨",
+          "reads": "18.8万",
+          "intro": "我不知道你活不活，但我知道你死没死。 谢安得到一个死灵法师传承系统。 既不知道世界走向，也不想掀起亡灵天灾被集火洗地，身为一个臭名昭著的死灵法师，还能怎么样？ 那就只能装逼了！ 本本分分做事。 老老实实做人。 偷偷摸摸发财。 开开心心生活。",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o2669e8a2daa262d24f2dafdaf5510a8e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=BJx5axBVqQTpsqu3RJmOWtrhCrw%3D",
+          "url": "https://fanqienovel.com/page/7654482268634745880"
         },
         {
           "title": "拒白月光不做冤大头七零留城享福",
           "author": "霖狐",
-          "reads": "16.5万",
+          "reads": "16.7万",
           "intro": "【年代+空间+不下乡】 傅南霆睁开眼，就变成了1970年，一名刚失去父亲，母亲要再嫁的家中长子。 面对母亲要带他们一起再嫁的提议，傅南霆直接拒绝，并且迅速将财产分割清楚，又劝说姐妹和唯一的弟弟不要和母亲一起过去。重组家庭的难处，大家都知道。 之后，又迅速的拒绝了白月光，绝对不会给别人养孩子，浪费了自己的一生。至于母亲再嫁家庭的小女儿要下乡？那关我什么事情？我们都不是一家人，爱上哪上哪。 前世觉醒的空间也跟来了？还有他花费了所有金钱，囤积的物资也来了？ 这日子不就好过了么？ 什么？要我分一点给继父？我哪来的继父？ 你爱吃苦，你自己吃去。我不伺候。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4d2627162a0345c4fbb9fb6ce567f275~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=repjZKKAYetMsi3PCmtQagaQxyE%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4d2627162a0345c4fbb9fb6ce567f275~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=o62RSlIv%2FwrPdpiIKkbzwmBvEQQ%3D",
           "url": "https://fanqienovel.com/page/7657155697712319513"
-        },
-        {
-          "title": "透视：这个高考状元还是亿万富豪",
-          "author": "奶味猕猴桃",
-          "reads": "15.8万",
-          "intro": "【透视+捡漏+爽文+多女】 陆元在高考前夕觉醒透视眼轻松通关高考拿下粤省高考状元，第二天前往平洲赌石，轻松日赚一亿。 顶级翡翠、国宝文物、千万豪车、十亿豪宅、角色美女……应有尽有！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7ecf6c7302059c6f260b750e2833c54d~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=P%2FafwHCb%2BfsUEQvytCkXVF9QEbU%3D",
-          "url": "https://fanqienovel.com/page/7659303778960542745"
-        },
-        {
-          "title": "只要我失恋，华语乐坛就过年！",
-          "author": "念旧歌",
-          "reads": "15.3万",
-          "intro": "【单女主】【文娱】 江游穿越成被全网群嘲的过气顶流，开局就被当红小花前女友递上分手协议。 全网黑粉和前女友都坐等他痛哭流涕，发长文卖惨求复合。 结果江游大笔一挥，转头背着一把红电吉他杀入Livehouse。 一首《你要跳舞吗》，带着全场黑粉疯狂蹦迪，硬生生把分手开成了狂欢派对！ 黑粉懵了：“卧槽？神特么分手快乐，他被甩了怎么比过年还高兴？！” 绑定【万象人生体验系统】，只要体验红尘百态，产生最真实的纯粹情绪，就能解锁地球文娱宝库。 于是，内娱少了一个流水线假人偶像，多了一个野生吟游诗人。 他去川藏线骑行，去街边撸串，去剧组蹲盒饭，去深山支教…… 当一首首神作横空出世，彻底撕碎塑料文娱时代的虚伪时，前女友悔不当初哭求复合，资本挥舞钞票跪求合作。 然而，江游的粉丝却在发现“江游只要恋爱，必出神级金曲”的定律后，彻底黑化了！ “江哥，求你快去谈个恋爱吧！然后赶紧被甩，华语乐坛等挺急的！” “听说江哥今天相亲又失败了？太好了，今晚必有神级苦情歌，兄弟们把纸巾备好！” “江哥今天去工地搬砖了吗？没有？那新歌肯定没内味儿，散了吧散了吧。” 江游：“我只想安安静静当个红尘体验派，你们这群假粉丝能盼我点好吗？！”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o5dc84e50f6b5c4810b0fe09a31c10c4f~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=T%2FHkmFBZgkpa5oSi0A%2BOVHWr7tc%3D",
-          "url": "https://fanqienovel.com/page/7661015753490959384"
-        },
-        {
-          "title": "与钱老同程，我用新药赚万亿外汇",
-          "author": "白肉卷皮蛋",
-          "reads": "15.2万",
-          "intro": "评分刚出会很低，后面会升，2050年顶尖生物医药院士，意外穿越到1945年的阿米利卡！ 穿越到1945，主角觉醒超强脑力，思维速度超越常人三倍，过目不忘、细思即通，所有前世科研知识、海量医学储备尽数留存脑海。 此时祖国百废待兴，医药工业一片空白，疫病横行、特效药被西方层层垄断，无数国人与前线伤员无药可医。 为报效家国，主角沉心苦读五年，以惊人天赋拿下博士学位，冲破美方重重阻挠，与钱老等一众国士同批归国！ 进入国内研究所后，他凭借跨时代的生物医药技术，接连攻克多种流行传染病特效药，淘汰劣质药品，斩断黑心药商牟利渠道，拯救万千民众性命。 前期攻坚克难，补齐祖国医药短板；后期放眼全球，接连研发出多款世界顶尖新药！ 在各国药企对华技术封锁的时代，主角以自研特效药打开国际市场，源源不断赚取万亿外汇，换回精密机床、工业设备、科研仪器，全方位加速祖国工业与科技崛起。 以一剂国药破百年封锁，以毕生所学助华夏腾飞！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc4f1bec2d7cc673999e7ac201acd1c6b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=Bq%2FGx9xAueYiSlO%2BDrQkaTPexAY%3D",
-          "url": "https://fanqienovel.com/page/7661704161058114585"
         },
         {
           "title": "别人召唤棋圣，我召唤出了柯洁？",
           "author": "东云浅",
-          "reads": "15.1万",
+          "reads": "16.3万",
           "intro": "【全民觉醒＋围棋竞技＋穿越＋轻松搞笑】 别人召唤棋圣，我召唤出了个金铲铲玩家？ 萧衍穿越到了一个围棋成为世界第一运动的时代。 在这里，每个人都有机会觉醒本命棋魂。 棋魂的等级越高，契约者未来的成就便越高。 而在觉醒仪式上，萧衍召唤出的，却是一个查不到任何生平的年轻人。 “有金铲铲吗？” “我马上就要上大师了。” 一时之间，萧衍沦为全校笑柄。 所有人都以为，萧衍觉醒了一个沉迷金铲铲的F级废棋魂。 只有萧衍知道，站在自己身后的，是曾经统治一个时代，又亲眼见证人工智能颠覆围棋的——九冠王柯洁。 古今棋圣，皆要重新落子。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6804be4872b4a129fd10cc93833a231c~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277254&x-signature=Hz6JPSPnlM1%2B3EB5PlUw5szPhYw%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6804be4872b4a129fd10cc93833a231c~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=5Ly7szyjRDY26alGOJ8k1%2Fva8Sw%3D",
           "url": "https://fanqienovel.com/page/7668599135578115096"
+        },
+        {
+          "title": "透视：这个高考状元还是亿万富豪",
+          "author": "奶味猕猴桃",
+          "reads": "15.6万",
+          "intro": "【透视+捡漏+爽文+多女】 陆元在高考前夕觉醒透视眼轻松通关高考拿下粤省高考状元，第二天前往平洲赌石，轻松日赚一亿。 顶级翡翠、国宝文物、千万豪车、十亿豪宅、角色美女……应有尽有！",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7ecf6c7302059c6f260b750e2833c54d~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=4l4f6ZayVMscENbRNfx%2FWjVMFWg%3D",
+          "url": "https://fanqienovel.com/page/7659303778960542745"
         },
         {
           "title": "只因我写了诛仙，校花给我寄刀片",
           "author": "想rua鱼",
-          "reads": "14.6万",
+          "reads": "14.9万",
           "intro": "有人写书，有人唱歌，有人拍电影。 而林渊，三者全占了。 随手一本《诛仙》，引爆全网，多所高校校花组团追更，虐到集体寄刀片。 闲来唱首歌，美女总裁在公司车里循环了一百遍，红着眼眶拨通了他电话。 随手拍部电影，女教师看完沉默良久，在社交平台写下一句影评——\"这是我见过最好的国产电影。\" 所有人都以为他是天才。 只有林渊知道，他只是把前世的东西，搬到了这个世界。 而这个世界，为他疯狂。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obda3816a1a964f8a3b4a2c562b7cc7e7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=A6jJ214Kv%2BTjhZ%2BpR6i8onSSHQc%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obda3816a1a964f8a3b4a2c562b7cc7e7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=iOCPZj8eZO1T9mAfeI3Qsatw%2Feo%3D",
           "url": "https://fanqienovel.com/page/7655146998667955224"
+        },
+        {
+          "title": "只要我失恋，华语乐坛就过年！",
+          "author": "念旧歌",
+          "reads": "13.6万",
+          "intro": "【单女主】【文娱】 江游穿越成被全网群嘲的过气顶流，开局就被当红小花前女友递上分手协议。 全网黑粉和前女友都坐等他痛哭流涕，发长文卖惨求复合。 结果江游大笔一挥，转头背着一把红电吉他杀入Livehouse。 一首《你要跳舞吗》，带着全场黑粉疯狂蹦迪，硬生生把分手开成了狂欢派对！ 黑粉懵了：“卧槽？神特么分手快乐，他被甩了怎么比过年还高兴？！” 绑定【万象人生体验系统】，只要体验红尘百态，产生最真实的纯粹情绪，就能解锁地球文娱宝库。 于是，内娱少了一个流水线假人偶像，多了一个野生吟游诗人。 他去川藏线骑行，去街边撸串，去剧组蹲盒饭，去深山支教…… 当一首首神作横空出世，彻底撕碎塑料文娱时代的虚伪时，前女友悔不当初哭求复合，资本挥舞钞票跪求合作。 然而，江游的粉丝却在发现“江游只要恋爱，必出神级金曲”的定律后，彻底黑化了！ “江哥，求你快去谈个恋爱吧！然后赶紧被甩，华语乐坛等挺急的！” “听说江哥今天相亲又失败了？太好了，今晚必有神级苦情歌，兄弟们把纸巾备好！” “江哥今天去工地搬砖了吗？没有？那新歌肯定没内味儿，散了吧散了吧。” 江游：“我只想安安静静当个红尘体验派，你们这群假粉丝能盼我点好吗？！”",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o5dc84e50f6b5c4810b0fe09a31c10c4f~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361257&x-signature=9CXQaZH7YNsOLzDuejWcUchY4H4%3D",
+          "url": "https://fanqienovel.com/page/7661015753490959384"
         },
         {
           "title": "给员工发超跑，你当死士养呢？",
           "author": "无关风风风月",
-          "reads": "13.5万",
+          "reads": "13万",
           "intro": "林澈绑定了“良心企业返现系统”。给员工花的钱，都能1:1全额返现至个人账户！ 但前提是：员工身心健康度必须达标，否则返现暴跌！ 为了薅秃系统，林澈定下铁律：员工工资行业顶薪1.5倍、955双休、带薪年假30天，不加班、拒绝内卷！ 下午茶、健身房、米其林食堂只是标配，各种补贴拿到手软，优秀员工甚至直接奖励海景别墅！ 然而，员工看着逆天福利和“入不敷出”的公司，感动得热泪盈眶。 “老板为了我们，宁可自己背负亏损也要给我们发奖金！他就是我们的再生父母！” “林总待我如国士，我必报之以国士！兄弟们，偷偷加班，绝对不能让这么好的公司破产倒闭！” 当林澈半夜突击，看着灯火通明、疯狂写代码的员工，看着暴跌的健康度，气得吐血大骂。 员工却泪流满面：“老板宁愿骂我们，也要逼我们休息……他真的，我哭死！兄弟们，明天再定早一点的闹钟，决不能让老板的心血倒闭！” 甚至，连竞争对手派来的内鬼，也直接叛变，并高喊： “星瀚，忠诚！！！”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1d78d2b9b57333a6c95b081e17e8d6a7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=dPZKiHKNbEQiAJDEyxaIiJN9myQ%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1d78d2b9b57333a6c95b081e17e8d6a7~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=Ubv8pu0DoDtqjgfBFtSOUMsGIMM%3D",
           "url": "https://fanqienovel.com/page/7636415867592395838"
         },
         {
           "title": "三棍打散兄妹情，我家兄长不当人",
           "author": "往事如烟",
-          "reads": "13.3万",
+          "reads": "12.7万",
           "intro": "修仙的哥，作死的妹，绿茶的弟弟，无能的爹。 一个家分两派:武力派，心机派。 遇到一个先动手后拱火的大哥，是我上辈子造的孽。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oafd59c711ece4b93c5193698e95e03d1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=oOQUStFJkh9pNxcMX8BrbXvRNkk%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oafd59c711ece4b93c5193698e95e03d1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=%2BgiACfftTcDShf637JtNyd%2Boyk8%3D",
           "url": "https://fanqienovel.com/page/7641618871547350040"
         },
         {
@@ -584,56 +566,64 @@
           "author": "黄连煮咖啡",
           "reads": "12.1万",
           "intro": "【轻松幽默向神医文】沈浪本是一家三甲肿瘤医院的医生，因为反对医院给癌症晚期病人用高价药，被医院开除，最后只能回老家继承了祖上的中医馆。 哪想院长认为沈浪有举报自己的行为，要对其斩尽杀绝。 就在医馆开业后不久，当地药监局执法科的科长万强就来到医馆， 以非法行医为名将医馆查封，结果万强刚出门，腿就被毒蛇咬了。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oa6c6b1cb6b9c6c61819449531f72c80b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=mxjVJYEjHz8u%2BtsR4qEQ1b3tSII%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oa6c6b1cb6b9c6c61819449531f72c80b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=M9J22S6AuaLAWTxV0fXZlhWdMk0%3D",
           "url": "https://fanqienovel.com/page/7659592058109168702"
+        },
+        {
+          "title": "与钱老同程，我用新药赚万亿外汇",
+          "author": "白肉卷皮蛋",
+          "reads": "11.8万",
+          "intro": "评分刚出会很低，后面会升，2050年顶尖生物医药院士，意外穿越到1945年的阿米利卡！ 穿越到1945，主角觉醒超强脑力，思维速度超越常人三倍，过目不忘、细思即通，所有前世科研知识、海量医学储备尽数留存脑海。 此时祖国百废待兴，医药工业一片空白，疫病横行、特效药被西方层层垄断，无数国人与前线伤员无药可医。 为报效家国，主角沉心苦读五年，以惊人天赋拿下博士学位，冲破美方重重阻挠，与钱老等一众国士同批归国！ 进入国内研究所后，他凭借跨时代的生物医药技术，接连攻克多种流行传染病特效药，淘汰劣质药品，斩断黑心药商牟利渠道，拯救万千民众性命。 前期攻坚克难，补齐祖国医药短板；后期放眼全球，接连研发出多款世界顶尖新药！ 在各国药企对华技术封锁的时代，主角以自研特效药打开国际市场，源源不断赚取万亿外汇，换回精密机床、工业设备、科研仪器，全方位加速祖国工业与科技崛起。 以一剂国药破百年封锁，以毕生所学助华夏腾飞！",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc4f1bec2d7cc673999e7ac201acd1c6b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=xeyj%2BlDOXYgsuNWCOdZdF9oUoPQ%3D",
+          "url": "https://fanqienovel.com/page/7661704161058114585"
         },
         {
           "title": "从获得马符咒开始影响世界",
           "author": "难得葫芦",
-          "reads": "11.8万",
+          "reads": "11.7万",
           "intro": "人体是有极限的， 对此陆川深信不疑，毕竟人体是血肉骨骼组成的，并不是可以熔炼的钢铁。 那如果拥有马符咒呢？ 看着自己手心里纹着中的正八边形石头，上面是紫色的骏马， 身体在崩溃重组中变强，马符咒负责消去身体损失，并且恢复精气神，让他能够持续不断地锻炼…… 通过这个“锻炼-成长-修复”循环， 这个人会以惊人的速度成为人类有史以来最强大的个体，在所有身体素质项目上都达到甚至超越目前所有世界纪录的总和。 他将是力量、速度、耐力、敏捷、反应、恢复能力的完美结合体，是碳基生命体的终极形态。 …… 它能将一个人推送到“人”这个概念的极限顶点…… 是药三分毒，类固醇最起码有七分，但那在我马符咒面前翻得起什么风浪？ “副作用？那是什么？” “副作用越大越好……我要打兽药，一人一管……” “健美圈传来噩耗……呸…喜讯…” “健美圈传来喜讯，类固醇星球迎来真神！” 多年以后，多项世界记录保持者，征服多个联赛的无冕之王，世界第一强公司创建者……陆川笑了。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2of08efe828bc6e2b38084505ad1059d91~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=T1xn02mVyMlrckDplyUu8nnWN9c%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2of08efe828bc6e2b38084505ad1059d91~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=cB8n2X5%2Fgyp%2B3fINoih52eLCPnI%3D",
           "url": "https://fanqienovel.com/page/7554063382085635134"
         },
         {
           "title": "让你设计游戏，你开发三角洲？",
           "author": "辉光闪耀",
-          "reads": "10.8万",
+          "reads": "11.4万",
           "intro": "林肖穿越到一个科技发达但游戏玩法落后、氪金严重的平行世界，成为一个扑街游戏设计师！ 绑定“游戏制作人系统”后，林肖制作出一款主打“搜、打、撤”玩法的硬核射击游戏：《三角洲行动》！ 没有炫酷的技能，没有升级加点，画质写实到极致，甚至连个充值弹窗都没有。 最离谱的是，这游戏死了竟然会掉光所有装备！ 可就是这么一款被骂“反人类”的游戏刚发布，全网玩家却彻底上头了！ “卧槽！血压拉满了！我在大坝捡了把满改AK，还没捂热乎就被草丛老六一枪秒了！装备全没了啊！” “兄弟们我撤出来了！一把血赚三百万！红卡房YYDS！这游戏太刺激了，心脏病都要犯了！” “跑刀才是这游戏的精髓！！” “别搜打撤了，全面战场开了！开坦克开飞机，32v32据点战，干翻他们！什么？后面还有《我的世界》和《英雄联盟》？！”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o149a7e7b1bbbfe53d01ea71b2ec7fcea~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=hHnxnSOhTR4s4K1366rZ0in93dY%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o149a7e7b1bbbfe53d01ea71b2ec7fcea~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=%2Bd8ktwKxRXLWKJcv0VuQUxKkbnE%3D",
           "url": "https://fanqienovel.com/page/7663130140917910552"
-        },
-        {
-          "title": "和校花分手后，睡了病娇女教授！",
-          "author": "比奇堡恶霸y",
-          "reads": "10.2万",
-          "intro": "【多女主+教授姐姐+校花+纯甜+校园+不墨迹+同居】 大一新生陆羽因为失恋去酒吧买醉，结果第二天醒来，发现身边躺着一个倾国倾城的绝世大美女。 本以为要完蛋了，结果下一秒【好感度APP】绑定！ 陆羽看着系统面板上高达98分的绝世容颜，以及那行【隐藏身份：南大经济学院新聘任的最年轻副教授】的字样…… 等等！那不是我下周一要去上的专业必修课吗？！丸辣！ 结果她不仅没发火，反而是：“别怕，姐姐会对你负责的，盖个章，从今天起你就是我男朋友了。” 于是…… 白天的南大讲台上，沈教授一袭正装，高冷严厉，拒人于千里之外。 晚上的海景套房里，沈乐瑶软绵绵地赖在他怀里： “男朋友，我腿酸，要抱抱~”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oeb9e7048b2bbe8ce31ab2c397bb60a9b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=%2B8nG4fOH1Ddsj9raRrsr4uTDsNU%3D",
-          "url": "https://fanqienovel.com/page/7662674218949037081"
-        },
-        {
-          "title": "预知未来躲子弹，顶美校花喊宝宝",
-          "author": "阿伟已经丝了",
-          "reads": "10.1万",
-          "intro": "【无系统+多女主+纯都市+爆爽人生】 江阳原本只是一个普通的大学生，没有轰轰烈烈的爱情，也没有跌宕起伏的故事，更没有波澜壮阔的未来。 有时候，他也会很羡慕电影、小说中的主角，能把人生过得那么精彩。 一次意外，江阳遭遇金铺抢劫，这样的经历足够精彩，但当子弹射向他的时候，他的一生也快要结束了。 就在江阳以为自己会唏嘘地带着遗憾死去时，却发现自己竟能预知未来，更是靠着这个能力直接躲避子弹！ 从此，江阳逆天改命，美人财富权力接踵而来，他的人生突然就精彩了起来！ 长腿顶美校花：“宝宝~咱几个把日子过好，比什么都重要~。”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o126a5ec12e15a468dc4e5f433c1183b1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=nlZvKHj%2BBDKmkaFCMTjQScNU6Po%3D",
-          "url": "https://fanqienovel.com/page/7651446049550126142"
-        },
-        {
-          "title": "超时空导演：从忽悠小天仙开始",
-          "author": "咸鱼不翻锅",
-          "reads": "10万",
-          "intro": "李小白意外获得一枚银色U盘，能穿越过去，但只能带回数据文件。 靠着卖歌赚到第一桶金后，他做了一个疯狂的决定——去1998年忽悠11岁的刘奕菲拍《巴啦啦小魔仙》，带回2026年全网发布。 视频炸了。 刘奕菲本人看到后当场社死，死去的记忆疯狂攻击，脚趾扣出三室一厅。更离谱的是，那根塑料魔法棒居然激活了真正的魔法传承，把她变成了货真价实的\"魔仙本仙\"。 然后刘奕菲加入了。两人带着U盘穿梭于1998年的武汉胡同和北京街头，把12岁的杨蜜、刘狮狮挨个\"忽悠\"进剧组。二十多年后视频发布，杨蜜对着自己转圈喊小魔仙变身的片段气急败坏，刘奕菲@她：\"嘿嘿。\" 什么幂幂、诗诗、唐糖、胖迪……娱乐圈半壁江山的童年黑历史被一网打尽。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7474df3a9427bc0c95836414f525ffd1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=RNIIKyAZxrf6hmvEvADqmUwFf40%3D",
-          "url": "https://fanqienovel.com/page/7662019158145518617"
         },
         {
           "title": "霸道女总裁爱上离婚带娃的我",
           "author": "云南小辣椒",
-          "reads": "10万",
+          "reads": "10.5万",
           "intro": "三年赘婿，惨遭离婚，净身出户，受尽世人嘲讽！ 前妻逼女儿选豪门富贵，六岁萌娃誓死追随落魄老爸！ 林辰毫无留恋，欣然签字，绝境觉醒一元三选秒杀神系统！ 一日一元，日日逆天，解锁豪宅、百亿人脉、无敌神技！ 前妻嚣张嘲讽，最终悔断肝肠； 岳家仗势欺人，最终彻底落魄！ 无人理解，高冷霸道女总裁为何执念倒追离异带娃的他！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o189a4351a991a32eeb8fd2937fc64ec6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787277256&x-signature=AV8GFDjxcVGGeHAuKB%2BcTu0H3Zs%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o189a4351a991a32eeb8fd2937fc64ec6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=tbJrruCS81RTFw4w%2BAisFMDg9HU%3D",
           "url": "https://fanqienovel.com/page/7657194661945019454"
+        },
+        {
+          "title": "和校花分手后，睡了病娇女教授！",
+          "author": "比奇堡恶霸y",
+          "reads": "10.4万",
+          "intro": "【多女主+教授姐姐+校花+纯甜+校园+不墨迹+同居】 大一新生陆羽因为失恋去酒吧买醉，结果第二天醒来，发现身边躺着一个倾国倾城的绝世大美女。 本以为要完蛋了，结果下一秒【好感度APP】绑定！ 陆羽看着系统面板上高达98分的绝世容颜，以及那行【隐藏身份：南大经济学院新聘任的最年轻副教授】的字样…… 等等！那不是我下周一要去上的专业必修课吗？！丸辣！ 结果她不仅没发火，反而是：“别怕，姐姐会对你负责的，盖个章，从今天起你就是我男朋友了。” 于是…… 白天的南大讲台上，沈教授一袭正装，高冷严厉，拒人于千里之外。 晚上的海景套房里，沈乐瑶软绵绵地赖在他怀里： “男朋友，我腿酸，要抱抱~”",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oeb9e7048b2bbe8ce31ab2c397bb60a9b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=8lWSblwjP1LSSD3FsgcjYuTWHeM%3D",
+          "url": "https://fanqienovel.com/page/7662674218949037081"
+        },
+        {
+          "title": "为了盘活乐队，我去参加恋综",
+          "author": "7个柒",
+          "reads": "10.3万",
+          "intro": "【娱乐+日常+恋综开局+乐队+单女主+非全能+无马甲（要装杯就装好了）】 本书又名【我们要组一辈子的乐队啊】。 张屿一觉睡醒，成为了一个乐队的主唱。 可是，这个乐队在昨天就解散了！ 富二代键盘手家里破产了，回家赚钱照顾老妈和妹妹了。 鼓手喜欢键盘手，和键盘手共患难去了。 贝斯手也另寻生计了。 天崩开局，但张屿会从一档恋综开始将大局逆转！ “你说是吧，我的系统！” “叮……” “大家好，我是爱与和平乐队的主唱张屿，aka章鱼哥。”",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obbebddf1ebb65a99d32c748d69fcebb0~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=lGYwooT%2BohqXbju4BPOPCBwhCkE%3D",
+          "url": "https://fanqienovel.com/page/7657579318557543448"
+        },
+        {
+          "title": "婚礼现场，系统让我别叫她嫂子",
+          "author": "请喝一杯咖啡",
+          "reads": "10万",
+          "intro": "班长婚礼上，所有人都等着陈野喊一声“嫂子”。 下一秒，系统突然绑定。 【检测到错误称呼！】 【请宿主拒绝叫她嫂子！】 【任务完成，奖励现金八万八！】 陈野当场改口。 整桌人都愣住了。 更离谱的是，婚礼还没结束，新娘突然把一个红色喜糖袋砸进他怀里。 袋子里没有喜糖。 只有一张写着“2306”的卡。 从那天开始，系统每天都会发布一个让人摸不着头脑的任务。 帮女老板解决合同危机。 替邻居姐姐处理燃眉之急。 让嘴硬的合作对象主动低头。 任务越离谱，奖励越夸张。 现金、豪车、房产、公司、身体强化接连到账。 陈野只想老老实实完成任务。 可他很快发现。 系统每一次让他出手，都刚好撞上了别人最需要他的时刻",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o26b6842a1ed0bac38d708913edd0b12e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1787361259&x-signature=g3m7bNh6JOTn3AGkxd7Co6L1ezc%3D",
+          "url": "https://fanqienovel.com/page/7662264858917735486"
         }
       ]
     }

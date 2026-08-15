@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-14",
-  "prev_date": "2026-08-13",
+  "date": "2026-08-15",
+  "prev_date": "2026-08-14",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 19,
-      "book_count": 560
+      "book_count": 570
     },
     {
       "type": "西方奇幻",
@@ -36,7 +36,7 @@
     {
       "type": "都市高武",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E9%AB%98%E6%AD%A6.json",
-      "book_count": 20
+      "book_count": 30
     },
     {
       "type": "历史古代",
