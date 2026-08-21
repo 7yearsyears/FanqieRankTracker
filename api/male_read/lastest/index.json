@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-20",
-  "prev_date": "2026-08-19",
+  "date": "2026-08-21",
+  "prev_date": "2026-08-20",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 19,
-      "book_count": 567
+      "book_count": 568
     },
     {
       "type": "西方奇幻",
@@ -21,7 +21,7 @@
     {
       "type": "科幻末世",
       "url": "api/lastest/%E7%A7%91%E5%B9%BB%E6%9C%AB%E4%B8%96.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "都市日常",
@@ -31,7 +31,7 @@
     {
       "type": "都市修真",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E4%BF%AE%E7%9C%9F.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "都市高武",
@@ -41,7 +41,7 @@
     {
       "type": "历史古代",
       "url": "api/lastest/%E5%8E%86%E5%8F%B2%E5%8F%A4%E4%BB%A3.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "战神赘婿",
