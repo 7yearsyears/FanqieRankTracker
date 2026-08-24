@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-23",
-  "prev_date": "2026-08-22",
+  "date": "2026-08-24",
+  "prev_date": "2026-08-23",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 18,
-      "book_count": 523
+      "book_count": 538
     },
     {
       "type": "古风世情",
@@ -21,7 +21,7 @@
     {
       "type": "游戏体育",
       "url": "api/lastest/%E6%B8%B8%E6%88%8F%E4%BD%93%E8%82%B2.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "女频衍生",
@@ -41,7 +41,7 @@
     {
       "type": "年代",
       "url": "api/lastest/%E5%B9%B4%E4%BB%A3.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "现言脑洞",
@@ -56,7 +56,7 @@
     {
       "type": "悬疑脑洞",
       "url": "api/lastest/%E6%82%AC%E7%96%91%E8%84%91%E6%B4%9E.json",
-      "book_count": 20
+      "book_count": 30
     },
     {
       "type": "古言脑洞",
@@ -81,12 +81,12 @@
     {
       "type": "女频悬疑",
       "url": "api/lastest/%E5%A5%B3%E9%A2%91%E6%82%AC%E7%96%91.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "职场婚恋",
       "url": "api/lastest/%E8%81%8C%E5%9C%BA%E5%A9%9A%E6%81%8B.json",
-      "book_count": 28
+      "book_count": 30
     },
     {
       "type": "豪门总裁",
