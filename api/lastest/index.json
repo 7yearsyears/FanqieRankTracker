@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-29",
-  "prev_date": "2026-08-28",
+  "date": "2026-08-30",
+  "prev_date": "2026-08-29",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 18,
-      "book_count": 539
+      "book_count": 537
     },
     {
       "type": "古风世情",
@@ -21,7 +21,7 @@
     {
       "type": "游戏体育",
       "url": "api/lastest/%E6%B8%B8%E6%88%8F%E4%BD%93%E8%82%B2.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "女频衍生",
@@ -41,7 +41,7 @@
     {
       "type": "年代",
       "url": "api/lastest/%E5%B9%B4%E4%BB%A3.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "现言脑洞",
@@ -76,12 +76,12 @@
     {
       "type": "星光璀璨",
       "url": "api/lastest/%E6%98%9F%E5%85%89%E7%92%80%E7%92%A8.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "女频悬疑",
       "url": "api/lastest/%E5%A5%B3%E9%A2%91%E6%82%AC%E7%96%91.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "职场婚恋",

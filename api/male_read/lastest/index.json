@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-29",
-  "prev_date": "2026-08-28",
+  "date": "2026-08-30",
+  "prev_date": "2026-08-29",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 19,
-      "book_count": 570
+      "book_count": 566
     },
     {
       "type": "西方奇幻",
@@ -71,12 +71,12 @@
     {
       "type": "都市脑洞",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E8%84%91%E6%B4%9E.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "玄幻脑洞",
       "url": "api/lastest/%E7%8E%84%E5%B9%BB%E8%84%91%E6%B4%9E.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "悬疑灵异",
@@ -91,12 +91,12 @@
     {
       "type": "游戏体育",
       "url": "api/lastest/%E6%B8%B8%E6%88%8F%E4%BD%93%E8%82%B2.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "动漫衍生",
       "url": "api/lastest/%E5%8A%A8%E6%BC%AB%E8%A1%8D%E7%94%9F.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "男频衍生",
