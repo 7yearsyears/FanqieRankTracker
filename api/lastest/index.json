@@ -1,22 +1,22 @@
 {
-  "date": "2026-09-01",
-  "prev_date": "2026-08-31",
+  "date": "2026-09-02",
+  "prev_date": "2026-09-01",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 18,
-      "book_count": 535
+      "book_count": 534
     },
     {
       "type": "古风世情",
       "url": "api/lastest/%E5%8F%A4%E9%A3%8E%E4%B8%96%E6%83%85.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "科幻末世",
       "url": "api/lastest/%E7%A7%91%E5%B9%BB%E6%9C%AB%E4%B8%96.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "游戏体育",
@@ -26,12 +26,12 @@
     {
       "type": "女频衍生",
       "url": "api/lastest/%E5%A5%B3%E9%A2%91%E8%A1%8D%E7%94%9F.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "玄幻言情",
       "url": "api/lastest/%E7%8E%84%E5%B9%BB%E8%A8%80%E6%83%85.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "种田",
@@ -46,7 +46,7 @@
     {
       "type": "现言脑洞",
       "url": "api/lastest/%E7%8E%B0%E8%A8%80%E8%84%91%E6%B4%9E.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "宫斗宅斗",
@@ -61,7 +61,7 @@
     {
       "type": "古言脑洞",
       "url": "api/lastest/%E5%8F%A4%E8%A8%80%E8%84%91%E6%B4%9E.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "快穿",
@@ -91,7 +91,7 @@
     {
       "type": "豪门总裁",
       "url": "api/lastest/%E8%B1%AA%E9%97%A8%E6%80%BB%E8%A3%81.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "民国言情",
