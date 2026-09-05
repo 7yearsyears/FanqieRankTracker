@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-04",
-  "prev_date": "2026-09-03",
+  "date": "2026-09-05",
+  "prev_date": "2026-09-04",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 18,
-      "book_count": 529
+      "book_count": 531
     },
     {
       "type": "古风世情",
@@ -16,17 +16,17 @@
     {
       "type": "科幻末世",
       "url": "api/lastest/%E7%A7%91%E5%B9%BB%E6%9C%AB%E4%B8%96.json",
-      "book_count": 28
+      "book_count": 29
     },
     {
       "type": "游戏体育",
       "url": "api/lastest/%E6%B8%B8%E6%88%8F%E4%BD%93%E8%82%B2.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "女频衍生",
       "url": "api/lastest/%E5%A5%B3%E9%A2%91%E8%A1%8D%E7%94%9F.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "玄幻言情",
@@ -41,7 +41,7 @@
     {
       "type": "年代",
       "url": "api/lastest/%E5%B9%B4%E4%BB%A3.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "现言脑洞",
@@ -51,7 +51,7 @@
     {
       "type": "宫斗宅斗",
       "url": "api/lastest/%E5%AE%AB%E6%96%97%E5%AE%85%E6%96%97.json",
-      "book_count": 28
+      "book_count": 30
     },
     {
       "type": "悬疑脑洞",
@@ -76,12 +76,12 @@
     {
       "type": "星光璀璨",
       "url": "api/lastest/%E6%98%9F%E5%85%89%E7%92%80%E7%92%A8.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "女频悬疑",
       "url": "api/lastest/%E5%A5%B3%E9%A2%91%E6%82%AC%E7%96%91.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "职场婚恋",

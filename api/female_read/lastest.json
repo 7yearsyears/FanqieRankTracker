@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-04",
-  "prev_date": "2026-09-03",
+  "date": "2026-09-05",
+  "prev_date": "2026-09-04",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 18,
-      "book_count": 536
+      "book_count": 535
     },
     {
       "type": "古风世情",
@@ -41,7 +41,7 @@
     {
       "type": "年代",
       "url": "api/lastest/%E5%B9%B4%E4%BB%A3.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "现言脑洞",
@@ -66,17 +66,17 @@
     {
       "type": "快穿",
       "url": "api/lastest/%E5%BF%AB%E7%A9%BF.json",
-      "book_count": 30
+      "book_count": 28
     },
     {
       "type": "青春甜宠",
       "url": "api/lastest/%E9%9D%92%E6%98%A5%E7%94%9C%E5%AE%A0.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "星光璀璨",
       "url": "api/lastest/%E6%98%9F%E5%85%89%E7%92%80%E7%92%A8.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "女频悬疑",
