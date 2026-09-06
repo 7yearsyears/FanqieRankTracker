@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-05",
-  "prev_date": "2026-09-04",
+  "date": "2026-09-06",
+  "prev_date": "2026-09-05",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 19,
-      "book_count": 560
+      "book_count": 554
     },
     {
       "type": "西方奇幻",
@@ -16,12 +16,12 @@
     {
       "type": "东方仙侠",
       "url": "api/lastest/%E4%B8%9C%E6%96%B9%E4%BB%99%E4%BE%A0.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "科幻末世",
       "url": "api/lastest/%E7%A7%91%E5%B9%BB%E6%9C%AB%E4%B8%96.json",
-      "book_count": 30
+      "book_count": 28
     },
     {
       "type": "都市日常",
@@ -31,17 +31,17 @@
     {
       "type": "都市修真",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E4%BF%AE%E7%9C%9F.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "都市高武",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E9%AB%98%E6%AD%A6.json",
-      "book_count": 30
+      "book_count": 28
     },
     {
       "type": "历史古代",
       "url": "api/lastest/%E5%8E%86%E5%8F%B2%E5%8F%A4%E4%BB%A3.json",
-      "book_count": 28
+      "book_count": 29
     },
     {
       "type": "战神赘婿",
@@ -51,27 +51,27 @@
     {
       "type": "都市种田",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E7%A7%8D%E7%94%B0.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "传统玄幻",
       "url": "api/lastest/%E4%BC%A0%E7%BB%9F%E7%8E%84%E5%B9%BB.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "历史脑洞",
       "url": "api/lastest/%E5%8E%86%E5%8F%B2%E8%84%91%E6%B4%9E.json",
-      "book_count": 28
+      "book_count": 30
     },
     {
       "type": "悬疑脑洞",
       "url": "api/lastest/%E6%82%AC%E7%96%91%E8%84%91%E6%B4%9E.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "都市脑洞",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E8%84%91%E6%B4%9E.json",
-      "book_count": 30
+      "book_count": 28
     },
     {
       "type": "玄幻脑洞",
@@ -81,7 +81,7 @@
     {
       "type": "悬疑灵异",
       "url": "api/lastest/%E6%82%AC%E7%96%91%E7%81%B5%E5%BC%82.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "抗战谍战",
@@ -96,7 +96,7 @@
     {
       "type": "动漫衍生",
       "url": "api/lastest/%E5%8A%A8%E6%BC%AB%E8%A1%8D%E7%94%9F.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "男频衍生",
