@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-13",
-  "prev_date": "2026-09-12",
+  "date": "2026-09-14",
+  "prev_date": "2026-09-13",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 18,
-      "book_count": 532
+      "book_count": 536
     },
     {
       "type": "古风世情",
@@ -26,7 +26,7 @@
     {
       "type": "女频衍生",
       "url": "api/lastest/%E5%A5%B3%E9%A2%91%E8%A1%8D%E7%94%9F.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "玄幻言情",
@@ -36,7 +36,7 @@
     {
       "type": "种田",
       "url": "api/lastest/%E7%A7%8D%E7%94%B0.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "年代",
@@ -51,22 +51,22 @@
     {
       "type": "宫斗宅斗",
       "url": "api/lastest/%E5%AE%AB%E6%96%97%E5%AE%85%E6%96%97.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "悬疑脑洞",
       "url": "api/lastest/%E6%82%AC%E7%96%91%E8%84%91%E6%B4%9E.json",
-      "book_count": 28
+      "book_count": 30
     },
     {
       "type": "古言脑洞",
       "url": "api/lastest/%E5%8F%A4%E8%A8%80%E8%84%91%E6%B4%9E.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "快穿",
       "url": "api/lastest/%E5%BF%AB%E7%A9%BF.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "青春甜宠",
@@ -86,7 +86,7 @@
     {
       "type": "职场婚恋",
       "url": "api/lastest/%E8%81%8C%E5%9C%BA%E5%A9%9A%E6%81%8B.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "豪门总裁",
