@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-18",
-  "prev_date": "2026-09-17",
+  "date": "2026-09-19",
+  "prev_date": "2026-09-18",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 19,
-      "book_count": 565
+      "book_count": 568
     },
     {
       "type": "西方奇幻",
@@ -21,12 +21,12 @@
     {
       "type": "科幻末世",
       "url": "api/lastest/%E7%A7%91%E5%B9%BB%E6%9C%AB%E4%B8%96.json",
-      "book_count": 28
+      "book_count": 29
     },
     {
       "type": "都市日常",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "都市修真",
@@ -46,7 +46,7 @@
     {
       "type": "战神赘婿",
       "url": "api/lastest/%E6%88%98%E7%A5%9E%E8%B5%98%E5%A9%BF.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "都市种田",
@@ -56,12 +56,12 @@
     {
       "type": "传统玄幻",
       "url": "api/lastest/%E4%BC%A0%E7%BB%9F%E7%8E%84%E5%B9%BB.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "历史脑洞",
       "url": "api/lastest/%E5%8E%86%E5%8F%B2%E8%84%91%E6%B4%9E.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "悬疑脑洞",
