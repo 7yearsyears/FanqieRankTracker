@@ -1,17 +1,17 @@
 {
-  "date": "2026-09-23",
-  "prev_date": "2026-09-22",
+  "date": "2026-09-24",
+  "prev_date": "2026-09-23",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 19,
-      "book_count": 568
+      "book_count": 563
     },
     {
       "type": "西方奇幻",
       "url": "api/lastest/%E8%A5%BF%E6%96%B9%E5%A5%87%E5%B9%BB.json",
-      "book_count": 30
+      "book_count": 28
     },
     {
       "type": "东方仙侠",
@@ -51,7 +51,7 @@
     {
       "type": "都市种田",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E7%A7%8D%E7%94%B0.json",
-      "book_count": 28
+      "book_count": 29
     },
     {
       "type": "传统玄幻",
@@ -71,7 +71,7 @@
     {
       "type": "都市脑洞",
       "url": "api/lastest/%E9%83%BD%E5%B8%82%E8%84%91%E6%B4%9E.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "玄幻脑洞",
@@ -81,12 +81,12 @@
     {
       "type": "悬疑灵异",
       "url": "api/lastest/%E6%82%AC%E7%96%91%E7%81%B5%E5%BC%82.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "抗战谍战",
       "url": "api/lastest/%E6%8A%97%E6%88%98%E8%B0%8D%E6%88%98.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "游戏体育",
@@ -101,7 +101,7 @@
     {
       "type": "男频衍生",
       "url": "api/lastest/%E7%94%B7%E9%A2%91%E8%A1%8D%E7%94%9F.json",
-      "book_count": 30
+      "book_count": 29
     }
   ]
 }
