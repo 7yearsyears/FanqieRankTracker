@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-30",
-  "prev_date": "2026-09-29",
+  "date": "2026-10-01",
+  "prev_date": "2026-09-30",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 18,
-      "book_count": 538
+      "book_count": 540
     },
     {
       "type": "古风世情",
@@ -36,7 +36,7 @@
     {
       "type": "种田",
       "url": "api/lastest/%E7%A7%8D%E7%94%B0.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "年代",
@@ -86,7 +86,7 @@
     {
       "type": "职场婚恋",
       "url": "api/lastest/%E8%81%8C%E5%9C%BA%E5%A9%9A%E6%81%8B.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "豪门总裁",
