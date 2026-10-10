@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-09",
-  "prev_date": "2026-10-08",
+  "date": "2026-10-10",
+  "prev_date": "2026-10-09",
   "types": [
     {
       "type": "all",
       "url": "api/lastest/all.json",
       "category_count": 19,
-      "book_count": 570
+      "book_count": 560
     },
     {
       "type": "西方奇幻",
@@ -81,7 +81,7 @@
     {
       "type": "悬疑灵异",
       "url": "api/lastest/%E6%82%AC%E7%96%91%E7%81%B5%E5%BC%82.json",
-      "book_count": 30
+      "book_count": 20
     },
     {
       "type": "抗战谍战",
